@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Freenet">
+        <ntfs_find path_match="Users\*\AppData\Local\Freenet\node*"/>
+    </sample>
+    <sample name="Freenet">
+        <ntfs_find path_match="Users\*\AppData\Local\Freenet\*completed.list.downloads"/>
+    </sample>
+    <sample name="Freenet">
+        <ntfs_find path_match="Users\*\AppData\Local\Freenet\*completed.list.uploads"/>
+    </sample>
+    <sample name="Freenet">
+        <ntfs_find path_match="Users\*\AppData\Local\Freenet\*.bak"/>
+    </sample>
+    <sample name="Freenet">
+        <ntfs_find path_match="Users\*\AppData\Local\Freenet\downloads\"/>
+    </sample>
+</getthis>

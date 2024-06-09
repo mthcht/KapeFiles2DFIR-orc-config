@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Multi Commander is a freeware Windows File Explorer replacement similar to Total Commander.-->
+    <!--Application folder will have lots of standard XML files that ship with Multi Commander.-->
+    <!--Config folder will have lots of XML files and folders related to Extensions and Scripts installed by the user.-->
+    <!--Log folder will contain multiple .log files depending on which activity the user engaged in. During my testing, my Log folder contained the following:-->
+    <!--2021-04-03-(2244)-FileOperations.log-->
+    <!--2021-04-03-(2244)-Filesystem.log-->
+    <!--2021-04-03-(2244)-FTP-192.168.131.123.log-->
+    <!--2021-04-03-(2244)-MultiCommander.log-->
+    <!--2021-04-03-(4048)-FileOperations.log-->
+    <!--2021-04-03-(4048)-Filesystem.log-->
+    <!--2021-04-03-(4048)-FTP-192.168.131.123.log-->
+    <!--2021-04-03-(4048)-MultiCommander.log-->
+    <!--2021-04-03-(15376)-FileOperations.log-->
+    <!--2021-04-03-(15376)-Filesystem.log-->
+    <!--2021-04-03-(15376)-MultiCommander.log-->
+    <!--UserData folder contains an ftpsite.xml file which contains all FTP configurations saved by the user.-->
+    <sample name="Multi_Commander_-_Application_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\MultiCommander*\"/>
+    </sample>
+    <sample name="Multi_Commander_-_Config_Folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\MultiCommander*\Config\"/>
+    </sample>
+    <sample name="Multi_Commander_-_Log_Folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\MultiCommander*\Logs\"/>
+    </sample>
+    <sample name="Multi_Commander_-_UserData_Folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\MultiCommander*\UserData\"/>
+    </sample>
+    <sample name="Multi_Commander_-_Log_File">
+        <ntfs_find path_match="Users\*\AppData\Roaming\MultiCommander*\*MultiCommander.log"/>
+    </sample>
+</getthis>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Information on UltraViewer logs can be found here: https://www.ultraviewer.net/en/200000026-summary-of-ultraviewer-s-security-information.html granted it is sparse.-->
+    <sample name="UltraViewer_User_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\UltraViewer"/>
+    </sample>
+    <sample name="UltraViewer_System_Logs">
+        <ntfs_find path_match="Windows\SysWOW64\config\systemprofile\AppData\Roaming\UltraViewer"/>
+    </sample>
+    <sample name="UltraViewer_Service_Log">
+        <ntfs_find path_match="Program Files*\UltraViewer"/>
+    </sample>
+    <sample name="UltraViewer_Connection_Log">
+        <ntfs_find path_match="Program Files*\UltraViewer"/>
+    </sample>
+</getthis>

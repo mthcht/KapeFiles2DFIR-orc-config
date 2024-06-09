@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="HitmanPro_Logs">
+        <ntfs_find path_match="ProgramData\HitmanPro\Logs\"/>
+    </sample>
+    <sample name="HitmanPro_Alert_Logs">
+        <ntfs_find path_match="ProgramData\HitmanPro.Alert\Logs\"/>
+    </sample>
+    <sample name="HitmanPro_Database">
+        <ntfs_find path_match="ProgramData\HitmanPro.Alert\"/>
+    </sample>
+</getthis>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.4kdownload.com/products/product-videodownloader-->
+    <!--The SQLite database(s) this Target collects can be parsed with SQLECmd using the following map(s):-->
+    <sample name="4K_Video_Downloader">
+        <ntfs_find path_match="Users\*\AppData\Local\4kdownload.com\4K Video Downloader\4K Video Downloader"/>
+    </sample>
+    <sample name="4K_Video_Downloader+">
+        <ntfs_find path_match="Users\*\AppData\Local\4kdownload.com\4K Video Downloader+\4K Video Downloader+"/>
+    </sample>
+</getthis>

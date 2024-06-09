@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For vivaldi user tracking, see here: https://vivaldi.com/blog/how-we-count-our-users/-->
+    <!--Vivaldi is Chromium, so the same artifacts can be found, however Vivaldi has a few unique ones-->
+    <!--Like "Notes"-->
+    <sample name="Vivaldi_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Network_Persistent_State">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Favicons">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Sessions_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\Sessions\"/>
+    </sample>
+    <sample name="Vivaldi_Login_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Network_Action_Predictor">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Preferences">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Top_Sites">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Visited_Links">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Web_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_User_Tracking">
+        <ntfs_find path_match="Users\*\"/>
+    </sample>
+    <sample name="Vivaldi_Calendar">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Contacts">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Notes">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+    <sample name="Vivaldi_Download_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Vivaldi\User Data\*\"/>
+    </sample>
+</getthis>

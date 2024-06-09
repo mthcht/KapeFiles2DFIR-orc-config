@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--http://sersc.org/journals/index.php/IJAST/article/download/17649/8916/-->
+    <!--https://core.ac.uk/download/pdf/214330118.pdf-->
+    <!--Acronis True Image can be used to create full, incremental, and differential backups of any disk/volume on a user's system.-->
+    <!--.\Acronis\TrueImageHome\Logs\ti_demon\ will contain logs that are prepended with ti_demon_ followed by what appears to be either a GUID or gibberish followed by a YYYY-MM-DD-HH-MM-SS timestamp prior to the .log file extension.-->
+    <!--Every time a backup process is started, a log file is created following this naming convention.-->
+    <!--.\Acronis\TrueImageHome\Database\ had a .opt file that I was able to view in a text editor that showed the source and destination for the backup job I created in my testing. It was nested under the "backup_archive_operation_options" with each being on a line that started with "volume_location".-->
+    <!--The Database folder target should get you the files I saw on my system that were relevant (Archives.db, Archives.db-shm, Archives.db-wal, Archives.db000000001h.opt).-->
+    <!--.\Acronis\TrueImageHome\Scripts\ contained .tib.tis files that were viewable in a text editor that appeared to have the contents of a batch script for running the backup I created in my testing.-->
+    <sample name="Acronis_True_Image_-_Logs">
+        <ntfs_find path_match="ProgramData\Acronis\TrueImageHome\Logs\ti_demon\"/>
+    </sample>
+    <sample name="Acronis_True_Image_-_Database_Files">
+        <ntfs_find path_match="ProgramData\Acronis\TrueImageHome\Database"/>
+    </sample>
+    <sample name="Acronis_True_Image_-_Scripts_Folder">
+        <ntfs_find path_match="ProgramData\Acronis\TrueImageHome\Scripts\"/>
+    </sample>
+</getthis>

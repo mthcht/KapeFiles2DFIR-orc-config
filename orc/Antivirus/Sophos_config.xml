@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://support.sophos.com/support/s/article/KB-000033591?language=en_US-->
+    <sample name="Sophos_Logs_(XP)">
+        <ntfs_find path_match="Documents and Settings\All Users\Application Data\Sophos\Sophos *\Logs\"/>
+    </sample>
+    <sample name="Sophos_Logs">
+        <ntfs_find path_match="ProgramData\Sophos\Sophos *\Logs\"/>
+    </sample>
+    <sample name="Sophos_Application_Events">
+        <ntfs_find path_match="ApplicationEvents.tkape"/>
+    </sample>
+</getthis>

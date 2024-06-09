@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://github.com/jklepsercyber/defender-detectionhistory-parser/blob/main/README.md-->
+    <sample name="DetectionHistory">
+        <ntfs_find path_match="ProgramData\Microsoft\Windows Defender\Scans\History\Service\DetectionHistory\*\"/>
+    </sample>
+</getthis>

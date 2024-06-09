@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://github.com/rathbuna/EventTranscript.db-Research-->
+    <!--https://www.kroll.com/en/insights/publications/cyber/forensically-unpacking-eventtranscript-->
+    <!--Articles will be at the bottom of the landing page above, more to come!-->
+    <!--Parse with SQLECmd using the SQLECmd Module-->
+    <!--In reference to the Office Diagnostic Logs, Windows appears to save a local copy of all diagnostic logs relating to the Microsoft Office applications. Here's what my folder looked like:-->
+    <!--C:\Users\%User%\AppData\Local\Temp\Diagnostics                                            2021-08-25 09:58:32-->
+    <!--Name                                                       Size Type                           Modified  Attr-->
+    <sample name="EventTranscript.db">
+        <ntfs_find path_match="ProgramData\Microsoft\Diagnosis\EventTranscriptEventTranscript.db*"/>
+    </sample>
+    <sample name="EventTranscript.db">
+        <ntfs_find path_match="Windows.old\ProgramData\Microsoft\Diagnosis\EventTranscriptEventTranscript.db*"/>
+    </sample>
+    <sample name="Microsoft_Office_Diagnostic_Logs">
+        <ntfs_find path_match="Users\*\AppData\Local\Temp\Diagnostics"/>
+    </sample>
+</getthis>

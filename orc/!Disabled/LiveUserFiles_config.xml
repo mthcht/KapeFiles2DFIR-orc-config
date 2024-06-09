@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <sample name="User_Files_-_Desktop">
+        <ntfs_find path_match="Users\*\Desktop\"/>
+    </sample>
+    <sample name="User_Files_-_Documents">
+        <ntfs_find path_match="Users\*\Documents\"/>
+    </sample>
+    <sample name="User_Files_-_Downloads">
+        <ntfs_find path_match="Users\*\Downloads\"/>
+    </sample>
+    <sample name="User_Files_-_Dropbox">
+        <ntfs_find path_match="Users\*\Dropbox*\"/>
+    </sample>
+</getthis>

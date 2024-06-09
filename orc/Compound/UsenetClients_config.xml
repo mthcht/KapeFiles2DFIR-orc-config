@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_Usenet_newsreaders.-->
+    <!--Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.-->
+    <sample name="NewsbinPro">
+        <ntfs_find path_match="NewsbinPro.tkape"/>
+    </sample>
+    <sample name="Newsleecher">
+        <ntfs_find path_match="Newsleecher.tkape"/>
+    </sample>
+    <sample name="NZBGet">
+        <ntfs_find path_match="NZBGet.tkape"/>
+    </sample>
+    <sample name="SABnbzd">
+        <ntfs_find path_match="SABnbzd.tkape"/>
+    </sample>
+</getthis>

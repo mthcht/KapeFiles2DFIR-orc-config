@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://troy4n6.blogspot.com/2019/02/text-based-treasure-qbittorent-log-file.html-->
+    <sample name="TorrentClients_-_qBittorrent">
+        <ntfs_find path_match="Users\*\AppData\Roaming\qBittorrent\*.ini"/>
+    </sample>
+    <sample name="TorrentClients_-_qBittorrent">
+        <ntfs_find path_match="Users\*\AppData\Local\qBittorrent\logs\"/>
+    </sample>
+    <sample name="TorrentClients_-_qBittorrent">
+        <ntfs_find path_match="Users\*\AppData\Local\qBittorrent\GeoDB\"/>
+    </sample>
+    <sample name="TorrentClients_-_qBittorrent">
+        <ntfs_find path_match="Users\*\AppData\Local\qBittorrent\BT_backup\"/>
+    </sample>
+</getthis>

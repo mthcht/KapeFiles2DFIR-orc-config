@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.advintel.io/post/secret-backdoor-behind-conti-ransomware-operation-introducing-atera-agent-->
+    <!--https://www.pcrisk.com/internet-threat-news/21576-conti-ransomwares-secret-backdoor-discovered-->
+    <!--https://news.sophos.com/en-us/2021/09/03/conti-affiliates-use-proxyshell-exchange-exploit-in-ransomware-attacks/-->
+    <sample name="AteraAgent_.ini_files">
+        <ntfs_find path_match="Program Files\ATERA Networks\AteraAgent*.ini"/>
+    </sample>
+    <sample name="AteraAgent_Logs">
+        <ntfs_find path_match="Program Files\ATERA Networks\AteraAgent*.txt"/>
+    </sample>
+    <sample name="AteraAgent_Logs">
+        <ntfs_find path_match="Program Files\ATERA Networks\AteraAgent*.db"/>
+    </sample>
+    <sample name="AteraAgent_Logs">
+        <ntfs_find path_match="Program Files\ATERA Networks\AteraAgent*.config"/>
+    </sample>
+    <sample name="AteraAgent_Logs">
+        <ntfs_find path_match="Program Files\ATERA Networks\AteraAgent*.cfg"/>
+    </sample>
+</getthis>

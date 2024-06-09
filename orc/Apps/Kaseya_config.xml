@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Kaseya_Live_Connect_Logs_(XP)">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Kaseya\Log\"/>
+    </sample>
+    <sample name="Kaseya_Live_Connect_Logs">
+        <ntfs_find path_match="Users\*\AppData\Local\Kaseya\Log\KaseyaLiveConnect\"/>
+    </sample>
+    <sample name="Kaseya_Agent_Endpoint_Service_Logs_(XP)">
+        <ntfs_find path_match="Documents and Settings\All Users\Application Data\Kaseya\Log\Endpoint\"/>
+    </sample>
+    <sample name="Kaseya_Agent_Endpoint_Service_Logs">
+        <ntfs_find path_match="ProgramData\Kaseya\Log\Endpoint\"/>
+    </sample>
+    <sample name="Kaseya_Agent_Service_Log">
+        <ntfs_find path_match="Program Files*\Kaseya\*\"/>
+    </sample>
+    <sample name="Kaseya_Setup_Log">
+        <ntfs_find path_match="Users\*\AppData\Local\Temp\"/>
+    </sample>
+    <sample name="Kaseya_Setup_Log">
+        <ntfs_find path_match="Windows\Temp\"/>
+    </sample>
+    <sample name="Kaseya_Setup_Log">
+        <ntfs_find path_match="Windows.old\Windows\Temp\"/>
+    </sample>
+    <sample name="Kaseya_Agent_Edge_Service_Logs">
+        <ntfs_find path_match="ProgramData\Kaseya\Log\KaseyaEdgeServices\"/>
+    </sample>
+</getthis>

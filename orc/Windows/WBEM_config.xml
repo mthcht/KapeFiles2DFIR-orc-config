@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.jaiminton.com/cheatsheet/DFIR/-->
+    <!--https://www.sans.org/blog/investigating-wmi-attacks-->
+    <!--https://www.fireeye.com/blog/threat-research/2016/12/do_you_see_what_icc.html-->
+    <!--https://cyberforensicator.com/2019/07/13/using-mitre-attck-for-forensics-wmi-event-subscription-t1084/-->
+    <sample name="WBEM">
+        <ntfs_find path_match="Windows\System32\wbem\Repository\"/>
+    </sample>
+    <sample name="WBEM">
+        <ntfs_find path_match="Windows.old\Windows\System32\wbem\Repository\"/>
+    </sample>
+</getthis>

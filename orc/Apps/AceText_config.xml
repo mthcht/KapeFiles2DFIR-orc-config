@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--AceText is made by the same people who make Edit Pad Pro, PowerGREP, etc. It's a cool program that serves as a Clipboard extension tool.-->
+    <!--From a forensic perspective, the entirety of a user's clipboard history is available for our perusal!-->
+    <!--Once you have the .atc file, you can open with any text editor and see the entire history of a user's clipboard contents.-->
+    <!--The copied text will be found between the &lt;text&gt; and &lt;/text&gt; parameters.-->
+    <!--If content is copied from a webpage, copied text will be the same as above but there will also be a &lt;url&gt; and &lt;/url&gt; parameter which will display the URL from which the contents were copied from.-->
+    <!--In addition to the above, the kind= parameter will provide clues as to where the contents were copied from.-->
+    <sample name="AceText_-_Clipboard_History">
+        <ntfs_find path_match="Users\*\Documents*.atc"/>
+    </sample>
+</getthis>

@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--http://windowsir.blogspot.com/2009/09/parsing-job-files.html-->
+    <!--https://www.sans.org/blog/windows-scheduler-at-job-forensics-->
+    <!--https://forensicswiki.xyz/wiki/index.php?title=Windows_Job_File_Format-->
+    <!--https://www.forensafe.com/blogs/taskschd.html-->
+    <!--https://stmxcsr.com/persistence/scheduled-tasks.html-->
+    <sample name="at_.job">
+        <ntfs_find path_match="Windows\Tasks\*.job"/>
+    </sample>
+    <sample name="at_.job">
+        <ntfs_find path_match="Windows.old\Windows\Tasks\*.job"/>
+    </sample>
+    <sample name="at_SchedLgU.txt">
+        <ntfs_find path_match="Windows\"/>
+    </sample>
+    <sample name="at_SchedLgU.txt">
+        <ntfs_find path_match="Windows.old\Windows\"/>
+    </sample>
+    <sample name="XML">
+        <ntfs_find path_match="Windows\System32\Tasks\"/>
+    </sample>
+    <sample name="XML">
+        <ntfs_find path_match="Windows\syswow64\Tasks\"/>
+    </sample>
+    <sample name="XML">
+        <ntfs_find path_match="Windows.old\Windows\System32\Tasks\"/>
+    </sample>
+</getthis>

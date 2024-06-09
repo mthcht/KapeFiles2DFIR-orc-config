@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Antivirus">
+        <ntfs_find path_match="Antivirus.tkape"/>
+    </sample>
+    <sample name="CloudStorage_Metadata">
+        <ntfs_find path_match="CloudStorage_Metadata.tkape"/>
+    </sample>
+    <sample name="EventLogs">
+        <ntfs_find path_match="EventLogs.tkape"/>
+    </sample>
+    <sample name="EvidenceOfExecution">
+        <ntfs_find path_match="EvidenceOfExecution.tkape"/>
+    </sample>
+    <sample name="FileSystem">
+        <ntfs_find path_match="FileSystem.tkape"/>
+    </sample>
+    <sample name="LNKFilesAndJumpLists">
+        <ntfs_find path_match="LNKFilesAndJumpLists.tkape"/>
+    </sample>
+    <sample name="PowerShellConsole">
+        <ntfs_find path_match="PowerShellConsole.tkape"/>
+    </sample>
+    <sample name="RecycleBin_InfoFiles">
+        <ntfs_find path_match="RecycleBin_InfoFiles.tkape"/>
+    </sample>
+    <sample name="RegistryHives">
+        <ntfs_find path_match="RegistryHives.tkape"/>
+    </sample>
+    <sample name="RemoteAccess">
+        <ntfs_find path_match="RemoteAdmin.tkape"/>
+    </sample>
+    <sample name="ScheduledTasks">
+        <ntfs_find path_match="ScheduledTasks.tkape"/>
+    </sample>
+    <sample name="SRUM">
+        <ntfs_find path_match="SRUM.tkape"/>
+    </sample>
+    <sample name="SUM">
+        <ntfs_find path_match="SUM.tkape"/>
+    </sample>
+    <sample name="WER">
+        <ntfs_find path_match="WER.tkape"/>
+    </sample>
+    <sample name="WBEM">
+        <ntfs_find path_match="WBEM.tkape"/>
+    </sample>
+    <sample name="WebBrowsers">
+        <ntfs_find path_match="WebBrowsers.tkape"/>
+    </sample>
+    <sample name="WindowsTimeline">
+        <ntfs_find path_match="WindowsTimeline.tkape"/>
+    </sample>
+</getthis>

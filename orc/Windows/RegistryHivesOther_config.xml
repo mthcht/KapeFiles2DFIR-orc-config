@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://medium.com/@lucideus/windows-registry-forensic-analysis-part-1-windows-forensics-manual-2018-2cb4da210125-->
+    <!--https://www.fireeye.com/blog/threat-research/2019/01/digging-up-the-past-windows-registry-forensics-revisited.html-->
+    <!--https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download-->
+    <!--https://www.youtube.com/watch?v=VYROU-ZwZX8-->
+    <sample name="BBI_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="BBI_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="BBI_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="BBI_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\System32\config\"/>
+    </sample>
+    <sample name="BCD-Template_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="BCD-Template_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="BCD-Template_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="BCD-Template_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\System32\config\"/>
+    </sample>
+    <sample name="COMPONENTS_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="COMPONENTS_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="COMPONENTS_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="COMPONENTS_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\System32\config\"/>
+    </sample>
+    <sample name="DRIVERS_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="DRIVERS_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="DRIVERS_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="DRIVERS_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\System32\config\"/>
+    </sample>
+    <sample name="ELAM_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="ELAM_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="ELAM_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="ELAM_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\System32\config\"/>
+    </sample>
+    <sample name="userdiff_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="userdiff_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="userdiff_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="userdiff_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\System32\config\"/>
+    </sample>
+    <sample name="VSMIDK_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="VSMIDK_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="VSMIDK_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="VSMIDK_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\System32\config\"/>
+    </sample>
+</getthis>

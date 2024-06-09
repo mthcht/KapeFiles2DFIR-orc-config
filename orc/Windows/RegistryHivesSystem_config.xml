@@ -1,0 +1,133 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://medium.com/@lucideus/windows-registry-forensic-analysis-part-1-windows-forensics-manual-2018-2cb4da210125-->
+    <!--https://www.fireeye.com/blog/threat-research/2019/01/digging-up-the-past-windows-registry-forensics-revisited.html-->
+    <!--https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download-->
+    <!--https://www.youtube.com/watch?v=VYROU-ZwZX8-->
+    <sample name="SAM_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SAM_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SECURITY_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SECURITY_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SYSTEM_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SYSTEM_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SAM_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SAM_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SECURITY_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SECURITY_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="RegBack_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\RegBack\*.LOG*"/>
+    </sample>
+    <sample name="RegBack_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\RegBack\*.LOG*"/>
+    </sample>
+    <sample name="SAM_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SAM_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SECURITY_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SECURITY_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="System_Profile_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\systemprofile\"/>
+    </sample>
+    <sample name="System_Profile_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\systemprofile\"/>
+    </sample>
+    <sample name="System_Profile_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\systemprofile\"/>
+    </sample>
+    <sample name="System_Profile_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\systemprofile\"/>
+    </sample>
+    <sample name="Local_Service_registry_hive">
+        <ntfs_find path_match="Windows\ServiceProfiles\LocalService\"/>
+    </sample>
+    <sample name="Local_Service_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\ServiceProfiles\LocalService\"/>
+    </sample>
+    <sample name="Local_Service_registry_transaction_files">
+        <ntfs_find path_match="Windows\ServiceProfiles\LocalService\"/>
+    </sample>
+    <sample name="Local_Service_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\ServiceProfiles\LocalService\"/>
+    </sample>
+    <sample name="Network_Service_registry_hive">
+        <ntfs_find path_match="Windows\ServiceProfiles\NetworkService\"/>
+    </sample>
+    <sample name="Network_Service_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\ServiceProfiles\NetworkService\"/>
+    </sample>
+    <sample name="Network_Service_registry_transaction_files">
+        <ntfs_find path_match="Windows\ServiceProfiles\NetworkService\"/>
+    </sample>
+    <sample name="Network_Service_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\ServiceProfiles\NetworkService\"/>
+    </sample>
+    <sample name="System_Restore_Points_Registry_Hives_(XP)">
+        <ntfs_find path_match="System Volume Information\_restore*\RP*\snapshot\"/>
+    </sample>
+</getthis>

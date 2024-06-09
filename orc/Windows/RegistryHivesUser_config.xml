@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download-->
+    <!--https://www.youtube.com/watch?v=OBp6SHgSSZg-->
+    <!--https://www.secjuice.com/windows-forensics-artifacts-2/-->
+    <!--https://www.sans.org/reading-room/whitepapers/forensics/windows-shellbag-forensics-in-depth-34545-->
+    <!--https://cyberforensicator.com/2019/02/03/shellbags-forensics-directory-viewing-preferences/-->
+    <sample name="NTUSER.DAT_registry_hive_XP">
+        <ntfs_find path_match="Documents and Settings\*\"/>
+    </sample>
+    <sample name="NTUSER.DAT_registry_hive">
+        <ntfs_find path_match="Users\*\"/>
+    </sample>
+    <sample name="NTUSER.DAT_registry_transaction_files">
+        <ntfs_find path_match="Users\*\"/>
+    </sample>
+    <sample name="NTUSER.DAT_DEFAULT_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="NTUSER.DAT_DEFAULT_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="NTUSER.DAT_DEFAULT_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="NTUSER.DAT_DEFAULT_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="UsrClass.dat_registry_hive">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\"/>
+    </sample>
+    <sample name="UsrClass.dat_registry_transaction_files">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\"/>
+    </sample>
+</getthis>

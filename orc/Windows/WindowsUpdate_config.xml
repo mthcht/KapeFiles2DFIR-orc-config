@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://learn.microsoft.com/en-us/windows/deployment/update/windows-update-logs-->
+    <sample name="Windows_Update_Session_Orchestrator_logs">
+        <ntfs_find path_match="ProgramData\USOShared\Logs\System\*.etl"/>
+    </sample>
+    <sample name="Windows_Update_logs">
+        <ntfs_find path_match="Windows\Logs\WindowsUpdate\WindowsUpdate*.etl"/>
+    </sample>
+    <sample name="Windows_Component-Based_Servicing_logs">
+        <ntfs_find path_match="Windows\Logs\CBS\CBS*.log"/>
+    </sample>
+</getthis>

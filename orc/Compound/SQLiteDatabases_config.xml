@@ -1,0 +1,347 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Apps - 4K Video Downloader - 4KVideoDownloader.tkape-->
+    <!--Apps - Microsoft OneNote - MicrosoftOneNote.tkape-->
+    <!--Apps - Microsoft Sticky Notes - MicrosoftStickyNotes.tkape-->
+    <!--Apps - Microsoft To Do - MicrosoftToDo.tkape-->
+    <!--Apps - Robo-FTP - Robo-FTP.tkape-->
+    <!--Apps - TeraCopy - TeraCopy.tkape-->
+    <!--Apps - Notion - Notion.tkape-->
+    <!--Apps - Idrive - Idrive.tkape-->
+    <!--Cloud Storage - Dropbox - Dropbox_Metadata.tkape-->
+    <!--Cloud Storage - Google Drive - GoogleDrive_Metadata.tkape-->
+    <!--FTP Clients - FileZilla - FileZilla.tkape-->
+    <!--Web Browsers - Chrome - Chrome.tkape-->
+    <!--Web Browsers - Edge Chromium - EdgeChromium.tkape-->
+    <!--Web Browsers - Firefox - Firefox.tkape-->
+    <!--Windows - Windows Notifications - WindowsNotificationsDB.tkape-->
+    <!--Windows - Windows Timeline - WindowsTimeline.tkape-->
+    <!--Windows - Windows OS Upgrade Artifacts - WindowsOSUpgradeArtifacts.tkape-->
+    <!--Windows - Bitdefender Antivirus - Bitdefender.tkape-->
+    <!--Windows - EventTranscript.db - EventTranscriptDB.tkape-->
+    <!--Documentation-->
+    <!--This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps-->
+    <!--This Target will likely be updated often as more SQLECmd Maps are created-->
+    <!--Despite not pointing to other .tkape files directly in the interest of only grabbing SQL databases, this Target is considered a Compound Target since it references many other Targets-->
+    <!--Use with SQLECmd.mkape or SQLECmd-Hunt.mkape for best results-->
+    <sample name="4K_Video_Downloader">
+        <ntfs_find path_match="Users\*\AppData\Local\4kdownload.com\4K Video Downloader\4K Video Downloader"/>
+    </sample>
+    <sample name="Microsoft_OneNote_-_FullTextSearchIndex">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\*\FullTextSearchIndex"/>
+    </sample>
+    <sample name="Microsoft_OneNote_-_RecentNotebooks_SeenURLs">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\Notifications"/>
+    </sample>
+    <sample name="Microsoft_OneNote_-_AccessibilityCheckerIndex">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\AccessibilityCheckerIndex"/>
+    </sample>
+    <sample name="Microsoft_OneNote_-_User_NoteTags">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\NoteTags"/>
+    </sample>
+    <sample name="Microsoft_OneNote_-_RecentSearches">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.Office.OneNote_8wekyb3d8bbwe\LocalState\AppData\Local\OneNote\16.0\RecentSearches"/>
+    </sample>
+    <sample name="Microsoft_Sticky_Notes_-_1607_and_later">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.MicrosoftStickyNotes*\LocalState\"/>
+    </sample>
+    <sample name="Microsoft_To_Do_-_SQLite_Database_of_To_Do_tasks">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.Todos_8wekyb3d8bbwe\LocalState\AccountsRoot\*\"/>
+    </sample>
+    <sample name="Robo-FTP_Jobs">
+        <ntfs_find path_match="Program Files\Robo-FTP *\ProgramData\"/>
+    </sample>
+    <sample name="TeraCopy_-_History_Databases">
+        <ntfs_find path_match="Users\*\AppData\Roaming\TeraCopy\History"/>
+    </sample>
+    <sample name="TeraCopy_-_Main_Database">
+        <ntfs_find path_match="Users\*\AppData\Roaming\TeraCopy\"/>
+    </sample>
+    <sample name="Notion_Local_Storage">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Notionnotion.db"/>
+    </sample>
+    <sample name="IDrive_Backed_Up_Files">
+        <ntfs_find path_match="ProgramData\IDrive\IBCOMMON\*\LDBNEW\*\*.idbs"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\*\"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\*\"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\*\"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\*\"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\*\"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\*\sync\"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\*\sync\"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\*\"/>
+    </sample>
+    <sample name="Dropbox_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Dropbox\*\"/>
+    </sample>
+    <sample name="Google_File_Stream_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Drive\*\cloud_graph\"/>
+    </sample>
+    <sample name="Google_File_Stream_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Drive\*\TempData\*\change_buffer\"/>
+    </sample>
+    <sample name="Google_File_Stream_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Drive\*\"/>
+    </sample>
+    <sample name="Google_File_Stream_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Drive\*\"/>
+    </sample>
+    <sample name="FileZilla_SQLite3_Log_Files">
+        <ntfs_find path_match="Users\*\AppData\Roaming\FileZilla\*.sqlite3*"/>
+    </sample>
+    <sample name="Chrome_bookmarks_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Cookies_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Current_Session_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Current_Tabs_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Favicons_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_History_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Last_Session_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Last_Tabs_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Login_Data_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Preferences_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Shortcuts_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Top_Sites_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Visited_Links_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Web_Data_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Current_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Current_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Download_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Extension_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Favicons">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Last_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Last_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Login_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Media_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Network_Action_Predictor">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Network_Persistent_State">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Preferences">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Quota_Manager">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Reporting_and_NEL">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Shortcuts">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Top_Sites">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Trust_Tokens">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_SyncData_Database">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\Sync Data"/>
+    </sample>
+    <sample name="Chrome_Visited_Links">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Web_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Edge_bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Collections">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\Collections"/>
+    </sample>
+    <sample name="Edge_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Current_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Current_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Favicons">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Last_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Last_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Login_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Media_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Network_Action_Predictor">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Preferences">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Shortcuts">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Top_Sites">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_SyncData_Database">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\Sync Data"/>
+    </sample>
+    <sample name="Edge_Bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Visited_Links">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Web_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Addons">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\weave\"/>
+    </sample>
+    <sample name="Cookies">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Cookies">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Downloads">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Favicons">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Form_history">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Permissions">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Places">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Protections">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Search">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Signons">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Storage_Sync">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Webappstore">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Windows_10_Notification_DB">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\Notifications\"/>
+    </sample>
+    <sample name="Windows_10_Notification_DB">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\Notifications\"/>
+    </sample>
+    <sample name="ActivitiesCache.db">
+        <ntfs_find path_match="Users\*\AppData\Local\ConnectedDevicesPlatform\*\"/>
+    </sample>
+    <sample name="Update_Store.db">
+        <ntfs_find path_match="ProgramData\USOPrivate\UpdateStore"/>
+    </sample>
+    <sample name="Bitdefender_SQLite_DB_Files">
+        <ntfs_find path_match="Program Files*\Bitdefender*\"/>
+    </sample>
+    <sample name="EventTranscript.db">
+        <ntfs_find path_match="ProgramData\Microsoft\Diagnosis\EventTranscriptEventTranscript.db*"/>
+    </sample>
+    <sample name="EventTranscript.db">
+        <ntfs_find path_match="Windows.old\ProgramData\Microsoft\Diagnosis\EventTranscriptEventTranscript.db*"/>
+    </sample>
+</getthis>

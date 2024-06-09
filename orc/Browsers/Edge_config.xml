@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.forensafe.com/blogs/microsoftedge.html-->
+    <sample name="Edge_folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\"/>
+    </sample>
+</getthis>

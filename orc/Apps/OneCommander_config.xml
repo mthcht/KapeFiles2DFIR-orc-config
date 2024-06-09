@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://onecommander.com/-->
+    <!--One Commander is a freeware file manager similar to Total Commander.-->
+    <!--\%user%\OneCommander\Logs\OCLog20210404.txt will have a play by play of user activity, however, it doesn't appear to be as verbose as one would expect. I've yet to see exact folder paths specified within this file in my limited testing.-->
+    <!--.\%user\OneCommander\Settings\OneCommanderV3.json will have the name of the user's PC.-->
+    <sample name="One_Commander_-_All_Configuration_Files">
+        <ntfs_find path_match="Users\*\OneCommander\"/>
+    </sample>
+    <sample name="One_Commander_-_Other_Configuration_Files">
+        <ntfs_find path_match="Users\*\AppData\Local\Apps\2.0\*\*\onec*\"/>
+    </sample>
+</getthis>

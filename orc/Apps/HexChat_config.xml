@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="HexChat_Chat_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\HexChat\logs\"/>
+    </sample>
+</getthis>

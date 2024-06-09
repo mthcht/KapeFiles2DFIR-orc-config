@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download-->
+    <!--https://www.youtube.com/watch?v=g1zYCvzhBS4-->
+    <!--https://belkasoft.com/forensic-analysis-of-lnk-files-->
+    <!--http://windowsir.blogspot.com/2017/05/use-of-lnk-filesagain.html-->
+    <!--https://dfir.pubpub.org/pub/wfuxlu9v-->
+    <!--https://www.forensafe.com/blogs/jumplist.html-->
+    <!--https://www.forensafe.com/blogs/lnkfile.html-->
+    <sample name="LNK_Files_from_Recent">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Windows\Recent\"/>
+    </sample>
+    <sample name="LNK_Files_from_Microsoft_Office_Recent">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Office\Recent\"/>
+    </sample>
+    <sample name="Start_Menu_LNK_Files">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Windows\Start Menu\Programs*.LNK"/>
+    </sample>
+    <sample name="LNK_Files_from_Recent_(XP)">
+        <ntfs_find path_match="Documents and Settings\*\Recent\"/>
+    </sample>
+    <sample name="Desktop_LNK_Files_XP">
+        <ntfs_find path_match="Documents and Settings\*\Desktop\*.LNK"/>
+    </sample>
+    <sample name="Desktop_LNK_Files">
+        <ntfs_find path_match="Users\*\Desktop\*.LNK"/>
+    </sample>
+    <sample name="Restore_point_LNK_Files_XP">
+        <ntfs_find path_match="System Volume Information\_restore*\RP*\*.LNK"/>
+    </sample>
+    <sample name="LNK_Files_from_C:\ProgramData">
+        <ntfs_find path_match="ProgramData\Microsoft\Windows\Start Menu\Programs\*.LNK"/>
+    </sample>
+</getthis>

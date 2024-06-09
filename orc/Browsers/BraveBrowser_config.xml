@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.forensafe.com/blogs/brave.html-->
+    <!--While Brave is Webkit/Chrome based, when compared to Chrome:-->
+    <!--       Does not appear to create Extension Cookies or Media History files-->
+    <!--       Has Unknowns: Safe Browsing Cookies &amp; TransportSecurity-->
+    <!--       Adds: Secure Preferences &amp; publisher_info_db-->
+    <!--Brave Rewards - publisher_info_db - https://github.com/brave/brave-browser/issues/9655-->
+    <sample name="Bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Current_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Current_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Download_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Favicons">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="History">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Sessions_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Sessions\"/>
+    </sample>
+    <sample name="Login_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Network_Action_Predictor">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Network_Persistent_State">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Preferences">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Quota_Manager">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Reporting_and_NEL">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Shortcuts">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Publisher_Info_DB/Brave_Rewards">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Top_Sites">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Visited_Links">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Web_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+    <sample name="Secure_Preferences">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\*\"/>
+    </sample>
+</getthis>

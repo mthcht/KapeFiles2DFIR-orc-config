@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://bohops.com/2021/03/16/investigating-net-clr-usage-log-tampering-techniques-for-edr-evasion/-->
+    <!--https://blog.menasec.net/2019/07/interesting-difr-traces-of-net-clr.html-->
+    <sample name=".NET_CLR_UsageLogs_(user-scoped)">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\CLR_*\*.log"/>
+    </sample>
+    <sample name=".NET_CLR_UsageLogs_(system-scoped)">
+        <ntfs_find path_match="Windows*\System32\config\systemprofile\AppData\Local\Microsoft\CLR_*\*.log"/>
+    </sample>
+</getthis>

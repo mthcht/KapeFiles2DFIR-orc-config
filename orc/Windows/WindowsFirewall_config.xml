@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.forensicfocus.com/articles/finding-and-interpreting-windows-firewall-rules/-->
+    <sample name="Windows_Firewall_Logs">
+        <ntfs_find path_match="Windows\System32\LogFiles\Firewall\"/>
+    </sample>
+    <sample name="Windows_Firewall_Logs">
+        <ntfs_find path_match="Windows.old\Windows\System32\LogFiles\Firewall\"/>
+    </sample>
+</getthis>

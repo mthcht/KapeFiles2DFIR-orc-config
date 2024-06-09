@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--https://www.prepressure.com/pdf/basics/versus-other-formats-->
+    <!--https://en.wikipedia.org/wiki/PDF#Alternatives-->
+    <!--https://en.wikipedia.org/wiki/Open_XML_Paper_Specification-->
+    <sample name="PDF_and_PDF-like_Documents">
+        <ntfs_find name=""/>
+    </sample>
+</getthis>

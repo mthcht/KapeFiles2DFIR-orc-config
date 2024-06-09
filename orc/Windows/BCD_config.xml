@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.champlain.edu/Documents/LCDI/archive/Volume-shadow-Report_Redux.pdf-->
+    <sample name="BCD">
+        <ntfs_find path_match="Boot\"/>
+    </sample>
+    <sample name="BCD_Logs">
+        <ntfs_find path_match="Boot\BCD.LOG*"/>
+    </sample>
+</getthis>

@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_online_backup_services.-->
+    <!--Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.-->
+    <sample name="Box_User_Files">
+        <ntfs_find path_match="BoxDrive_UserFiles.tkape"/>
+    </sample>
+    <sample name="Dropbox_User_Files">
+        <ntfs_find path_match="Dropbox_UserFiles.tkape"/>
+    </sample>
+    <sample name="Google_Drive_Backup_and_Sync_User_Files">
+        <ntfs_find path_match="GoogleDriveBackupSync_UserFiles.tkape"/>
+    </sample>
+    <sample name="OneDrive_User_Files">
+        <ntfs_find path_match="OneDrive_UserFiles.tkape"/>
+    </sample>
+    <sample name="pCloudDatabase">
+        <ntfs_find path_match="pCloudDatabase.tkape"/>
+    </sample>
+    <sample name="SugarSync">
+        <ntfs_find path_match="SugarSync.tkape"/>
+    </sample>
+    <sample name="CloudStorage_Metadata">
+        <ntfs_find path_match="CloudStorage_Metadata.tkape"/>
+    </sample>
+    <sample name="Idrive_Backup">
+        <ntfs_find path_match="Idrive.tkape"/>
+    </sample>
+</getthis>

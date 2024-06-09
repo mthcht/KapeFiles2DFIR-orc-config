@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--This target only collects Outlook files from well known default folders.  File locations can be user-defined.  Review NTUSER\Software\Microsoft\Office\16.0\Outlook\Search to identify other potential locations.-->
+    <!--Documentation-->
+    <!--https://support.microsoft.com/en-us/office/introduction-to-outlook-data-files-pst-and-ost-222eaf92-a995-45d9-bde2-f331f60e2790-->
+    <!--https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download-->
+    <!--https://gist.github.com/richaarya/d336fec34c600cc8ab8a51195289c99a-->
+    <!--https://www.nirsoft.net/outlook_office_software.html-->
+    <!--https://www.eshlomo.us/windows-forensics-analysis-evidence/-->
+    <!--https://www.meridiandiscovery.com/articles/email-attachment-timestamps-forensics-outlook/-->
+    <!--https://www.forensafe.com/blogs/outlook.html-->
+    <sample name="PST_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Microsoft\Outlook\*.pst"/>
+    </sample>
+    <sample name="OST_XP">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Microsoft\Outlook\*.ost"/>
+    </sample>
+    <sample name="PST_(2013_or_2016)">
+        <ntfs_find path_match="Users\*\Documents\Outlook Files\*.pst"/>
+    </sample>
+    <sample name="OST_(2013_or_2016)">
+        <ntfs_find path_match="Users\*\Documents\Outlook Files\*.ost"/>
+    </sample>
+    <sample name="PST">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Outlook\*.pst"/>
+    </sample>
+    <sample name="OST">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Outlook\*.ost"/>
+    </sample>
+    <sample name="NST">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Outlook\*.nst"/>
+    </sample>
+    <sample name="Outlook_Attachment_Temporary_Storage">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\"/>
+    </sample>
+</getthis>

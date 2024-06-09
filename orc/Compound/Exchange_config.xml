@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Exchange_client_access_log_files">
+        <ntfs_find path_match="ExchangeClientAccess.tkape"/>
+    </sample>
+    <sample name="Exchange_TransportRoles_log_files">
+        <ntfs_find path_match="ExchangeTransport.tkape"/>
+    </sample>
+</getthis>

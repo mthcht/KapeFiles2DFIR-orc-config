@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://github.com/Ylianst/MeshAgent-->
+    <!--https://ylianst.github.io/MeshCentral/meshcentral/agents/-->
+    <!--https://meshcentral.com/-->
+    <sample name="MeshAgent_.msh_(configuration)_file">
+        <ntfs_find path_match="Program Files\Mesh Agent\"/>
+    </sample>
+    <sample name="MeshAgent_log_file">
+        <ntfs_find path_match="Program Files\Mesh Agent\"/>
+    </sample>
+</getthis>

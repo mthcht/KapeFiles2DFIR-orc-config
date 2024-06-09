@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://midnight-commander.org/-->
+    <!--Midnight Commander is a free, open course orthodox file manager similar to Norton Commander.-->
+    <!--This folder is created upon install so it should be where all configuration files resides. I've not done extensive testing on this one due to the DOSness of the application.-->
+    <sample name="Midnight_Commander_--_All_Configuation_Files">
+        <ntfs_find path_match="Users\*\Midnight Commander\"/>
+    </sample>
+</getthis>

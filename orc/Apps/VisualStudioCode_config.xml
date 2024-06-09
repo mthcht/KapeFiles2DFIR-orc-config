@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="VSCode_Opened_Files">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Code\User\History\*\"/>
+    </sample>
+    <sample name="VSCode_Workspaces">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Code\User\globalStorage\"/>
+    </sample>
+    <sample name="VSCode_User_extensions">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Code\CachedExtensions\"/>
+    </sample>
+    <sample name="VSCode_User_settings">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Code\User\"/>
+    </sample>
+    <sample name="VSCode_User_Preferences">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Code\"/>
+    </sample>
+    <sample name="VSCode_Network_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Code\Network\"/>
+    </sample>
+    <sample name="VSCode_Network_Persistent_State">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Code\Network\"/>
+    </sample>
+    <sample name="VSCode_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Code\logs\"/>
+    </sample>
+</getthis>

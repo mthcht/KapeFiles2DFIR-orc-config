@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="$MFT">
+        <ntfs_find path_match="$MFT.tkape"/>
+    </sample>
+    <sample name="$LogFile">
+        <ntfs_find path_match="$LogFile.tkape"/>
+    </sample>
+    <sample name="$J">
+        <ntfs_find path_match="$J.tkape"/>
+    </sample>
+    <sample name="$SDS">
+        <ntfs_find path_match="$SDS.tkape"/>
+    </sample>
+    <sample name="$Boot">
+        <ntfs_find path_match="$Boot.tkape"/>
+    </sample>
+    <sample name="$T">
+        <ntfs_find path_match="$T.tkape"/>
+    </sample>
+</getthis>

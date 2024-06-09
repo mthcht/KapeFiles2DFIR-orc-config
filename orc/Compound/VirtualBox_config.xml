@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="VirtualBox_Logs">
+        <ntfs_find path_match="VirtualBoxLogs.tkape"/>
+    </sample>
+    <sample name="VirtualBox_Memory">
+        <ntfs_find path_match="VirtualBoxMemory.tkape"/>
+    </sample>
+    <sample name="VirtualBox_Configs">
+        <ntfs_find path_match="VirtualBoxConfig.tkape"/>
+    </sample>
+    <sample name="Virtual_Hard_Drives">
+        <ntfs_find path_match="VirtualDisks.tkape"/>
+    </sample>
+</getthis>

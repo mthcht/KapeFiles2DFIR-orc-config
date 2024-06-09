@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="RecycleBin_InfoFiles">
+        <ntfs_find path_match="RecycleBin_InfoFiles.tkape"/>
+    </sample>
+    <sample name="RecycleBin_DataFiles">
+        <ntfs_find path_match="RecycleBin_DataFiles.tkape"/>
+    </sample>
+</getthis>

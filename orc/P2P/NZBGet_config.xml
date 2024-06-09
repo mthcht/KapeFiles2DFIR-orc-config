@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--C:\ProgramData\NZBGet\nzbget.log is where a verbose log file exists.-->
+    <!--C:\ProgramData\NZBGet\nzb\ is where a replication of any NZBs used by the user will reside, regardless of where the NZB was residing prior to its use. This behavior is similar to Newsbin Pro above.-->
+    <sample name="Usenet_Clients_-_NZBGet_Log_File">
+        <ntfs_find path_match="ProgramData\NZBGet\nzbget.log"/>
+    </sample>
+    <sample name="Usenet_Clients_-_NZBGet_NZBs">
+        <ntfs_find path_match="ProgramData\NZBGet\nzb\"/>
+    </sample>
+</getthis>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="NGINX_Log_Files">
+        <ntfs_find path_match="nginx\logs\*.log"/>
+    </sample>
+</getthis>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--DC++ is a popular file-sharing client that runs on the Direct Connect network.-->
+    <!--DC++ is commonly used to share any file type with any users either directly or within chat rooms (hubs).-->
+    <!--Hub/chat logs are plain text readable with your favorite text editor.-->
+    <sample name="DC++_Chat_Logs">
+        <ntfs_find path_match="Users\*\AppData\Local\DC++\Logs\"/>
+    </sample>
+</getthis>

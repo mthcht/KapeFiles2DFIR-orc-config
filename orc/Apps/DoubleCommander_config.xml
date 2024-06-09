@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Double Commander is a freeware Windows File Explorer replacement similar in function to Total Commander, which is commonly used by threat actors during IR incidents.-->
+    <!--If you open up the history.xml file path in a text editor, depending on how big the file is, all your artifacts equivalent to Shellbags should be located under a &lt;Navigation&gt; string with each "Shellbag" preprended by &lt;Item&gt;.-->
+    <!--It should be noted that these are sorted in descending order, meaning the top item is the most recent folder navigated to by the user.-->
+    <!--It should be noted that history.xml only updates when Double Commander is closed.-->
+    <!--For instance, I explored the following paths in this order from bottom to top:-->
+    <!--     &lt;Item&gt;C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\&lt;/Item&gt;-->
+    <!--     &lt;Item&gt;C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\Settings\&lt;/Item&gt;-->
+    <!--     &lt;Item&gt;C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\Layouts\&lt;/Item&gt;-->
+    <!--     &lt;Item&gt;C:\Users\%user%\Desktop\EZ Tools\&lt;/Item&gt;-->
+    <!--     &lt;Item&gt;C:\Users\%user%\Desktop\EZ Tools\SDBExplorer\&lt;/Item&gt;-->
+    <!--     &lt;Item&gt;C:\Users\%user%\Desktop\EZ Tools\EZViewer\&lt;/Item&gt;-->
+    <!--     &lt;Item&gt;C:\Users\%user%\Desktop\&lt;/Item&gt;-->
+    <!--     &lt;Item&gt;C:\Users\%user%\&lt;/Item&gt;-->
+    <!--     &lt;Item&gt;C:\Users\&lt;/Item&gt;-->
+    <!--     &lt;Item&gt;C:\&lt;/Item&gt;-->
+    <!--     &lt;Item&gt;C:\Program Files\&lt;/Item&gt;-->
+    <!--Doublecmd.xml has a lot more information overall than history.xml, but it does have similar Shellbags-equivalent artifacts that are sorted in descending order.-->
+    <!--If you open up the doublecmd.xml file path in a text editor, search for the following string: &lt;Path Filename= and you will start seeing these artifacts.-->
+    <!--For instance, besides the top two lines, I explored the following paths in this order from top to bottom:-->
+    <!--&lt;Path Filename="bz2.dll"&gt;C:\Program Files\Double Commander\&lt;/Path&gt;-->
+    <!--&lt;Path Filename="Double Commander"&gt;C:\Program Files\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename="Users"&gt;C:\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename="%user%"&gt;C:\Users\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename="Desktop"&gt;C:\Users\%user%\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename="EZ Tools"&gt;C:\Users\%user%\Desktop\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename="EZViewer"&gt;C:\Users\%user%\Desktop\EZ Tools\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename=".."&gt;C:\Users\%user%\Desktop\EZ Tools\EZViewer\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename="SDBExplorer"&gt;C:\Users\%user%\Desktop\EZ Tools\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename=".."&gt;C:\Users\%user%\Desktop\EZ Tools\SDBExplorer\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename="TimelineExplorer"&gt;C:\Users\%user%\Desktop\EZ Tools\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename="Layouts"&gt;C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename=".."&gt;C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\Layouts\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename="Settings"&gt;C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename=".."&gt;C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\Settings\&lt;/Path&gt;-->
+    <!--      &lt;Path Filename="Settings"&gt;C:\Users\%user%\Desktop\EZ Tools\TimelineExplorer\&lt;/Path&gt;-->
+    <!--These artifacts can be very useful when your threat actor isn't using File Explorer.-->
+    <sample name="Double_Commander_-_history.xml">
+        <ntfs_find path_match="Users\*\AppData\Roaming\doublecmd\history.xml"/>
+    </sample>
+    <sample name="Double_Commander_-_doublecmd.xml">
+        <ntfs_find path_match="Users\*\AppData\Roaming\doublecmd\doublecmd.xml"/>
+    </sample>
+    <sample name="Double_Commander_-_FTP_Log">
+        <ntfs_find path_match="Users\*\AppData\Roaming\doublecmd\doublecmd*.log"/>
+    </sample>
+    <sample name="Double_Commander_-_multiarc.ini">
+        <ntfs_find path_match="Users\*\AppData\Roaming\doublecmd\multiarc.ini"/>
+    </sample>
+    <sample name="Double_Commander_-_session.ini">
+        <ntfs_find path_match="Users\*\AppData\Roaming\doublecmd\session.ini"/>
+    </sample>
+    <sample name="Double_Commander_-_pixmaps.txt">
+        <ntfs_find path_match="Users\*\AppData\Roaming\doublecmd\pixmaps.txt"/>
+    </sample>
+    <sample name="Double_Commander_-_shortcuts.scf">
+        <ntfs_find path_match="Users\*\AppData\Roaming\doublecmd\shortcuts.scf"/>
+    </sample>
+</getthis>

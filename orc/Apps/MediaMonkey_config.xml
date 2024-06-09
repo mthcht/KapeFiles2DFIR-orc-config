@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.mediamonkey.com/support/knowledge-base/mediamonkey-install-config/modifying-the-mediamonkey-db-and-ini-files/-->
+    <!--MediaMonkey is a popular media organizing, tagging, and playing application for Windows-->
+    <!--MM.DB contains information about any files added to a user's MediaMonkey library, including music and video files-->
+    <!--MediaMonkey.ini will contain file paths pointing to where a user stores media that's being viewed within MediaMonkey-->
+    <sample name="MediaMonkey_-_Media_SQLite_Database">
+        <ntfs_find path_match="Users\*\AppData\Roaming\MediaMonkeyMM.DB"/>
+    </sample>
+    <sample name="MediaMonkey_-_MediaMonkey.ini">
+        <ntfs_find path_match="Users\*\AppData\Roaming\MediaMonkeyMediaMonkey.ini"/>
+    </sample>
+</getthis>

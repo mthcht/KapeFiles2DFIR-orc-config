@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download-->
+    <!--https://topic.alibabacloud.com/a/font-classtopic-s-color00c1derestorefont-point-forensics-notes-for-the-forensic-processing-of-windows-xp-font-classtopic-s-color00c1derestorefont-points_1_15_32116346.html-->
+    <!--https://www.researchgate.net/publication/220345974_Forensic_analysis_of_System_Restore_points_in_Microsoft_Windows_XP-->
+    <!--https://www.stevebunting.org/udpd4n6/forensics/restorepoints.htm-->
+    <sample name="System_Volume_Information">
+        <ntfs_find path_match="System Volume Information\"/>
+    </sample>
+</getthis>

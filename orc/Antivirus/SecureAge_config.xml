@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--This Target should pull the following log files:-->
+    <!--Antivirus.log - will have a list of files that were scanned. Good for locating files as they appear on the file system that may no longer exist-->
+    <!--clamd.log-->
+    <!--SecureAPlus.log-->
+    <!--UniversalAV.log-->
+    <!--whitelist.log-->
+    <sample name="SecureAge_Antvirus_Logs">
+        <ntfs_find path_match="ProgramData\SecureAge Technology\SecureAge\log\"/>
+    </sample>
+</getthis>

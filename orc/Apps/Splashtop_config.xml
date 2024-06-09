@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://jsac.jpcert.or.jp/archive/2023/pdf/JSAC2023_1_1_yamashige-nakatani-tanaka_en.pdf-->
+    <!--https://www.synacktiv.com/en/publications/legitimate-rats-a-comprehensive-forensic-analysis-of-the-usual-suspects-->
+    <sample name="Splashtop_Log_Files">
+        <ntfs_find path_match="Program Files*\Splashtop\Splashtop Remote\Server\log"/>
+    </sample>
+    <sample name="Splashtop_Log_Files_in_ProgramData">
+        <ntfs_find path_match="ProgramData\Splashtop\Temp\log"/>
+    </sample>
+</getthis>

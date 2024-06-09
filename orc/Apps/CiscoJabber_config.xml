@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Cisco_Jabber_Database">
+        <ntfs_find path_match="Users\*\AppData\Local\Cisco\Unified Communications\Jabber\CSF\History\*.db"/>
+    </sample>
+</getthis>

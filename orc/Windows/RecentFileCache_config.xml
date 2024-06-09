@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://digital-forensics.sans.org/media/poster-windows-forensics-final.pdf-->
+    <!--http://journeyintoir.blogspot.com/2013/12/revealing-recentfilecachebcf-file.html-->
+    <!--https://www.youtube.com/watch?v=ZKlyu-HOvxY-->
+    <sample name="RecentFileCache">
+        <ntfs_find path_match="Windows\AppCompat\Programs\"/>
+    </sample>
+    <sample name="RecentFileCache">
+        <ntfs_find path_match="Windows.old\Windows\AppCompat\Programs\"/>
+    </sample>
+</getthis>

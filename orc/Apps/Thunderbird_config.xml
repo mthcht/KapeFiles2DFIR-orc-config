@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.mailxaminer.com/blog/mozilla-thunderbird-forensics/-->
+    <!--https://az4n6.blogspot.com/2014/04/whats-word-thunderbird-parser-that-is.html-->
+    <!--https://www.forensafe.com/blogs/thunderbird.html-->
+    <!--Thunderbird is a free, open-source, cross-platform application for managing email, news feeds, chat, and news groups. It is a local (rather than browser or web-based) email application that is powerful yet easy-to-use.-->
+    <sample name="Mozilla_Thunderbird_Install_Date">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\Crash Reports\InstallTime*"/>
+    </sample>
+    <sample name="Mozilla_Thunderbird_Profiles.ini">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\profiles.ini"/>
+    </sample>
+    <sample name="Mozilla_Thunderbird_prefs.js">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\Profiles\*\"/>
+    </sample>
+    <sample name="Mozilla_Thunderbird_Global_Messages_Database">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\Profiles\*\"/>
+    </sample>
+    <sample name="Mozilla_Thunderbird_logins.json">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\Profiles\*\"/>
+    </sample>
+    <sample name="Mozilla_Thunderbird_places.sqlite">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\Profiles\*\"/>
+    </sample>
+    <sample name="Mozilla_Thunderbird_ImapMail_INBOX">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\Profiles\*\ImapMail\"/>
+    </sample>
+    <sample name="Mozilla_Thunderbird_Mail_INBOX">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\Profiles\*\Mail\"/>
+    </sample>
+    <sample name="Mozilla_Thunderbird_Calendar_Data">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\Profiles\*\calendar-data\"/>
+    </sample>
+    <sample name="Mozilla_Thunderbird_Attachments">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\Profiles\*\Attachments\"/>
+    </sample>
+    <sample name="Mozilla_Thunderbird_Address_Book">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Thunderbird\Profiles\*\"/>
+    </sample>
+</getthis>

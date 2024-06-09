@@ -1,0 +1,19 @@
+Description: ManageEngine Log Files
+Author: Whitney Champion, Phill Moore
+Version: 1.1
+Id: c034ee17-a97f-48a1-b720-c73867ed66e6
+RecreateDirectories: true
+Targets:
+    -
+        Name: ManageEngine Desktop Central Log Files
+        Category: Logs
+        Path: C:\ManageEngine\DesktopCentral_Server\logs\
+        Recursive: true
+    -
+        Name: ManageEngine ADSelfService Plus Log Files
+        Category: Logs
+        Path: C:\ManageEngine\ADSelfService Plus\logs\
+        Recursive: true
+
+# Documentation
+# https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-259a

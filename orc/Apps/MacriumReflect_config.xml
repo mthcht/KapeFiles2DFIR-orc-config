@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Macrium Reflect is a program that can be used to create full, incremental, and differential backups of any disk/volume on a user's system.-->
+    <!--Often times, backups are automated and scheduled through Scheduled Tasks.-->
+    <!--If you notice there are Scheduled Tasks (ScheduledTasks.tkape) for Macrium Reflect, then this target is for you!-->
+    <!--This target will copy out all log files that'll show when and where backups were made.-->
+    <!--Another location to check for Macrium Reflect artifacts is Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree in the SOFTWARE registry hive.-->
+    <!--.\Macrium\Reflect\ contains a Consolidate.log file, which contains a play-by-play of when backups occur and their destination. There will also be daily logs for scheduled backups.-->
+    <!--.\Macrium\Macrium Launcher\ contains logs that give a play-by-play of the program's events on a given day.-->
+    <sample name="Macrium_Reflect">
+        <ntfs_find path_match="ProgramData\Macrium\Macrium Service\"/>
+    </sample>
+    <sample name="Macrium_Reflect">
+        <ntfs_find path_match="ProgramData\Macrium\Reflect\"/>
+    </sample>
+    <sample name="Macrium_Reflect">
+        <ntfs_find path_match="ProgramData\Macrium\Reflect Launcher"/>
+    </sample>
+</getthis>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="VIPRE_Business_Agent_Logs">
+        <ntfs_find path_match="ProgramData\VIPRE Business Agent\Logs\"/>
+    </sample>
+    <sample name="VIPRE_Business_User_Logs_(v7+)">
+        <ntfs_find path_match="Users\*\AppData\Roaming\VIPRE Business\"/>
+    </sample>
+    <sample name="VIPRE_Business_User_Logs_(v5-v6)">
+        <ntfs_find path_match="Users\*\AppData\Roaming\GFI Software\AntiMalware\Logs\"/>
+    </sample>
+    <sample name="VIPRE_Business_User_Logs_(up_to_v4)">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Sunbelt Software\AntiMalware\Logs\"/>
+    </sample>
+</getthis>

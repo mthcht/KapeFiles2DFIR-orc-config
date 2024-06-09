@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.dwservice.net/en/faq.html-->
+    <!--https://github.com/AG7GN/dwservice/blob/master/README.md-->
+    <sample name="DWAgent_Log_Files">
+        <ntfs_find path_match="ProgramData\DWAgent*\*.log*"/>
+    </sample>
+</getthis>

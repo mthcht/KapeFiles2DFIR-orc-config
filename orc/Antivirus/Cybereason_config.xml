@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Cybereason_Anti-Ransomware_Logs">
+        <ntfs_find path_match="ProgramData\crs1\Logs"/>
+    </sample>
+    <sample name="Cybereason_Sensor_Communications_and_Anti-Malware_Logs">
+        <ntfs_find path_match="ProgramData\apv2\Logs"/>
+    </sample>
+    <sample name="Cybereason_Application_Control_and_NGAV_Logs">
+        <ntfs_find path_match="ProgramData\crb1\Logs"/>
+    </sample>
+</getthis>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="VHD">
+        <ntfs_find name="*.VHD"/>
+    </sample>
+    <sample name="VHDX">
+        <ntfs_find name="*.VHDX"/>
+    </sample>
+    <sample name="VDI">
+        <ntfs_find name="*.VDI"/>
+    </sample>
+    <sample name="VMDK">
+        <ntfs_find name="*.VMDK"/>
+    </sample>
+</getthis>

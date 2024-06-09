@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--https://digital-forensics.sans.org/media/DFIR-Command-Line.pdf-->
+    <!--https://www.youtube.com/watch?v=ZCj7cbWwUOs-->
+    <sample name="$SDS">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="$SDS">
+        <ntfs_find name=""/>
+    </sample>
+</getthis>

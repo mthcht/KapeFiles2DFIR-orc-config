@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--Rclone is a popular exfil tool that supports many cloud storage services-->
+    <!--https://research.nccgroup.com/2021/05/27/detecting-rclone-an-effective-tool-for-exfiltration/-->
+    <sample name="Rclone_Config">
+        <ntfs_find name="rclone.conf"/>
+    </sample>
+</getthis>

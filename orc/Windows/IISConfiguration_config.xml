@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://docs.microsoft.com/en-us/iis/configuration/-->
+    <!--https://www.microsoft.com/en-us/security/blog/2022/07/26/malicious-iis-extensions-quietly-open-persistent-backdoors-into-servers-->
+    <sample name="IIS_applicationHost.config">
+        <ntfs_find path_match="Windows\System32\inetsrv\config\"/>
+    </sample>
+    <sample name="IIS_administration.config">
+        <ntfs_find path_match="Windows\System32\inetsrv\config\"/>
+    </sample>
+    <sample name="IIS_redirection.config">
+        <ntfs_find path_match="Windows\System32\inetsrv\config\"/>
+    </sample>
+    <sample name="web.config">
+        <ntfs_find path_match="inetpub\wwwroot"/>
+    </sample>
+</getthis>

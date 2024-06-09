@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.jam-software.com/treesize_free-->
+    <!--TreeSize is a program similar to WinDirStat which allows the user to enumerate their computer's file system in a variety of ways-->
+    <!--ScanHistory.XML will provide listings that look similar to this-->
+    <!--&lt;SCANS&gt;-->
+    <!--	&lt;Root path="\\HOSTNAME\C$\"&gt;-->
+    <!--		&lt;Path&gt;\\HOSTNAME\C$\&lt;/Path&gt;-->
+    <!--		&lt;Date&gt;44148.3234845949&lt;/Date&gt;-->
+    <!--		&lt;Version&gt;8.0.2.1505&lt;/Version&gt;-->
+    <!--		&lt;SizeData Size="210610089818" Allocated="187592699904" Files="678331"/&gt;-->
+    <!--		&lt;Freespace&gt;814266826752&lt;/Freespace&gt;-->
+    <!--	&lt;/Root&gt;-->
+    <!--For each scan ran, there will be an entry in this file-->
+    <sample name="TreeSize_-_ScanHistory.XML">
+        <ntfs_find path_match="Users\*\AppData\Roaming\JAM Software\TreeSizescanhistory.xml"/>
+    </sample>
+</getthis>

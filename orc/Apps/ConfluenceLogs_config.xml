@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Confluence_Wiki_Log_Files">
+        <ntfs_find path_match="Atlassian\Application Data\Confluence\logs\*.log*"/>
+    </sample>
+    <sample name="Confluence_Wiki_Log_Files">
+        <ntfs_find path_match="Program Files\Atlassian\Confluence\logs\*.log"/>
+    </sample>
+</getthis>

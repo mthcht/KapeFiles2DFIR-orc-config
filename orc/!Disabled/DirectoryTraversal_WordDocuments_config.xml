@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions-->
+    <!--https://en.wikipedia.org/wiki/OpenDocument-->
+    <!--https://en.wikipedia.org/wiki/WordPerfect#WordPerfect_Office-->
+    <!--https://en.wikipedia.org/wiki/TextMaker-->
+    <!--https://en.wikipedia.org/wiki/Apache_OpenOffice#File_formats-->
+    <!--https://en.wikipedia.org/wiki/WPS_Office#File_format-->
+    <!--https://en.wikipedia.org/wiki/OnlyOffice#Desktop_editors-->
+    <sample name="Word_and_Word-like_Documents">
+        <ntfs_find name=""/>
+    </sample>
+</getthis>

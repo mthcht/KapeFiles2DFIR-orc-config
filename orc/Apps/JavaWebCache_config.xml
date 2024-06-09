@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Java_WebStart_Cache_User_Level_-_Default">
+        <ntfs_find path_match="Users\*\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+    <sample name="Java_WebStart_Cache_User_Level_-_IE_Protected_Mode">
+        <ntfs_find path_match="Users\*\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+    <sample name="Java_WebStart_Cache_System_level">
+        <ntfs_find path_match="Windows\System32\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+    <sample name="Java_WebStart_Cache_System_level">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+    <sample name="Java_WebStart_Cache_System_level_-_IE_Protected_Mode">
+        <ntfs_find path_match="Windows\System32\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+    <sample name="Java_WebStart_Cache_System_level_-_IE_Protected_Mode">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+    <sample name="Java_WebStart_Cache_System_level_(SysWow64)">
+        <ntfs_find path_match="Windows\SysWOW64\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+    <sample name="Java_WebStart_Cache_System_level_(SysWow64)">
+        <ntfs_find path_match="Windows.old\Windows\SysWOW64\config\systemprofile\AppData\Local\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+    <sample name="Java_WebStart_Cache_System_level_(SysWow64)_-_IE_Protected_Mode">
+        <ntfs_find path_match="Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+    <sample name="Java_WebStart_Cache_System_level_(SysWow64)_-_IE_Protected_Mode">
+        <ntfs_find path_match="Windows.old\Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+    <sample name="Java_WebStart_Cache_User_Level_-_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Sun\Java\Deployment\cache\*\*\*.idx"/>
+    </sample>
+</getthis>

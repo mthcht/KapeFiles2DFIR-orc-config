@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Please note, this Compound Target does NOT include the RegistryHivesOther Target on purpose. While they are technically Registry hives, they are not currently identified as being forensically significant.-->
+    <!--However, for the purpose of KapeResearch_Registry Modules that will dump hives from the ROOT key to JSON for the purpose of (hopefully) finding forensically relevant data in one of these Registry hives, RegistryHivesOther exists for that very reason.-->
+    <!--If you want to pull every single Registry hive possible, combine this Compound Target along with the RegistryHivesOther Target.-->
+    <sample name="System_Registry_Files">
+        <ntfs_find path_match="RegistryHivesSystem.tkape"/>
+    </sample>
+    <sample name="User_Level_Registry_Files">
+        <ntfs_find path_match="RegistryHivesUser.tkape"/>
+    </sample>
+    <sample name="MSIX_Application_Registry_Files">
+        <ntfs_find path_match="RegistryHivesMSIXApps.tkape"/>
+    </sample>
+</getthis>

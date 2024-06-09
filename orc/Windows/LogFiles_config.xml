@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://digital-forensics.sans.org/community/papers/gcfa/forensic-analysis-windows-2000-server-iis-oracle_112-->
+    <!--https://advisory.kpmg.us/blog/2021/digital-forensics-incident-response.html-->
+    <sample name="LogFiles">
+        <ntfs_find path_match="Windows\System32\LogFiles\"/>
+    </sample>
+    <sample name="LogFiles">
+        <ntfs_find path_match="Windows.old\Windows\System32\LogFiles\"/>
+    </sample>
+    <sample name="Error_logging">
+        <ntfs_find path_match="windows\"/>
+    </sample>
+</getthis>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Apache_Access_Log">
+        <ntfs_find name="access.log"/>
+    </sample>
+</getthis>

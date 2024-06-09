@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="McAfee_ePO_Logs">
+        <ntfs_find path_match="ProgramData\McAfee\Endpoint Security\Logs\"/>
+    </sample>
+</getthis>

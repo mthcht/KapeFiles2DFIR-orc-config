@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://ir3e.com/chapter-14-additional-im-clients/-->
+    <sample name="mIRC_Chat_Logs_(Vista+)">
+        <ntfs_find path_match="Users\*\AppData\Roaming\mIRC\logs\"/>
+    </sample>
+    <sample name="mIRC_Chat_Logs_(2000/XP)">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\mIRC\logs\"/>
+    </sample>
+</getthis>

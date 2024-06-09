@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Drivers">
+        <ntfs_find path_match="Windows\system32\drivers\*.sys"/>
+    </sample>
+</getthis>

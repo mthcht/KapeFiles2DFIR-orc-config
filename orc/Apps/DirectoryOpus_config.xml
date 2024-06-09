@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Directory Opus is the best Windows File Explorer replacement on the market, in my humble opinion.-->
+    <!--Thankfully, lots of data is stored on user activity if your suspect ends up using this as their daily driver.-->
+    <!--Any of the .osd files can be viewed in your favorite text editor.-->
+    <!--The Thumbnail Cache folder will dump all files which appear to be randomized filenames with a .db extension.-->
+    <sample name="Directory_Opus">
+        <ntfs_find path_match="Users\*\AppData\Local\GPSoftware\Directory Opus\State Data\MRU\rename_folders.osd"/>
+    </sample>
+    <sample name="Directory_Opus">
+        <ntfs_find path_match="Users\*\AppData\Local\GPSoftware\Directory Opus\State Data\MRU\rename_files.osd"/>
+    </sample>
+    <sample name="Directory_Opus">
+        <ntfs_find path_match="Users\*\AppData\Local\GPSoftware\Directory Opus\State Data\MRU\find_contains.osd"/>
+    </sample>
+    <sample name="Directory_Opus">
+        <ntfs_find path_match="Users\*\AppData\Local\GPSoftware\Directory Opus\State Data\MRU\find_name.osd"/>
+    </sample>
+    <sample name="Directory_Opus">
+        <ntfs_find path_match="Users\*\AppData\Local\GPSoftware\Directory Opus\State Data\MRU\find_path.osd"/>
+    </sample>
+    <sample name="Directory_Opus">
+        <ntfs_find path_match="Users\*\AppData\Local\GPSoftware\Directory Opus\State Data\recent.osd"/>
+    </sample>
+    <sample name="Directory_Opus">
+        <ntfs_find path_match="Users\*\AppData\Local\GPSoftware\Directory Opus\State Data\backupconfig.osd"/>
+    </sample>
+    <sample name="Directory_Opus">
+        <ntfs_find path_match="Users\*\AppData\Local\GPSoftware\Directory Opus\Thumbnail Cache\"/>
+    </sample>
+    <sample name="Directory_Opus">
+        <ntfs_find path_match="Users\*\AppData\Roaming\GPSoftware\Directory Opus\Logs\"/>
+    </sample>
+</getthis>

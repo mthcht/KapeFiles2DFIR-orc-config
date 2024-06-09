@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Avira_Activity_Logs">
+        <ntfs_find path_match="ProgramData\Avira\Antivirus\LOGFILES\"/>
+    </sample>
+    <sample name="Avira_Security_Logs">
+        <ntfs_find path_match="ProgramData\Avira\Security\Logs"/>
+    </sample>
+    <sample name="Avira_VPN_Logs">
+        <ntfs_find path_match="ProgramData\Avira\VPN"/>
+    </sample>
+</getthis>

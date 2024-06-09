@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://arxiv.org/pdf/1709.10395-->
+    <!--https://www.forensicfocus.com/articles/evernote-introduction/-->
+    <!--https://www.carpeindicium.com/blog/quick-dirty-recover-local-evernote/-->
+    <!--https://www.forensafe.com/blogs/evernote.html-->
+    <!--Evernote is a powerful tool that can help executives, entrepreneurs and creative people capture and arrange their ideas. All you have to do is use it.-->
+    <sample name="Evernote_Accounts">
+        <ntfs_find path_match="Users\*\AppData\Local\Evernote\Evernote\Databases\"/>
+    </sample>
+    <sample name="Evernote_Notebooks">
+        <ntfs_find path_match="Users\*\AppData\Local\Evernote\Evernote\Databases\"/>
+    </sample>
+    <sample name="Evernote_Notebook_Snippets">
+        <ntfs_find path_match="Users\*\AppData\Local\Evernote\Evernote\Databases\"/>
+    </sample>
+</getthis>

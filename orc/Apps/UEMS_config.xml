@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.manageengine.com/unified-endpoint-management-security.html-->
+    <!--UEMS Manage Engine Agent is a remote access tool in the ManageEngine suite.-->
+    <!--We have observed this tool being deployed in a recent Cactus ransomware Campaign:-->
+    <!--https://arcticwolf.com/resources/blog/qlik-sense-exploited-in-cactus-ransomware-campaign/-->
+    <!--https://www.bleepingcomputer.com/news/security/cactus-ransomware-exploiting-qlik-sense-flaws-to-breach-networks/-->
+    <!--https://www.cybersecuritydive.com/news/cactus-ransomware-qlik-sense-cves/714578/-->
+    <sample name="Unified_endpoint_management_and_security_solutions_from_ManageEngine">
+        <ntfs_find path_match="Program Files (x86)\ManageEngine\UEMS_Agent\logs*.log"/>
+    </sample>
+    <sample name="Unified_endpoint_management_and_security_solutions_from_ManageEngine">
+        <ntfs_find path_match="Users\*\AppData\Local\VirtualStore\Program Files (x86)\ManageEngine\UEMS_Agent\logs*.log"/>
+    </sample>
+</getthis>

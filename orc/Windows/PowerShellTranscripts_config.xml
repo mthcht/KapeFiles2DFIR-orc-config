@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://lazyadmin.nl/powershell/start-transcript/-->
+    <!--https://www.stigviewer.com/stig/windows_10/2021-03-10/finding/V-230220-->
+    <!--https://www.itprotoday.com/powershell/how-use-automatic-powershell-transcription-->
+    <!--These logs appears when auditing is turned on via Group Policy or Start-Transcript is used during PowerShell execution-->
+    <!--As more locations are observed, they will be added here-->
+    <!--Example location (default): c:\users\name\documents\20220301\PowerShell_transcript.DEVICENAME.qp9EOTN2.20220301132612.txt-->
+    <sample name="PowerShell_Transcripts_-_Default_Location">
+        <ntfs_find path_match="Users\*\Documents\20*\PowerShell_transcript.*.txt"/>
+    </sample>
+    <sample name="PowerShell_Transcripts_-_Observed_Location">
+        <ntfs_find path_match="Windows\SysWOW64\*\PowerShell_transcript.*.txt"/>
+    </sample>
+    <sample name="PowerShell_Transcripts_-_Observed_Location">
+        <ntfs_find path_match="Program Files\Amazon\Ec2ConfigService\Scripts\*\PowerShell_transcript.*.txt"/>
+    </sample>
+    <sample name="PowerShell_Transcripts_-_Observed_Location">
+        <ntfs_find path_match="Windows\System32\*\PowerShell_transcript.*.txt"/>
+    </sample>
+</getthis>

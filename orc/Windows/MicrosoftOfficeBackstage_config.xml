@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.hecfblog.com/2018/10/daily-blog-510-office-2016-backstage.html-->
+    <sample name="Microsoft_Office_Backstage">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Office\*\BackstageinAppNavCache\"/>
+    </sample>
+</getthis>

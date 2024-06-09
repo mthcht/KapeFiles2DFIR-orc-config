@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name=".bash_history">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bash_history"/>
+    </sample>
+    <sample name=".bash_logout">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bash_logout"/>
+    </sample>
+    <sample name=".bashrc">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.bashrc"/>
+    </sample>
+    <sample name=".profile">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\*\LocalState\rootfs\home\*\.profile"/>
+    </sample>
+</getthis>

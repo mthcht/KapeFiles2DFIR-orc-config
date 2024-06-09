@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Qlik Sense is a powerful business intelligence solution that enables users to visualize and analyze complex data.-->
+    <!--We have seen three vulnerabilities (CVE-2023-41266, CVE-2023-41265, and CVE-2023-48365) exploited on exposed Qlik solution in a recent Cactus Ransomware Campaign:-->
+    <!--https://www.cybersecuritydive.com/news/cactus-ransomware-qlik-sense-cves/714578/-->
+    <!--https://arcticwolf.com/resources/blog/qlik-sense-exploited-in-cactus-ransomware-campaign/-->
+    <!--https://www.shadowserver.org/what-we-do/network-reporting/critical-vulnerable-compromised-qlik-sense-special-report/-->
+    <!--You can find details on the full exploit here:-->
+    <!--https://www.praetorian.com/blog/qlik-sense-technical-exploit/-->
+    <!--https://www.praetorian.com/blog/doubleqlik-bypassing-the-original-fix-for-cve-2023-41265/-->
+    <sample name="Qlik_Sense_Logs">
+        <ntfs_find path_match="ProgramData\Qlik\Sense\Log\Proxy*.txt"/>
+    </sample>
+    <sample name="Qlik_Sense_Logs">
+        <ntfs_find path_match="ProgramData\Qlik\Sense\Log\Proxy*.log"/>
+    </sample>
+    <sample name="Qlik_Sense_Logs">
+        <ntfs_find path_match="ProgramData\Qlik\Sense\Log\Scheduler*.txt"/>
+    </sample>
+    <sample name="Qlik_Sense_Logs">
+        <ntfs_find path_match="ProgramData\Qlik\Sense\Log\Scheduler*.log"/>
+    </sample>
+</getthis>

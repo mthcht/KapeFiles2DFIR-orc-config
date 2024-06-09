@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="MS_SQL_Errorlog">
+        <ntfs_find path_match="Program Files\Microsoft SQL Server\*\MSSQL\LOG\"/>
+    </sample>
+    <sample name="MS_SQL_Errorlogs">
+        <ntfs_find path_match="Program Files\Microsoft SQL Server\*\MSSQL\LOG\"/>
+    </sample>
+</getthis>

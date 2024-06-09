@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.zerofox.com/blog/the-registry-hives-you-may-be-msix-ing-registry-redirection-with-ms-msix/-->
+    <!--https://github.com/ydkhatri/Appx-Analysis/blob/master/winapps_appx_mus_2019.pdf-->
+    <sample name="Registry.dat_MSIX_Hive">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\*\SystemAppData\Helium\"/>
+    </sample>
+    <sample name="User.dat_MSIX_Hive">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\*\SystemAppData\Helium\"/>
+    </sample>
+    <sample name="UserClasses.dat_MSIX_Hive">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\*\SystemAppData\Helium\"/>
+    </sample>
+</getthis>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_BitTorrent_clients.-->
+    <!--Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.-->
+    <sample name="BitTorrent">
+        <ntfs_find path_match="BitTorrent.tkape"/>
+    </sample>
+    <sample name="qBittorrent">
+        <ntfs_find path_match="qBittorrent.tkape"/>
+    </sample>
+    <sample name="uTorrent">
+        <ntfs_find path_match="uTorrent.tkape"/>
+    </sample>
+</getthis>

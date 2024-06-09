@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Steam_Game_Image_files">
+        <ntfs_find path_match="Program Files\Steam\appcache\librarycache\"/>
+    </sample>
+    <sample name="Steam_Login_Metadata_file">
+        <ntfs_find path_match="Program Files\Steam\config\"/>
+    </sample>
+    <sample name="Steam_Friend_List_and_Username_History_file">
+        <ntfs_find path_match="Program Files\Steam\userdata\*\config\"/>
+    </sample>
+    <sample name="Steam_User_Avatar_files">
+        <ntfs_find path_match="Program Files\Steam\config\avatarcache\"/>
+    </sample>
+    <sample name="Steam_Game_Tray_Icon_files">
+        <ntfs_find path_match="Program Files\Steam\steam\games\"/>
+    </sample>
+    <sample name="Steam_Startup_Times_Log_file">
+        <ntfs_find path_match="Program Files\Steam\logs\"/>
+    </sample>
+    <sample name="Steam_Game_Image_files">
+        <ntfs_find path_match="Program Files (x86)\Steam\appcache\librarycache\"/>
+    </sample>
+    <sample name="Steam_Login_Metadata_file">
+        <ntfs_find path_match="Program Files (x86)\Steam\config\"/>
+    </sample>
+    <sample name="Steam_Friend_List_and_Username_History_file">
+        <ntfs_find path_match="Program Files (x86)\Steam\userdata\*\config\"/>
+    </sample>
+    <sample name="Steam_User_Avatar_files">
+        <ntfs_find path_match="Program Files (x86)\Steam\config\avatarcache\"/>
+    </sample>
+    <sample name="Steam_Game_Tray_Icon_files">
+        <ntfs_find path_match="Program Files (x86)\Steam\steam\games\"/>
+    </sample>
+    <sample name="Steam_Startup_Times_Log_file">
+        <ntfs_find path_match="Program Files (x86)\Steam\logs\"/>
+    </sample>
+</getthis>

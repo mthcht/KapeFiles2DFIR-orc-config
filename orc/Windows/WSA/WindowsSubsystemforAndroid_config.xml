@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://blogs.windows.com/windows-insider/2021/10/20/introducing-android-apps-on-windows-11-to-windows-insiders/-->
+    <sample name="Diagnostic_Logs_for_WSA">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalState\diagnostics\logcat\"/>
+    </sample>
+    <sample name="App_download_artifacts_(PNG)">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache\"/>
+    </sample>
+    <sample name="App_download_artifacts_(ICO)">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache\"/>
+    </sample>
+    <sample name="Appcompatdb.json">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalState\"/>
+    </sample>
+    <sample name="userdata.vhdx">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\LocalCache\"/>
+    </sample>
+</getthis>

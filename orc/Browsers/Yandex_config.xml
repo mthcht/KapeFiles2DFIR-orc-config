@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Yandex_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Network_Persistent_State">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Favicons">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Sessions_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\Sessions\"/>
+    </sample>
+    <sample name="Yandex_Login_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Network_Action_Predictor">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Preferences">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Top_Sites">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Visited_Links">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Web_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Autofill_data">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Passman_logs">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+    <sample name="Yandex_Shortcuts">
+        <ntfs_find path_match="Users\*\AppData\Local\Yandex\YandexBrowser\User Data\*\"/>
+    </sample>
+</getthis>

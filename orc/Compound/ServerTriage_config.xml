@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--A Target to run on generic servers when their role is unknown. Includes common server applications.-->
+    <sample name="WebServers">
+        <ntfs_find path_match="WebServers.tkape"/>
+    </sample>
+    <sample name="Exchange">
+        <ntfs_find path_match="Exchange.tkape"/>
+    </sample>
+    <sample name="Confluence">
+        <ntfs_find path_match="ConfluenceLogs.tkape"/>
+    </sample>
+    <sample name="FileZilla_Server">
+        <ntfs_find path_match="FileZillaServer.tkape"/>
+    </sample>
+    <sample name="OpenSSH_Server">
+        <ntfs_find path_match="OpenSSHServer.tkape"/>
+    </sample>
+    <sample name="ManageEngine">
+        <ntfs_find path_match="ManageEngineLogs.tkape"/>
+    </sample>
+</getthis>

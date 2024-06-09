@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Google Drive for Desktop (originally Google File Stream) stores user files in a virtualized "G:\My Drive" folder by default. This target will not collect files from those versions of Google Drive.-->
+    <!--https://www.researchgate.net/publication/330319091_Cloud_Drives_Forensic_Artifacts_A_Google_Drive_Case-->
+    <!--https://cyberforensicator.com/2018/10/19/cloud-forensics-google-drive/-->
+    <!--https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics/-->
+    <!--https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics-2/-->
+    <!--https://forensafe.com/blogs/windows_google_drive.html-->
+    <sample name="Google_Drive_Backup_and_Sync_User_Files">
+        <ntfs_find path_match="Users\*\Google Drive*\"/>
+    </sample>
+</getthis>

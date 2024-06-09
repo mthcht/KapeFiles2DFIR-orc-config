@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="JDownloader_2.0_Download_Lists">
+        <ntfs_find path_match="Users\*\AppData\Local\JDownloader 2.0\cfg"/>
+    </sample>
+    <sample name="JDownloader_2.0_Link_Collector">
+        <ntfs_find path_match="Users\*\AppData\Local\JDownloader 2.0\cfg"/>
+    </sample>
+    <sample name="JDownloader_2.0_General_Settings">
+        <ntfs_find path_match="Users\*\AppData\Local\JDownloader 2.0\cfg"/>
+    </sample>
+    <sample name="JDownloader_2.0_Link_Grabber_Settings">
+        <ntfs_find path_match="Users\*\AppData\Local\JDownloader 2.0\cfg"/>
+    </sample>
+    <sample name="JDownloader_2.0_Proxy_Settings">
+        <ntfs_find path_match="Users\*\AppData\Local\JDownloader 2.0\cfg"/>
+    </sample>
+</getthis>

@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.champlain.edu/Documents/LCDI/ApplicationAnalysis_S17.pdf-->
+    <!--Slack is a popular chat/collaboration platform that is used by many organizations worldwide.-->
+    <!--Within the IndexedDB folder, there will be another folder that does not appear to be server-specific like Mattermost. I'm in two Slack workspaces but separate folders do not appear to be created for each Slack workspace.-->
+    <!--Within this folder, there will be a .log file for each Slack workspace. Slack must be exited properly in order for new logs to commit to this directory. My two log files were named .000039.log and .000041.log, respectively. This is where you should concentrate your analysis.-->
+    <!--Unlike Mattermost, there are no timestamped by the keystroke entries. The log files are also harder to visually parse through compared to Mattermost's log files.-->
+    <!--Thankfully, these logs appear to be more exhaustive than Mattermost's. Use the following search term in your text editor of choice to zoom to the message content: subtype_-->
+    <!--It should be noted there appears to be .ldb (Microsoft Access Record-Locking Information) files that don't seem to have as much information once the .log file is converted to .ldb upon application exit.-->
+    <sample name="Slack_-_Chat_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Slack\IndexedDB\"/>
+    </sample>
+    <sample name="Slack_LevelDB_Files">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Slack\Local Storage\leveldb"/>
+    </sample>
+    <sample name="Slack_Electron_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Slack\logs\"/>
+    </sample>
+    <sample name="Slack_Cache">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Slack\Cache"/>
+    </sample>
+    <sample name="Slack_Storage">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Slack\storage\"/>
+    </sample>
+</getthis>

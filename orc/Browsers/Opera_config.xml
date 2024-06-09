@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://kb.digital-detective.net/display/BF/Opera-->
+    <!--https://www.digitalforensics.com/blog/an-overview-of-web-browser-forensics/-->
+    <!--https://davidkoepi.wordpress.com/2012/12/16/opera-forensics/-->
+    <!--https://www.forensafe.com/blogs/opera.html-->
+    <!--Opera is a third-party web browser that has a small market share compared to the bigger names.-->
+    <!--The Local folder is mostly going to contain cache files that are not readable in a text editor.-->
+    <!--The Roaming folder is where one can find the most useful information.-->
+    <!--Within Roaming, IndexedDB folder will have folders named after URLs the user navigates to.-->
+    <!--Within Roaming, Session Storage will have logs with the naming convention of XXXXXX.log that increment as they are rolled over. Within these files are URLs the user navigated to in a given session.-->
+    <sample name="Opera_-_Local_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Opera Software\Opera Stable"/>
+    </sample>
+    <sample name="Opera_-_Roaming_Folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Opera Software\Opera Stable"/>
+    </sample>
+</getthis>

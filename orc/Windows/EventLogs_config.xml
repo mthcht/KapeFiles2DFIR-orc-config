@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.youtube.com/watch?v=qjeA1a5n0LQ-->
+    <sample name="Event_logs_XP">
+        <ntfs_find path_match="Windows\System32\config\*.evt"/>
+    </sample>
+    <sample name="Event_logs_Win7+">
+        <ntfs_find path_match="Windows\System32\winevt\logs\*.evtx"/>
+    </sample>
+    <sample name="Event_logs_Win7+">
+        <ntfs_find path_match="Windows.old\Windows\System32\winevt\logs\*.evtx"/>
+    </sample>
+</getthis>

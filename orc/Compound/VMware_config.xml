@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="VMware_Inventory">
+        <ntfs_find path_match="VMwareInventory.tkape"/>
+    </sample>
+    <sample name="VMware_Memory">
+        <ntfs_find path_match="VMwareMemory.tkape"/>
+    </sample>
+    <sample name="Virtual_Hard_Drives">
+        <ntfs_find path_match="VirtualDisks.tkape"/>
+    </sample>
+</getthis>

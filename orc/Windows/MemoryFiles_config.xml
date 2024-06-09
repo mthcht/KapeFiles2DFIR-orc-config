@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.13cubed.com/episodes/memory.html-->
+    <!--https://digital-forensics.sans.org/media/volatility-memory-forensics-cheat-sheet.pdf-->
+    <sample name="hiberfil.sys">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="pagefile.sys">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="swapfile.sys">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="Small_Memory_Dump_directory">
+        <ntfs_find path_match="Windows\Minidump\*.dmp"/>
+    </sample>
+    <sample name="Small_Memory_Dump_directory">
+        <ntfs_find path_match="Windows.old\Windows\Minidump\*.dmp"/>
+    </sample>
+</getthis>

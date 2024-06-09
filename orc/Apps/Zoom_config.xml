@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://support.zoom.us/hc/en-us/articles/201512326-Troubleshooting-log-for-Windows-->
+    <!--https://www.sans.org/posters/windows-third-party-apps-forensics-poster/-->
+    <!--https://www.sciencedirect.com/science/article/pii/S2666281721000019-->
+    <!--https://www.forensafe.com/blogs/zoom.html-->
+    <!--This target includes some "irrelevant" artifacts like DLLs, and exes-->
+    <!--We collect everything to hopefully avoid missing crucial artifacts-->
+    <sample name="Zoom_client_logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Zoom\logs"/>
+    </sample>
+    <sample name="Zoom_client_logs_(Windows_XP)">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Zoom\"/>
+    </sample>
+    <sample name="Zoom_client_recordings">
+        <ntfs_find path_match="Users\*\Documents\Zoom\"/>
+    </sample>
+    <sample name="Zoom_plugin_(Outlook)">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Zoom Plugin"/>
+    </sample>
+</getthis>

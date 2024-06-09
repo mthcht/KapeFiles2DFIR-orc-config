@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Snagit is an awesome, premium screen capturing software that is totally worth looking into.-->
+    <!--Captures with Snagit are stored as .SNAG files, which can be opened with Snagit Editor.-->
+    <!--Think of Snagit as Snipping Tool on steroids. The user can create robust diagrams and guides on top of the captured image.-->
+    <!--This target will grab all the contents of the DataStore folder.-->
+    <sample name="Snagit_-_Captures">
+        <ntfs_find path_match="Users\*\AppData\Local\TechSmith\Snagit\DataStore"/>
+    </sample>
+</getthis>

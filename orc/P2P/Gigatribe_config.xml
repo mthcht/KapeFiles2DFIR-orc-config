@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Gigatribe_Files_Windows_Vista/7/8/10">
+        <ntfs_find path_match="Users\*\AppData\Local\Shalsoft\"/>
+    </sample>
+    <sample name="Gigatribe_Files_Windows_XP">
+        <ntfs_find path_match="Documents and Settings\*\*\Application Data\Gigatribe\"/>
+    </sample>
+    <sample name="Gigatribe_Files_Windows_XP">
+        <ntfs_find path_match="Documents and Settings\*\*\Application Data\Shalsoft\"/>
+    </sample>
+</getthis>

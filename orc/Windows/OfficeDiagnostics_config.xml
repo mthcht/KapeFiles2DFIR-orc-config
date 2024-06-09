@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://twitter.com/nas_bench/status/1531718490494844928?cxt=HHwWgIC-ncH24MEqAAAA-->
+    <sample name="Office_Diagnostics">
+        <ntfs_find path_match="Users\*\AppData\Local\Diagnostics\"/>
+    </sample>
+    <sample name="Office_Elevated_Diagnostics">
+        <ntfs_find path_match="Users\*\AppData\Local\ElevatedDiagnostics\"/>
+    </sample>
+</getthis>

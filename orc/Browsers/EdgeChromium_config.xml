@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.dataforensics.org/microsoft-edge-browser-forensics/-->
+    <!--https://www.forensicfocus.com/articles/chromium-based-microsoft-edge-from-a-forensic-point-of-view/-->
+    <!--https://www.foxtonforensics.com/browser-history-examiner/microsoft-edge-history-location-->
+    <!--https://www.sans.org/security-resources/posters/windows-forensics-evidence-of/75/download-->
+    <!--https://cyberforensicator.com/2017/02/07/windows-10-forensics/-->
+    <!--https://www.forensafe.com/blogs/edgechromium.html-->
+    <sample name="Edge_bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Collections">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\Collections"/>
+    </sample>
+    <sample name="Edge_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\Network"/>
+    </sample>
+    <sample name="Edge_Current_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Current_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Favicons">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Last_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Last_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Sessions_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\Sessions\"/>
+    </sample>
+    <sample name="Edge_Login_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Media_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Network_Action_Predictor">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Preferences">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Shortcuts">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Top_Sites">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_SyncData_Database">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\Sync Data"/>
+    </sample>
+    <sample name="Edge_Bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Visited_Links">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_Web_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Edge_WebAssistDatabase">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\"/>
+    </sample>
+    <sample name="Windows_Protect_Folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Protect\*\"/>
+    </sample>
+    <sample name="Edge_Snapshots_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\Snapshots\*\"/>
+    </sample>
+</getthis>

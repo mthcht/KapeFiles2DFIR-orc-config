@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Q-Dir is a freeware Windows File Explorer replacement similar to Total Commander and other orthodox file managers.-->
+    <!--Q-Dir has limited FTP functionality as of April 2021.-->
+    <!--The .ini is not the most helpful. It appears everything is stored in a currently unknown encoding format.-->
+    <!--Same story for start.qdr. However, this is where all the info the program stores at this time resides.-->
+    <sample name="Q-Dir_-_.ini_File">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Q-Dir\Q-Dir.ini"/>
+    </sample>
+    <sample name="Q-Dir_-_.qdr_file">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Q-Dir\start.qdr"/>
+    </sample>
+</getthis>

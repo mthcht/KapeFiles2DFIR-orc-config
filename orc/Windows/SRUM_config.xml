@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://medium.com/@esmyl/srum-forensics-dfir-aa9522a925c5-->
+    <!--https://medium.com/velociraptor-ir/digging-into-the-system-resource-usage-monitor-srum-afbadb1a375-->
+    <!--https://www.youtube.com/watch?v=l6-83WU95Sw-->
+    <!--https://www.youtube.com/watch?v=Uw8n4_o-ETM-->
+    <!--https://digital-forensics.sans.org/summit-archives/file/summit_archive_1492184583.pdf-->
+    <!--https://frsecure.com/blog/windows-forensics-execution/-->
+    <!--https://isc.sans.edu/forums/diary/System+Resource+Utilization+Monitor/21927/-->
+    <!--https://medium.com/velociraptor-ir/digging-into-the-system-resource-usage-monitor-srum-afbadb1a375-->
+    <!--https://coek.info/pdf-forensic-implications-of-system-resource-usage-monitor-srum-data-in-windows-8-.html-->
+    <!--https://digitalforensicsdotblog.wordpress.com/2021/10/06/swimming-in-the-srum/-->
+    <!--https://www.forensafe.com/blogs/srudb.html-->
+    <!--https://twitter.com/purp1ew0lf/status/1504491533487296517?s=21-->
+    <!--https://github.com/WithSecureLabs/slide-decks/blob/main/2023-SANS_DFIR_Summit_Europe/Exploring_the_depths_of_SRUM_for_incident_response.pdf-->
+    <sample name="SRUM">
+        <ntfs_find path_match="Windows\System32\SRU\"/>
+    </sample>
+    <sample name="SRUM">
+        <ntfs_find path_match="Windows.old\Windows\System32\SRU\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+</getthis>

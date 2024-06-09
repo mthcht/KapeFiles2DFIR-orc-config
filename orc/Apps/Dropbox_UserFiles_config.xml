@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--This target will also collect the ".dropbox.cache" folder located in the storage location-->
+    <!--https://www.marshall.edu/forensics/files/Treleven-Dropbox-Paper-FINAL.pdf-->
+    <!--https://arxiv.org/pdf/1709.10395-->
+    <!--https://www.sans.org/blog/digital-forensics-dropbox/-->
+    <!--https://www.researchgate.net/publication/342991973_Forensic_Analysis_of_Dropbox_Data_Remnants_on_Windows_10-->
+    <!--https://www.atropos4n6.com/cloud-forensics/windows-10-artifacts-of-dropboxs-native-app-usage/-->
+    <!--https://www.atropos4n6.com/cloud-forensics/artifacts-of-dropbox-usage-on-windows-10-part-2/-->
+    <!--https://www.forensafe.com/blogs/dropbox.html-->
+    <sample name="Dropbox_User_Files">
+        <ntfs_find path_match="Users\*\Dropbox*\"/>
+    </sample>
+</getthis>

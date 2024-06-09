@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--QFinderPro is the GUI Windows application used to manage a QNAP device outside of the NAS itself.-->
+    <!--A .json file resides in the above location which will lay out the following: Firmware Version, IP Address, MAC Address, Device Model, Name of Device, and Timestamp (likely date of last firmware update).-->
+    <sample name="QFinderPro">
+        <ntfs_find path_match="Users\*\AppData\Local\QNAP\QfinderPro"/>
+    </sample>
+</getthis>

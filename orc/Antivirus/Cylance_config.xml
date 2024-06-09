@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Use SQLECmd to process the chp.db log-->
+    <sample name="Cylance_ProgramData_Logs">
+        <ntfs_find path_match="ProgramData\Cylance\Desktop"/>
+    </sample>
+    <sample name="Cylance_Optics_Logs">
+        <ntfs_find path_match="ProgramData\Cylance\Optics\Log"/>
+    </sample>
+    <sample name="Cylance_Program_Files_Logs">
+        <ntfs_find path_match="Program Files\Cylance\Desktop\log"/>
+    </sample>
+</getthis>

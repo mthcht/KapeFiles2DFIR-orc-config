@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="FDM_Database">
+        <ntfs_find path_match="Users\*\AppData\Local\Free Download Manager\"/>
+    </sample>
+    <sample name="FDM_Backup_Info">
+        <ntfs_find path_match="Users\*\AppData\Local\Free Download Manager\backup\"/>
+    </sample>
+    <sample name="FDM_Database_(userdata.zip)">
+        <ntfs_find path_match="Users\*\AppData\Local\Free Download Manager\backup\"/>
+    </sample>
+</getthis>

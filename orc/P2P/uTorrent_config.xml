@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://robertpearsonblog.wordpress.com/2016/11/11/utorrent-and-windows-10-forensic-nuggets-of-info/-->
+    <!--https://www.forensicfocus.com/articles/forensic-analysis-of-the-%CE%BCtorrent-peer-to-peer-client-in-windows/-->
+    <!--https://forensafe.com/blogs/android_utorrent.html-->
+    <sample name="TorrentClients_-_uTorrent">
+        <ntfs_find path_match="Users\*\AppData\Roaming\uTorrent\*.dat"/>
+    </sample>
+</getthis>

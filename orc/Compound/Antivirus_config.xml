@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_antivirus_software.-->
+    <!--Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.-->
+    <sample name="Avast">
+        <ntfs_find path_match="Avast.tkape"/>
+    </sample>
+    <sample name="AVG">
+        <ntfs_find path_match="AVG.tkape"/>
+    </sample>
+    <sample name="Avira">
+        <ntfs_find path_match="AviraAVLogs.tkape"/>
+    </sample>
+    <sample name="Bitdefender">
+        <ntfs_find path_match="Bitdefender.tkape"/>
+    </sample>
+    <sample name="ComboFix">
+        <ntfs_find path_match="ComboFix.tkape"/>
+    </sample>
+    <sample name="Cybereason">
+        <ntfs_find path_match="Cybereason.tkape"/>
+    </sample>
+    <sample name="Cylance">
+        <ntfs_find path_match="Cylance.tkape"/>
+    </sample>
+    <sample name="Emsisoft">
+        <ntfs_find path_match="Emsisoft.tkape"/>
+    </sample>
+    <sample name="ESET">
+        <ntfs_find path_match="ESET.tkape"/>
+    </sample>
+    <sample name="FSecure">
+        <ntfs_find path_match="FSecure.tkape"/>
+    </sample>
+    <sample name="HitmanPro">
+        <ntfs_find path_match="HitmanPro.tkape"/>
+    </sample>
+    <sample name="Malwarebytes">
+        <ntfs_find path_match="Malwarebytes.tkape"/>
+    </sample>
+    <sample name="McAfee">
+        <ntfs_find path_match="McAfee.tkape"/>
+    </sample>
+    <sample name="McAfee_ePO">
+        <ntfs_find path_match="McAfee_ePO.tkape"/>
+    </sample>
+    <sample name="RogueKiller">
+        <ntfs_find path_match="RogueKiller.tkape"/>
+    </sample>
+    <sample name="SecureAge">
+        <ntfs_find path_match="SecureAge.tkape"/>
+    </sample>
+    <sample name="SentinelOne">
+        <ntfs_find path_match="SentinelOne.tkape"/>
+    </sample>
+    <sample name="Sophos">
+        <ntfs_find path_match="Sophos.tkape"/>
+    </sample>
+    <sample name="SUPERAntiSpyware">
+        <ntfs_find path_match="SUPERAntiSpyware.tkape"/>
+    </sample>
+    <sample name="Symantec">
+        <ntfs_find path_match="Symantec_AV_Logs.tkape"/>
+    </sample>
+    <sample name="TotalAV">
+        <ntfs_find path_match="TotalAV.tkape"/>
+    </sample>
+    <sample name="TrendMicro">
+        <ntfs_find path_match="TrendMicro.tkape"/>
+    </sample>
+    <sample name="VIPRE">
+        <ntfs_find path_match="VIPRE.tkape"/>
+    </sample>
+    <sample name="Webroot">
+        <ntfs_find path_match="Webroot.tkape"/>
+    </sample>
+    <sample name="Windows_Defender">
+        <ntfs_find path_match="WindowsDefender.tkape"/>
+    </sample>
+</getthis>

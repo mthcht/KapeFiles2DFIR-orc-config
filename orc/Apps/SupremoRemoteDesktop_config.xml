@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.supremocontrol.com/-->
+    <!--Supremo Remote Desktop is a Remote Access Tool similar to TeamViewer.-->
+    <!--Supremo.00.Incoming.log is logging the incoming remote sessions.-->
+    <!--Supremo.00.ReportsQueue.log is logging device related information of remote sessions.-->
+    <!--Supremo.00.Client.log is logging application events such as program start/exit and the client-server-connections to the Supremo servers.-->
+    <!--Supremo.00.FileTransfer.log is logging file transfers between remote sessions.-->
+    <!--Keep in mind: Files can be transferred to any location on the remote client, not only into the Inbox folder.-->
+    <sample name="Supremo_Connection_Logs">
+        <ntfs_find path_match="ProgramData\SupremoRemoteDesktop\Log*.log"/>
+    </sample>
+    <sample name="Supremo_File_Transfer_Inbox">
+        <ntfs_find path_match="ProgramData\SupremoRemoteDesktop\Inbox"/>
+    </sample>
+</getthis>

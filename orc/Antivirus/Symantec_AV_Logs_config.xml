@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://malwaremaloney.blogspot.com/p/all-things-symantec.html-->
+    <sample name="Symantec_Endpoint_Protection_Logs_(XP)">
+        <ntfs_find path_match="Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Logs\AV\"/>
+    </sample>
+    <sample name="Symantec_Endpoint_Protection_Logs">
+        <ntfs_find path_match="ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Logs\"/>
+    </sample>
+    <sample name="Symantec_Endpoint_Protection_User_Logs">
+        <ntfs_find path_match="Users\*\AppData\Local\Symantec\Symantec Endpoint Protection\Logs\"/>
+    </sample>
+    <sample name="Symantec_Event_Log_Win7+">
+        <ntfs_find path_match="Windows\System32\winevt\logs\"/>
+    </sample>
+    <sample name="Symantec_Event_Log_Win7+">
+        <ntfs_find path_match="Windows.old\Windows\System32\winevt\logs\"/>
+    </sample>
+    <sample name="Symantec_Endpoint_Protection_Manager_(SEPM)_Application_Events">
+        <ntfs_find path_match="ApplicationEvents.tkape"/>
+    </sample>
+    <sample name="Symantec_Endpoint_Protection_Quarantine_(XP)">
+        <ntfs_find path_match="Documents and Settings\All Users\Application Data\Symantec\Symantec Endpoint Protection\Quarantine\"/>
+    </sample>
+    <sample name="Symantec_Endpoint_Protection_Quarantine">
+        <ntfs_find path_match="ProgramData\Symantec\Symantec Endpoint Protection\*\Data\Quarantine\"/>
+    </sample>
+    <sample name="ccSubSDK_Database">
+        <ntfs_find path_match="ProgramData\Symantec\Symantec Endpoint Protection\*\Data\CmnClnt\ccSubSDK\"/>
+    </sample>
+    <sample name="registrationInfo.xml">
+        <ntfs_find path_match="ProgramData\Symantec\Symantec Endpoint Protection\*\Data\"/>
+    </sample>
+</getthis>

@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_web_browsers.-->
+    <!--Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.-->
+    <sample name="Chrome">
+        <ntfs_find path_match="Chrome.tkape"/>
+    </sample>
+    <sample name="Edge">
+        <ntfs_find path_match="Edge.tkape"/>
+    </sample>
+    <sample name="Edge_Chromium">
+        <ntfs_find path_match="EdgeChromium.tkape"/>
+    </sample>
+    <sample name="Firefox">
+        <ntfs_find path_match="Firefox.tkape"/>
+    </sample>
+    <sample name="Internet_Explorer">
+        <ntfs_find path_match="InternetExplorer.tkape"/>
+    </sample>
+    <sample name="Opera">
+        <ntfs_find path_match="Opera.tkape"/>
+    </sample>
+    <sample name="Puffin_Secure_Browser">
+        <ntfs_find path_match="PuffinSecureBrowser.tkape"/>
+    </sample>
+    <sample name="Brave_Browser">
+        <ntfs_find path_match="BraveBrowser.tkape"/>
+    </sample>
+    <sample name="Yandex_Browser">
+        <ntfs_find path_match="Yandex.tkape"/>
+    </sample>
+    <sample name="Vivaldi_Browser">
+        <ntfs_find path_match="Vivaldi.tkape"/>
+    </sample>
+</getthis>

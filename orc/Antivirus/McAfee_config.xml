@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="McAfee_Desktop_Protection_Logs_XP">
+        <ntfs_find path_match="Users\All Users\Application Data\McAfee\DesktopProtection\"/>
+    </sample>
+    <sample name="McAfee_Desktop_Protection_Logs">
+        <ntfs_find path_match="ProgramData\McAfee\DesktopProtection\"/>
+    </sample>
+    <sample name="McAfee_Endpoint_Security_Logs">
+        <ntfs_find path_match="ProgramData\McAfee\Endpoint Security\Logs\"/>
+    </sample>
+    <sample name="McAfee_Endpoint_Security_Logs">
+        <ntfs_find path_match="ProgramData\McAfee\Endpoint Security\Logs_Old\"/>
+    </sample>
+    <sample name="McAfee_VirusScan_Logs">
+        <ntfs_find path_match="ProgramData\Mcafee\VirusScan\"/>
+    </sample>
+</getthis>

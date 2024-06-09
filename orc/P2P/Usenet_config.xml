@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--NZB files are the equivalent to .torrent in the Usenet world.-->
+    <!--NZB filenames usually are verbose and very clear in identifying what the user is downloading, i.e. MovieTitle.Year.Resolution.ReleaseType.Codec-ReleaseGroup.nzb.-->
+    <!--The same format is followed for music, apps, games, etc.-->
+    <sample name="Usenet_(NZB)_Files">
+        <ntfs_find name="*.nzb"/>
+    </sample>
+</getthis>

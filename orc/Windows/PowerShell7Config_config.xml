@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_powershell_config?view=powershell-7.3-->
+    <sample name="PowerShell_7_Config_JSON">
+        <ntfs_find path_match="Program Files\PowerShell\7powershell.config.json"/>
+    </sample>
+</getthis>

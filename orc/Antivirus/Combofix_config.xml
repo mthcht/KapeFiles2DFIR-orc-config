@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="ComboFix">
+        <ntfs_find name=""/>
+    </sample>
+</getthis>

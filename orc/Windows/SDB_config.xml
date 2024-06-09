@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://geoffchappell.com/studies/windows/win32/apphelp/sdb/index.htm?tx=54-->
+    <!--https://docs.microsoft.com/en-us/windows/win32/devnotes/application-compatibility-database?redirectedfrom=MSDN-->
+    <sample name="SDB_Files">
+        <ntfs_find path_match="Windows\apppatch\Custom\*.sdb"/>
+    </sample>
+    <sample name="SDB_Files">
+        <ntfs_find path_match="Windows.old\Windows\apppatch\Custom\*.sdb"/>
+    </sample>
+    <sample name="SDB_Files_x64">
+        <ntfs_find path_match="Windows\apppatch\Custom\Custom64\*.sdb"/>
+    </sample>
+    <sample name="SDB_Files_x64">
+        <ntfs_find path_match="Windows.old\Windows\apppatch\Custom\Custom64\*.sdb"/>
+    </sample>
+</getthis>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--C:\Users\%user%\AppData\Local\sabnzbd\logs\sabnzbd.log is where a verbose log file exists.-->
+    <!--C:\Users\%user%\AppData\Local\sabnzbd\admin\history1.db appears to show a history of filenames of NZBs used by the user.-->
+    <sample name="Usenet_Clients_-_SABnzbd_Download_Logs">
+        <ntfs_find path_match="Users\*\AppData\Local\sabnzbd\logs\sabnzbd.log"/>
+    </sample>
+    <sample name="Usenet_Clients_-_SABnzbd_History.db">
+        <ntfs_find path_match="Users\*\AppData\Local\sabnzbd\admin\history1.db"/>
+    </sample>
+</getthis>

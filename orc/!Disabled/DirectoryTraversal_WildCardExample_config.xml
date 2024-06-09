@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Values starting with * need to be enclosed in single quotes because * denotes a reference in yaml-->
+    <!--You can also do regex:&lt;regex pattern&gt; if more control is needed. i.e. FileMask: regex:(2019|DSC|Log).+\.(jpg|txt)-->
+    <sample name="Zips">
+        <ntfs_find name=""/>
+    </sample>
+</getthis>

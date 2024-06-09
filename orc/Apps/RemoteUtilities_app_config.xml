@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Information on RemoteUtilities logs can be found here: https://www.remoteutilities.com/support/docs/host-log/-->
+    <!--Information on the different Connection Modes is available here: https://www.remoteutilities.com/support/docs/connection-modes/-->
+    <sample name="RemoteUtilities_Connection_Logs">
+        <ntfs_find path_match="Program Files*\Remote Utilities - Host\Logs"/>
+    </sample>
+    <sample name="RemoteUtilities_Install_Log">
+        <ntfs_find path_match="ProgramData\Remote Utilities"/>
+    </sample>
+</getthis>

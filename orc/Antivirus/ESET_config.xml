@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Remote Administrator log information: https://help.eset.com/protect_admin/80/en-US/fs_agent_connection_troubleshooting.html-->
+    <sample name="ESET_NOD32_AV_Logs_(XP)">
+        <ntfs_find path_match="Documents and Settings\All Users\Application Data\ESET\ESET NOD32 Antivirus\Logs\"/>
+    </sample>
+    <sample name="ESET_NOD32_AV_Logs">
+        <ntfs_find path_match="ProgramData\ESET\ESET NOD32 Antivirus\Logs\"/>
+    </sample>
+    <sample name="ESET_NOD32_AV_Logs">
+        <ntfs_find path_match="ProgramData\ESET\ESET Security\Logs"/>
+    </sample>
+    <sample name="ESET_Remote_Administrator_Logs">
+        <ntfs_find path_match="ProgramData\ESET\RemoteAdministrator\Agent\EraAgentApplicationData\Logs"/>
+    </sample>
+    <sample name="Local_User_Quarantine">
+        <ntfs_find path_match="Users\*\AppData\Local\ESET\ESET Security\Quarantine\"/>
+    </sample>
+    <sample name="SYSTEM_user_quarantine">
+        <ntfs_find path_match="\Windows\System32\config\systemprofile\AppData\Local\ESET\ESET Security\Quarantine\"/>
+    </sample>
+</getthis>

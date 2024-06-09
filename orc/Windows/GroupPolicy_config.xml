@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://medium.com/@grzegorztworek/gpo-group-policy-object-is-one-of-the-most-useful-features-of-the-windows-ecosystem-73b6eeab812-->
+    <!--https://learn.microsoft.com/en-us/troubleshoot/windows-server/group-policy/remove-this-item-if-it-is-no-longer-applied-option-->
+    <sample name="Group_Policy_Files">
+        <ntfs_find path_match="Windows\System32\grouppolicy\"/>
+    </sample>
+    <sample name="Computer_Group_Policy_files">
+        <ntfs_find path_match="ProgramData\Microsoft\Group Policy\History\"/>
+    </sample>
+    <sample name="User_Group_Policy_files">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Group Policy\History"/>
+    </sample>
+    <sample name="Local_Group_Policy_INI_Files">
+        <ntfs_find path_match="Windows.old\Windows\System32\grouppolicy\*.ini"/>
+    </sample>
+    <sample name="Local_Group_Policy_Files_-_Registry_Policy_Files">
+        <ntfs_find path_match="Windows\System32\grouppolicy\*.pol"/>
+    </sample>
+    <sample name="Local_Group_Policy_Files_-_Registry_Policy_Files">
+        <ntfs_find path_match="Windows.old\Windows\System32\grouppolicy\*.pol"/>
+    </sample>
+    <sample name="Local_Group_Policy_Files_-_Startup/Shutdown_Scripts">
+        <ntfs_find path_match="Windows\System32\grouppolicy\*\Scripts\"/>
+    </sample>
+    <sample name="Local_Group_Policy_Files_-_Startup/Shutdown_Scripts">
+        <ntfs_find path_match="Windows.old\Windows\System32\grouppolicy\*\Scripts\"/>
+    </sample>
+</getthis>

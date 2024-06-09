@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.4n6k.com/2017/11/forensics-quickie-identifying-clear.html-->
+    <!--https://www.digitalforensics.com/blog/an-overview-of-web-browser-forensics/-->
+    <!--https://www.foxtonforensics.com/browser-history-examiner/firefox-history-location-->
+    <!--https://www.forensafe.com/blogs/firefox.html-->
+    <sample name="Addons">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\weave\"/>
+    </sample>
+    <sample name="Bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\bookmarkbackups"/>
+    </sample>
+    <sample name="Cookies">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Cookies">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Downloads">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Extensions">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Favicons">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Form_history">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Permissions">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Places">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Protections">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Search">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Signons">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Storage_Sync">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Webappstore">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Password">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Password">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Password">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Preferences">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Sessionstore">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Sessionstore_Folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\*\sessionstore-backups"/>
+    </sample>
+    <sample name="Places_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Downloads_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Form_history_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Cookies_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Signons_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Webappstore_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Favicons_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Addons_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Search_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Password_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Password_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Password_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="Sessionstore_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+</getthis>

@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://mremoteng.org/-->
+    <!--https://vk9-sec.com/exploiting-mremoteng/-->
+    <!--mRemoteNG is an open source, multi-protocol, remote connections manager for Windows.-->
+    <!--It handles connections for RDP, VNC, SSH, Telnet, rlogin and other protocols.-->
+    <!--The stored credentials are encrypted with a static key and base64 encoded.-->
+    <sample name="mRemoteNG_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\mRemoteNG\"/>
+    </sample>
+    <sample name="mRemoteNG_Connection_Configuration_and_Backups">
+        <ntfs_find path_match="Users\*\AppData\Roaming\mRemoteNG\"/>
+    </sample>
+    <sample name="mRemoteNG_Program_Settings">
+        <ntfs_find path_match="Users\*\AppData\*\mRemoteNG\"/>
+    </sample>
+</getthis>

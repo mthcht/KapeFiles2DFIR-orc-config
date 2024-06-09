@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_file_managers or https://alternativeto.net/software/total-commander/.-->
+    <!--Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.-->
+    <!--Use Everything, Directory Monitor Pro (not free, but use a trial if you don't want to pay), NirSoft's RegistryChangesView, etc to monitor what these applications do to the File System and DOCUMENT!-->
+    <sample name="Directory_Opus">
+        <ntfs_find path_match="DirectoryOpus.tkape"/>
+    </sample>
+    <sample name="Double_Commander">
+        <ntfs_find path_match="DoubleCommander.tkape"/>
+    </sample>
+    <sample name="EF_Commander">
+        <ntfs_find path_match="EFCommander.tkape"/>
+    </sample>
+    <sample name="FreeCommander_XE">
+        <ntfs_find path_match="FreeCommander.tkape"/>
+    </sample>
+    <sample name="Midnight_Commander">
+        <ntfs_find path_match="MidnightCommander.tkape"/>
+    </sample>
+    <sample name="Multi_Commander">
+        <ntfs_find path_match="MultiCommander.tkape"/>
+    </sample>
+    <sample name="One_Commander">
+        <ntfs_find path_match="OneCommander.tkape"/>
+    </sample>
+    <sample name="Q-Dir">
+        <ntfs_find path_match="Q-Dir.tkape"/>
+    </sample>
+    <sample name="SpeedCommander">
+        <ntfs_find path_match="SpeedCommander.tkape"/>
+    </sample>
+    <sample name="Tablacus_Explorer">
+        <ntfs_find path_match="TablacusExplorer.tkape"/>
+    </sample>
+    <sample name="Total_Commander">
+        <ntfs_find path_match="TotalCommander.tkape"/>
+    </sample>
+    <sample name="XYplorer">
+        <ntfs_find path_match="XYplorer.tkape"/>
+    </sample>
+</getthis>

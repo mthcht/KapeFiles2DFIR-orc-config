@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://dfirtnt.wordpress.com/2023/08/23/rmm-action1-client-side-evidence/-->
+    <!--https://www.bleepingcomputer.com/news/security/hackers-start-abusing-action1-rmm-in-ransomware-attacks/-->
+    <sample name="Action1_Client_Application_logs">
+        <ntfs_find path_match="Windows\Action1\logs*.log"/>
+    </sample>
+</getthis>

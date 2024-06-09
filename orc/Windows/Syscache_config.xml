@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://dfir.ru/2018/12/02/the-cit-database-and-the-syscache-hive/-->
+    <!--https://www.hecfblog.com/2018/12/daily-blog-579-meaning-of-syscachehve.html-->
+    <sample name="Syscache">
+        <ntfs_find path_match="System Volume Information\Syscache.hve"/>
+    </sample>
+    <sample name="Syscache_transaction_files">
+        <ntfs_find path_match="System Volume Information\Syscache.hve.LOG*"/>
+    </sample>
+</getthis>

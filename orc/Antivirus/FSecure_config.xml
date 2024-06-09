@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://community.f-secure.com/en/discussion/122488/removing-f-secure-log-files-from-internet-security-->
+    <sample name="F-Secure_Logs">
+        <ntfs_find path_match="ProgramData\F-Secure\Log\"/>
+    </sample>
+    <sample name="F-Secure_User_Logs">
+        <ntfs_find path_match="Users\*\AppData\Local\F-Secure\Log\"/>
+    </sample>
+    <sample name="F-Secure_Scheduled_Scan_Reports">
+        <ntfs_find path_match="ProgramData\F-Secure\Antivirus\ScheduledScanReports\"/>
+    </sample>
+</getthis>

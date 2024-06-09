@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Whatsapp Desktop saves shared media locally, simply open it with a media software.-->
+    <sample name="Microsoft_Store_WhatsApp_Desktop_Profile_Pictures">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\*WhatsAppDesktop*\LocalState\profilePictures"/>
+    </sample>
+    <sample name="Microsoft_Store_WhatsApp_Shared_Media">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\*WhatsAppDesktop*\LocalState\shared\transfers"/>
+    </sample>
+</getthis>

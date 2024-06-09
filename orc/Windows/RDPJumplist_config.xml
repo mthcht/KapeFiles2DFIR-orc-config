@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.zerofox.com/blog/remote-desktop-application-vs-mstsc-forensics-the-rdp-artifacts-you-might-be-missing/-->
+    <sample name="RDP_Jumplist_Files">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.RemoteDesktop_8wekyb3d8bbwe\"/>
+    </sample>
+</getthis>

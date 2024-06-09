@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://thinkdfir.com/2022/02/08/tracking-screenshots-with-lnk-files/-->
+    <!--https://www.reddit.com/r/Windows10/comments/iv8gf8/snip_sketch_autosave_location/-->
+    <sample name="Snip_&amp;amp;_Sketch">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\*.png"/>
+    </sample>
+</getthis>

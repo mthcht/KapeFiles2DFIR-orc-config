@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For those who don't know, VoidTools' Everything is what Windows search wishes it could be. Use it instead of Windows Search. Get it here: https://www.voidtools.com/downloads/-->
+    <!--Everything must have been exited completely in order for the Everything.db file to have been committed to disk. So for initial installs, it won't commit until the first exit.-->
+    <!--Everything creates a searchable index almost instantly on any system its installed on. Everything.db is what this index is stored in.-->
+    <!--This target pulls the Everything.db which can then be converted with the Everything (VoidTools) Module to provide a readable list of every file located on a system using a text editor or the Everything tool itself.-->
+    <!--The Search History and Run History are not enabled by default. They can be enabled within Options -&gt; History.-->
+    <!--Timestamps within the CSV files can be converted with CyberChef with this particular recipe: https://gchq.github.io/CyberChef/#recipe=From_UNIX_Timestamp('Nanoseconds%20(ns)')-->
+    <sample name="Everything_(VoidTools)">
+        <ntfs_find path_match="Users\*\AppData\Local\Everything\"/>
+    </sample>
+    <sample name="Everything_(VoidTools)_-_Run_History">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Everything\"/>
+    </sample>
+    <sample name="Everything_(VoidTools)_-_Search_History">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Everything\"/>
+    </sample>
+    <sample name="Everything_(VoidTools)_-_.ini_file">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Everything\"/>
+    </sample>
+</getthis>

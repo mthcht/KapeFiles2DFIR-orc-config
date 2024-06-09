@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For those looking to contribute to this list, check here for ideas:-->
+    <!--- https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients-->
+    <!--- https://en.wikipedia.org/wiki/Comparison_of_user_features_of_messaging_platforms-->
+    <!--Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.-->
+    <sample name="IRC_Clients">
+        <ntfs_find path_match="IRCClients.tkape"/>
+    </sample>
+    <sample name="Cisco_Jabber">
+        <ntfs_find path_match="CiscoJabber.tkape"/>
+    </sample>
+    <sample name="Discord">
+        <ntfs_find path_match="Discord.tkape"/>
+    </sample>
+    <sample name="Mattermost">
+        <ntfs_find path_match="Mattermost.tkape"/>
+    </sample>
+    <sample name="Microsoft_Teams">
+        <ntfs_find path_match="MicrosoftTeams.tkape"/>
+    </sample>
+    <sample name="Signal">
+        <ntfs_find path_match="Signal.tkape"/>
+    </sample>
+    <sample name="Skype">
+        <ntfs_find path_match="Skype.tkape"/>
+    </sample>
+    <sample name="Slack">
+        <ntfs_find path_match="Slack.tkape"/>
+    </sample>
+    <sample name="Telegram">
+        <ntfs_find path_match="Telegram.tkape"/>
+    </sample>
+    <sample name="Viber">
+        <ntfs_find path_match="Viber.tkape"/>
+    </sample>
+    <sample name="WhatsApp">
+        <ntfs_find path_match="WhatsApp.tkape"/>
+    </sample>
+</getthis>

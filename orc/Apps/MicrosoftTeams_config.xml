@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://cyberforensicator.com/2020/04/16/looking-at-microsoft-teams-from-a-dfir-perspective/-->
+    <!--https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/microsoft-teams-and-skype-logging-privacy-issue/-->
+    <!--https://netsecninja.github.io/analysis/2021/02/11/ms-teams-logs-activity.html-->
+    <!--https://www.datadigitally.com/2020/09/microsoft-teams-artifacts-and-chat-logs.html-->
+    <!--https://bakerstreetforensics.com/2021/05/10/collecting-from-microsoft-teams-using-powershell/-->
+    <sample name="Microsoft_Teams_IndexedDB_Cache">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Teams\IndexedDB\https_teams.microsoft.com_0.indexeddb.leveldb\"/>
+    </sample>
+    <sample name="Microsoft_Teams_Local_Storage_Cache">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Teams\Local Storage\leveldb\"/>
+    </sample>
+    <sample name="Microsoft_Teams_Cache">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Teams\Cache\"/>
+    </sample>
+    <sample name="Microsoft_Teams_Config">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Teams\"/>
+    </sample>
+    <sample name="Microsoft_Teams_Logs_(Windows_11)">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\MicrosoftTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams\Logs"/>
+    </sample>
+</getthis>

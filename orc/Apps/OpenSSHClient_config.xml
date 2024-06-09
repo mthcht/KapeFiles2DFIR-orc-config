@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="OpenSSH_Config_File">
+        <ntfs_find path_match="Users\*\.ssh\config"/>
+    </sample>
+    <sample name="OpenSSH_Known_Hosts">
+        <ntfs_find path_match="Users\*\.ssh\known_hosts"/>
+    </sample>
+    <sample name="OpenSSH_Public_Keys">
+        <ntfs_find path_match="Users\*\.ssh\*.pub"/>
+    </sample>
+    <sample name="OpenSSH_Default_RSA_Private_Key">
+        <ntfs_find path_match="Users\*\.ssh\id_rsa"/>
+    </sample>
+    <sample name="OpenSSH_Default_ECDSA_Private_Key">
+        <ntfs_find path_match="Users\*\.ssh\id_ecdsa"/>
+    </sample>
+    <sample name="OpenSSH_Default_ECDSA-SK_Private_Key">
+        <ntfs_find path_match="Users\*\.ssh\id_ecdsa_sk"/>
+    </sample>
+    <sample name="OpenSSH_Default_ED25519_Private_Key">
+        <ntfs_find path_match="Users\*\.ssh\id_ed25519"/>
+    </sample>
+    <sample name="OpenSSH_Default_ED25519-SK_Private_Key">
+        <ntfs_find path_match="Users\*\.ssh\id_ed25519_sk"/>
+    </sample>
+    <sample name="OpenSSH_Default_DSA_Private_Key">
+        <ntfs_find path_match="Users\*\.ssh\id_dsa"/>
+    </sample>
+</getthis>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Network_setting_files">
+        <ntfs_find path_match="windows\system32\drivers\etc"/>
+    </sample>
+</getthis>

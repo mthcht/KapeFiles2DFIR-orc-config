@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.robo-ftp.com/-->
+    <!--Robo-FTP is an FTP client that is focused on automation through the use of scripts.-->
+    <sample name="Robo-FTP_User_Scripts">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\UserData\*\Scripts\"/>
+    </sample>
+    <sample name="Robo-FTP_User_Debug_Logs">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\UserData\*\Debug\"/>
+    </sample>
+    <sample name="Robo-FTP_User_Script/Trace_Logs">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\UserData\*\Logs\"/>
+    </sample>
+    <sample name="Robo-FTP_User_XML_Config">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\UserData\*\"/>
+    </sample>
+    <sample name="Robo-FTP_User_SSH_Keys">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\UserData\*\SSH Keys\"/>
+    </sample>
+    <sample name="Robo-FTP_User_SSL_Certificates">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\UserData\*\SSL Certificates\"/>
+    </sample>
+    <sample name="Robo-FTP_User_PGP_Keys">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\UserData\*\PGP Keys\"/>
+    </sample>
+    <sample name="Robo-FTP_SSH_Keys">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\ProgramData\SSH Keys\"/>
+    </sample>
+    <sample name="Robo-FTP_SSL_Certificates">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\ProgramData\SSL Certificates\"/>
+    </sample>
+    <sample name="Robo-FTP_PGP_Keys">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\ProgramData\PGP Keys\"/>
+    </sample>
+    <sample name="Robo-FTP_Debug_Logs">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\ProgramData\Debug\"/>
+    </sample>
+    <sample name="Robo-FTP_Script/Trace_Logs">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\ProgramData\Logs\"/>
+    </sample>
+    <sample name="Robo-FTP_XML_Config">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\ProgramData\"/>
+    </sample>
+    <sample name="Robo-FTP_Jobs">
+        <ntfs_find path_match="Program Files\Robo-FTP 3.12\ProgramData\"/>
+    </sample>
+</getthis>

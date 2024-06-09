@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <!--This .ini file appears to contain record of the last 15 files opened by the user-->
+    <!--Additionally, this .ini file appears to contain the folder path the user will be presented with upon clicking on File -&gt; Open within IrfanView-->
+    <sample name="IrfanView_Configuration_File">
+        <ntfs_find path_match="Users\*\AppData\Roaming\IrfanView\"/>
+    </sample>
+</getthis>

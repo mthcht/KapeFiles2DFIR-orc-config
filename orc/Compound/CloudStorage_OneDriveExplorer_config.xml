@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="OneDrive_Metadata">
+        <ntfs_find path_match="OneDrive_Metadata.tkape"/>
+    </sample>
+    <sample name="User_Related_Registry_hives">
+        <ntfs_find path_match="RegistryHivesUser.tkape"/>
+    </sample>
+    <sample name="Recycle_Bin_DataAndInfo">
+        <ntfs_find path_match="RecycleBin.tkape"/>
+    </sample>
+</getthis>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.forensicfocus.com/forums/general/vlc-recent-files/-->
+    <!--https://superuser.com/questions/287137/does-vlc-media-player-store-the-files-or-its-history-in-a-hidden-location/1206411-->
+    <!--https://www.forensafe.com/blogs/vlc.html-->
+    <sample name="VLC_Recently_Opened_Files">
+        <ntfs_find path_match="Users\*\AppData\Roaming\vlc\"/>
+    </sample>
+    <sample name="VLC_Recorded_Files">
+        <ntfs_find path_match="Users\*\Videos\"/>
+    </sample>
+</getthis>

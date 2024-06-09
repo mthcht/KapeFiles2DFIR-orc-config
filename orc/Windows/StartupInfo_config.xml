@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="StartupInfo_XML_Files">
+        <ntfs_find path_match="Windows\System32\WDI\LogFiles\StartupInfo\*.xml"/>
+    </sample>
+    <sample name="StartupInfo_XML_Files">
+        <ntfs_find path_match="Windows.old\Windows\System32\WDI\LogFiles\StartupInfo\*.xml"/>
+    </sample>
+</getthis>

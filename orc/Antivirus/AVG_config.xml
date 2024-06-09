@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://businesshelp.avast.com/Content/Products/General_Help/LogLocations/BaseAntivirusLogs.htm-->
+    <!--https://forensafe.com/blogs/windows_avg.html-->
+    <sample name="AVG_AV_Logs_(XP)">
+        <ntfs_find path_match="Documents and Settings\All Users\Application Data\AVG\Antivirus\log"/>
+    </sample>
+    <sample name="AVG_AV_Report_Logs_(XP)">
+        <ntfs_find path_match="Documents and Settings\All Users\Application Data\AVG\Antivirus\report"/>
+    </sample>
+    <sample name="AVG_AV_Logs">
+        <ntfs_find path_match="ProgramData\AVG\Antivirus\log"/>
+    </sample>
+    <sample name="AVG_Report_Logs">
+        <ntfs_find path_match="ProgramData\AVG\Antivirus\report"/>
+    </sample>
+    <sample name="AVG_Persistent_Logs">
+        <ntfs_find path_match="ProgramData\AVG\Persistent Data\Antivirus\Logs"/>
+    </sample>
+    <sample name="AVG_FileInfo_DB">
+        <ntfs_find path_match="ProgramData\AVG\Antivirus"/>
+    </sample>
+    <sample name="AVG_lsdbj2_JSON">
+        <ntfs_find path_match="ProgramData\AVG\Antivirus"/>
+    </sample>
+</getthis>

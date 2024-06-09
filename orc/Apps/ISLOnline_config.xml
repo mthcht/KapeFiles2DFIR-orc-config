@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.islonline.com/us/enus/-->
+    <!--https://www.anomali.com/blog/anomali-cyber-watch-earth-kitsune-uses-chrome-native-messaging-for-persistence-wip26-targets-middle-east-telco-from-abused-clouds-azerbaijan-sponsored-group-geofenced-its-payloads-to-armenian-ips-->
+    <!--https://www.bleepingcomputer.com/news/security/coinbase-cyberattack-targeted-employees-with-fake-sms-alert/-->
+    <!--ISL Online is a remote access tool with several methods of connecting to clients. ISL Light allows for installed or run once clients.-->
+    <!--ISL AlwaysOn allows for unattended access to clients and requires elevated privileges to install the ISL Online client.-->
+    <!--Forensic artifacts vary based on method of use.-->
+    <!--One of the most common methods of connecting to a client is to ask them to navigate to islonline.net and enter a connection code which will then download a single use ISL client.-->
+    <!--The most useful artifacts are ISLClient.out, trace.out, and session.xml. With these files you can identify how many sessions occured, when they occurred, as well as what took place (ie. file transfers in or out)-->
+    <sample name="ISLOnline_Logs_-_Sessions_-_*.out">
+        <ntfs_find path_match="Users\*\AppData\Local\ISL Online Cache\ISL Light Client\*\ISLClient.out"/>
+    </sample>
+    <sample name="ISLOnline_Logs_-_Session_Configurations">
+        <ntfs_find path_match="Users\*\AppData\Local\ISL Online Cache\ISL Light Client\*\conf\*"/>
+    </sample>
+    <sample name="ISL_AlwaysOn_Logs_-_Sessions_List">
+        <ntfs_find path_match="Program Files (x86)\ISL Online\ISL AlwaysOn\session.xml"/>
+    </sample>
+    <sample name="ISL_AlwaysOn_Logs_-_Sessions">
+        <ntfs_find path_match="Program Files (x86)\ISL Online\ISL AlwaysOn\sessions\*\trace.out"/>
+    </sample>
+    <sample name="ISL_AlwaysOn_-_App_Logs">
+        <ntfs_find path_match="Program Files (x86)\ISL Online\ISL AlwaysOn\*.out"/>
+    </sample>
+    <sample name="ISL_Light_Logs_-_Sessions">
+        <ntfs_find path_match="Users\*\AppData\Local\ISL Online Cache\ISL Light\*\trace.out"/>
+    </sample>
+    <sample name="ISL_AlwaysOn_-_Email_Configuration">
+        <ntfs_find path_match="Program Files (x86)\ISL Online\ISL AlwaysOn\status\tray"/>
+    </sample>
+    <sample name="ISL_AlwaysOn_-_Configuration">
+        <ntfs_find path_match="Program Files (x86)\ISL Online\ISL AlwaysOn\StaticConfiguration.ini"/>
+    </sample>
+</getthis>

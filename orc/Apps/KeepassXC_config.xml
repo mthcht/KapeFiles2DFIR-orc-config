@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://keepassxc.org/project/-->
+    <!--KeePassXC is a free open source password manager, considered the best variant the well known KeePass.-->
+    <sample name="Keepass_Local_Ini">
+        <ntfs_find path_match="Users\*\AppData\Local\KeePassXC\"/>
+    </sample>
+    <sample name="Keepass_Roaming_Ini">
+        <ntfs_find path_match="Users\*\AppData\Roaming\KeePassXC\"/>
+    </sample>
+</getthis>

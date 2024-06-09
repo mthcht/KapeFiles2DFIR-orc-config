@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://learn.microsoft.com/en-us/mem/configmgr/core/plan-design/hierarchy/about-log-files#locating-log-files-->
+    <!--Previous version of this Target: https://github.com/EricZimmerman/KapeFiles/commit/2199b6b7749b2f066e9f54a16626160279ab7948-->
+    <!--I have seen reference to malicious binaries associated with a user in a log found in this folder-->
+    <!--Sample log entry:-->
+    <!--&lt;![LOG[Add RecentlyUsedApp: &lt;evil.exe DOMAIN\username&gt;]LOG]!&gt;&lt;time="12:22:13.679+300" date="02-27-2022" component="AssetAdvisor" context="" type="1" thread="5564" file="aa_recentlyusedapps.cpp:235"&gt;-->
+    <sample name="SCCM_Client_Log_Files">
+        <ntfs_find path_match="Windows\CCM\Logs"/>
+    </sample>
+</getthis>

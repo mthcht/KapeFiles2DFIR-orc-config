@@ -1,0 +1,226 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="NTUSER.DAT_registry_hive">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="NTUSER.DAT_registry_transaction_files">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="NTUSER.DAT_DEFAULT_registry_hive">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="NTUSER.DAT_DEFAULT_transaction_files">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="UsrClass.dat_registry_hive">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="UsrClass.dat_registry_transaction_files">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="LNK_Files">
+        <ntfs_find name="*.LNK"/>
+    </sample>
+    <sample name="Word_Autosave_Location">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Word\"/>
+    </sample>
+    <sample name="Excel_Autosave_Location">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Excel\"/>
+    </sample>
+    <sample name="PowerPoint_Autosave_Location">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\PowerPoint\"/>
+    </sample>
+    <sample name="Publisher_Autosave_Location">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Publisher\"/>
+    </sample>
+    <sample name="Publisher_Autosave_Location">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Word\"/>
+    </sample>
+    <sample name="Office_Document_Cache">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Office\*\OfficeFileCache\"/>
+    </sample>
+    <sample name="Office_Document_Cache">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Office\*\OfficeFileCache\"/>
+    </sample>
+    <sample name="Chrome_bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_bookmarks">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Current_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Current_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Current_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Current_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Download_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Download_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Extension_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Extension_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Favicons">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Favicons">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Last_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Last_Session">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Last_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Last_Tabs">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Sessions_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\Sessions\"/>
+    </sample>
+    <sample name="Chrome_Sessions_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\Sessions\"/>
+    </sample>
+    <sample name="Chrome_Login_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Login_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Media_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Media_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Network_Action_Predictor">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Network_Action_Predictor">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Network_Persistent_State">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Network_Persistent_State">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Preferences">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Preferences">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Quota_Manager">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Quota_Manager">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Reporting_and_NEL">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Reporting_and_NEL">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Shortcuts">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Shortcuts">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Top_Sites">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Top_Sites">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Trust_Tokens">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Trust_Tokens">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_SyncData_Database">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\Sync Data"/>
+    </sample>
+    <sample name="Chrome_SyncData_Database">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\Sync Data"/>
+    </sample>
+    <sample name="Chrome_Visited_Links">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Visited_Links">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Web_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Chrome_Web_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\"/>
+    </sample>
+    <sample name="Windows_Protect_Folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Protect\*\"/>
+    </sample>
+    <sample name="Windows_Protect_Folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Protect\*\"/>
+    </sample>
+    <sample name="Edge_folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\"/>
+    </sample>
+    <sample name="Edge_folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\"/>
+    </sample>
+    <sample name="Amcache">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="Amcache_transaction_files">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="LNK_Files_from_Recent">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Windows\Recent\"/>
+    </sample>
+    <sample name="LNK_Files_from_Recent">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Windows\Recent\"/>
+    </sample>
+    <sample name="LNK_Files_from_Microsoft_Office_Recent">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Office\Recent\"/>
+    </sample>
+    <sample name="LNK_Files_from_Microsoft_Office_Recent">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Office\Recent\"/>
+    </sample>
+    <sample name="Desktop_LNK_Files">
+        <ntfs_find name="*.LNK"/>
+    </sample>
+</getthis>

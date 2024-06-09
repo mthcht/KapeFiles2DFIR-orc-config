@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Debian">
+        <ntfs_find path_match="Debian.tkape"/>
+    </sample>
+    <sample name="Ubuntu">
+        <ntfs_find path_match="Ubuntu.tkape"/>
+    </sample>
+    <sample name="Kali">
+        <ntfs_find path_match="Kali.tkape"/>
+    </sample>
+    <sample name="openSUSE">
+        <ntfs_find path_match="openSUSE.tkape"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server">
+        <ntfs_find path_match="SUSELinuxEnterpriseServer.tkape"/>
+    </sample>
+</getthis>

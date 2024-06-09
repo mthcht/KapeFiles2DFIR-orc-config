@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="VirtualBox_Logs">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="VirtualBox_Backup_Logs">
+        <ntfs_find name=""/>
+    </sample>
+    <sample name="VirtualBox_Hardening_Logs">
+        <ntfs_find name=""/>
+    </sample>
+</getthis>

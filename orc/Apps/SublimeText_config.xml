@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://superuser.com/questions/894021/where-does-sublime-text-store-its-un-saved-windows-->
+    <!--https://forum.sublimetext.com/t/restoring-files-saved-in-auto-save-session-sublime-session/25654/2-->
+    <sample name="SublimeText_2/3_Auto_Save_Session">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Sublime Text*\Settings\"/>
+    </sample>
+    <sample name="SublimeText_4_Auto_Save_Session">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Sublime Text*\Local\*.sublime_session"/>
+    </sample>
+</getthis>

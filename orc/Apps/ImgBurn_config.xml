@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://forum.imgburn.com/topic/14632-where-can-i-find-the-imgburn-log-->
+    <sample name="ImgBurn_-_Application_Log_File">
+        <ntfs_find path_match="Users\*\AppData\Roaming\ImgBurn\Log Files\"/>
+    </sample>
+</getthis>

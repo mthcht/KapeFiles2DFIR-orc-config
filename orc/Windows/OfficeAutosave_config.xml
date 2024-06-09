@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Word_Autosave_Location">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Word\"/>
+    </sample>
+    <sample name="Excel_Autosave_Location">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Excel\"/>
+    </sample>
+    <sample name="Powerpoint_Autosave_Location">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Powerpoint\"/>
+    </sample>
+    <sample name="Publisher_Autosave_Location">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Publisher\"/>
+    </sample>
+</getthis>

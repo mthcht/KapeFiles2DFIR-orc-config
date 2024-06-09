@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://windowstechno.com/what-is-netlogon/-->
+    <!--https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/verify-srv-dns-records-have-been-created-->
+    <!--https://www.oreilly.com/library/view/windows-server-2008/9780735624375/ch19s06.html-->
+    <sample name="DNS_Netlogon_files">
+        <ntfs_find path_match="Windows\System32\config\netlogon.*"/>
+    </sample>
+    <sample name="DNS_files">
+        <ntfs_find path_match="Windows\System32\dns\"/>
+    </sample>
+    <sample name="DHCP_files">
+        <ntfs_find path_match="Windows\System32\dhcp"/>
+    </sample>
+</getthis>

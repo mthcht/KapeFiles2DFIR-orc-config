@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://countuponsecurity.com/2015/11/23/digital-forensics-supertimeline-event-logs-part-i/-->
+    <!--https://www.jaiminton.com/cheatsheet/DFIR/-->
+    <sample name="Application_Event_Log_XP">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="Application_Event_Log_XP">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="Application_Event_Log_Win7+">
+        <ntfs_find path_match="Windows\System32\winevt\logs\"/>
+    </sample>
+    <sample name="Application_Event_Log_Win7+">
+        <ntfs_find path_match="Windows.old\Windows\System32\winevt\logs\"/>
+    </sample>
+</getthis>

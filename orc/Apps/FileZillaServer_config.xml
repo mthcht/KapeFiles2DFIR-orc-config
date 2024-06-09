@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.sans.org/reading-room/whitepapers/forensics/evidence-data-exfiltration-containerised-applications-virtual-private-servers-38555-->
+    <!--https://wiki.filezilla-project.org/Logs-->
+    <!--https://www.hecfblog.com/2013/09/daily-blog-93-filezilla-artifacts.html-->
+    <!--https://forensafe.com/blogs/filezilla.html-->
+    <!--FileZilla Server Interface.xml will display the following information:-->
+    <!--&lt;FileZillaServer&gt;-->
+    <!--    &lt;Settings&gt;-->
+    <!--        &lt;Item name="Last Server Address" type="string"&gt;localhost&lt;/Item&gt;-->
+    <!--        &lt;Item name="Last Server Port" type="numeric"&gt;12345&lt;/Item&gt;-->
+    <!--        &lt;Item name="Last Server Password" type="string" /&gt;-->
+    <!--        &lt;Item name="Always use last server" type="numeric"&gt;0&lt;/Item&gt;-->
+    <!--        &lt;Item name="Start Minimized" type="numeric"&gt;0&lt;/Item&gt;-->
+    <!--    &lt;/Settings&gt;-->
+    <!--&lt;/FileZillaServer&gt;-->
+    <!--FileZilla Server.log will display the following information:-->
+    <!--(000018) 4/3/2021 11:08:27 AM - (not logged in) (192.168.131.1)&gt; USER Andrew-->
+    <!--(000018) 4/3/2021 11:08:27 AM - (not logged in) (192.168.131.1)&gt; 331 Password required for andrew-->
+    <!--(000018) 4/3/2021 11:08:27 AM - (not logged in) (192.168.131.1)&gt; PASS-->
+    <!--(000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 230 Logged on-->
+    <!--(000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; CWD /EVT-->
+    <!--(000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 250 CWD successful. "/EVT" is current directory.-->
+    <!--(000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; TYPE I-->
+    <!--(000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 200 Type set to I-->
+    <!--(000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; CWD /EVT-->
+    <!--(000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 250 CWD successful. "/EVT" is current directory.-->
+    <!--(000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; PASV-->
+    <!--(000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 227 Entering Passive Mode (192,168,131,128,204,144)-->
+    <!--(000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; TYPE I-->
+    <!--(000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 200 Type set to I-->
+    <!--(000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; RETR Internet.evt-->
+    <!--(000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; PASV-->
+    <!--(000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 227 Entering Passive Mode (192,168,131,128,255,124)-->
+    <!--(000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 150 Opening data channel for file download from server of "/EVT/Internet.evt"-->
+    <!--(000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; RETR AppEvent.Evt-->
+    <!--(000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 150 Opening data channel for file download from server of "/EVT/AppEvent.Evt"-->
+    <!--(000018) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 226 Successfully transferred "/EVT/AppEvent.Evt"-->
+    <!--(000017) 4/3/2021 11:08:27 AM - andrew (192.168.131.1)&gt; 226 Successfully transferred "/EVT/Internet.evt"-->
+    <!--The above example shows me downloading two test .EVT files to my host machine shortly after reconnecting to the FTP Server administered by FileZilla Server which was running within a Windows 10 VM.-->
+    <sample name="FileZilla_Server_XML_Log_Files">
+        <ntfs_find path_match="Users\*\AppData\Roaming\FileZilla Server\*.xml*"/>
+    </sample>
+    <sample name="FileZilla_Log_Files">
+        <ntfs_find path_match="Program Files (x86)\FileZilla Server\Logs\*.log*"/>
+    </sample>
+</getthis>

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-259a-->
+    <sample name="ManageEngine_Desktop_Central_Log_Files">
+        <ntfs_find path_match="ManageEngine\DesktopCentral_Server\logs\"/>
+    </sample>
+    <sample name="ManageEngine_ADSelfService_Plus_Log_Files">
+        <ntfs_find path_match="ManageEngine\ADSelfService Plus\logs\"/>
+    </sample>
+</getthis>

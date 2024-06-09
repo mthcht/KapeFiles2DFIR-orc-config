@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="MegaSync_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Mega Limited\MEGAsync\"/>
+    </sample>
+</getthis>

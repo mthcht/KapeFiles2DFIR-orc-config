@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.researchgate.net/publication/333198144_Analysis_of_Security_Virtual_Private_Network_VPN_Using_OpenVPN-->
+    <sample name="OpenVPN_Client_Config">
+        <ntfs_find path_match="Users\*\OpenVPN\config\"/>
+    </sample>
+    <sample name="OpenVPN_Client_Config">
+        <ntfs_find path_match="Program Files*\OpenVPN\config"/>
+    </sample>
+    <sample name="OpenVPN_Client_Config">
+        <ntfs_find path_match="Users\*\OpenVPN\log\*.log"/>
+    </sample>
+</getthis>

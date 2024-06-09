@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://cyberforensicator.com/2017/03/01/how-to-find-passwords-for-encrypted-itunes-backups/-->
+    <!--https://farleyforensics.com/2019/04/14/forensic-analysis-of-itunes-backups/-->
+    <!--https://www.digitalforensics.com/blog/itunes-backup-forensic-analysis/-->
+    <!--https://forensafe.com/blogs/itunes.html-->
+    <sample name="iTunes_Backup_Folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Apple\Mobilesync\Backup\"/>
+    </sample>
+    <sample name="iTunes_Backup_Folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Apple Computer\Mobilesync\Backup\"/>
+    </sample>
+    <sample name="iTunes_Backup_Folder_-_iOS13">
+        <ntfs_find path_match="Users\*\Apple\Mobilesync\Backup\"/>
+    </sample>
+</getthis>

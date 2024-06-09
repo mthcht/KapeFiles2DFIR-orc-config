@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--https://crucialsecurity.wordpress.com/2011/05/23/virtual-machine-files-essential-to-forensic-investigations/-->
+    <!--https://blog.salvationdata.com/2018/06/01/case-study-how-to-forensically-extract-evidence-data-from-a-virtual-machine/-->
+    <sample name="VMware_(Fusion/Workstation/Server/Player)">
+        <ntfs_find name="*.vmem"/>
+    </sample>
+    <sample name="VMware_(Fusion/Workstation/Server/Player)">
+        <ntfs_find name="*.vmss"/>
+    </sample>
+    <sample name="VMware_(Fusion/Workstation/Server/Player)">
+        <ntfs_find name="*.vmsn"/>
+    </sample>
+</getthis>

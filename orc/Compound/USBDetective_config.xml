@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For more information on USB Detective go here: https://usbdetective.com/features/-->
+    <sample name="USBDevicesLogs">
+        <ntfs_find path_match="USBDevicesLogs.tkape"/>
+    </sample>
+    <sample name="RegistryHives">
+        <ntfs_find path_match="RegistryHives.tkape"/>
+    </sample>
+    <sample name="Event_Logs">
+        <ntfs_find path_match="EventLogs.tkape"/>
+    </sample>
+    <sample name="LNKFilesAndJumplists">
+        <ntfs_find path_match="LNKFilesAndJumplists.tkape"/>
+    </sample>
+    <sample name="Amcache">
+        <ntfs_find path_match="Amcache.tkape"/>
+    </sample>
+</getthis>

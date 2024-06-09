@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Validating digital signatures of an offline system can be problematic.-->
+    <!--Microsoft relies mostly on detached signature files to sign Windows-->
+    <!--executables.  Checking those on an offline system using sigcheck.exe-->
+    <!--from SysInternals requires importing the target system's detached-->
+    <!--signature files into the anlysis system.  To use with sigcheck, slightly-->
+    <!--rename the collected GUID directories (keeping the names in a GUID format),-->
+    <!--copy them to C:\Windows\System32\CatRoot of your analysis machine, restart-->
+    <!--Cryptographic Services, then run sigcheck against the target system files.-->
+    <!--This will import the target's signature files into the local analysis-->
+    <!--machine's signature database and should accurately validate the target-->
+    <!--system's files (which presumabley were collected with other KAPE modules).-->
+    <!--Kudos to Troy Larson for providing this workaround technique.-->
+    <sample name="SignatureCatalog">
+        <ntfs_find path_match="Windows\System32\CatRoot\"/>
+    </sample>
+    <sample name="SignatureCatalog">
+        <ntfs_find path_match="Windows.old\Windows\System32\CatRoot\"/>
+    </sample>
+</getthis>

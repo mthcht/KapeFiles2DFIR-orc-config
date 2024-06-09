@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download-->
+    <!--https://www.digitalforensics.com/blog/an-overview-of-web-browser-forensics/-->
+    <!--https://www.dataforensics.org/internet-explorer-forensics/-->
+    <!--https://www.xploreforensics.com/blog/internet-explorer-forensic-artifacts-analysis.html-->
+    <!--https://cyberforensicator.com/2017/02/07/windows-10-forensics/-->
+    <!--https://www.forensafe.com/blogs/internetexplorer.html-->
+    <sample name="Index.dat_History">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\History\History.IE5\"/>
+    </sample>
+    <sample name="Index.dat_History_subdirectory">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\History\History.IE5\*\"/>
+    </sample>
+    <sample name="Index.dat_cookies">
+        <ntfs_find path_match="Documents and Settings\*\Cookies\"/>
+    </sample>
+    <sample name="Index.dat_UserData">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Microsoft\Internet Explorer\UserData\"/>
+    </sample>
+    <sample name="Index.dat_Office_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Microsoft\Office\Recent\"/>
+    </sample>
+    <sample name="Index.dat_Office">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Office\Recent\"/>
+    </sample>
+    <sample name="Local_Internet_Explorer_folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Internet Explorer\"/>
+    </sample>
+    <sample name="Roaming_Internet_Explorer_folder">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Internet Explorer\"/>
+    </sample>
+    <sample name="IE_9/10_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\History\"/>
+    </sample>
+    <sample name="IE_9/10_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\Cookies\"/>
+    </sample>
+    <sample name="IE_9/10_Download_History">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\IEDownloadHistory\"/>
+    </sample>
+    <sample name="IE_11_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\WebCache\"/>
+    </sample>
+    <sample name="IE_11_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\INetCookies\"/>
+    </sample>
+</getthis>

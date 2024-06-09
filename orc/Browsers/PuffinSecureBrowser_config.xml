@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Puffin is a secure web browser that takes a LOT of work to get set up. If your suspect is using this, they went out of their way to make this their browser of choice. I had to use a credit card/billing address, authorization codes sent to my fake email, sign in multiple times to activate the browser and my membership, etc. It was a pain.-->
+    <!--As secure as Puffin claims to be, they store some stuff locally!-->
+    <!--Data.db had evidence of tabs I had opened with the browser.-->
+    <!--Autocompletes.dat stored some autocomplete data (email, etc) that I entered throughout the setup process.-->
+    <!--passwordForms.dat stored the email in plaintext but the password itself is not in plain text.-->
+    <!--"subscription" was a file without a file extension (viewable in a text editor) that showed the fake email I used to set up my trial with Puffin.-->
+    <!--The image_cache folder will store what appears to be .JPG files but as .ci0 files. I was able to view all the images with IrfanView despite the proprietary file extension.-->
+    <sample name="Puffin_-_data.db">
+        <ntfs_find path_match="Users\*\AppData\Local\PuffinSecureBrowser"/>
+    </sample>
+    <sample name="Puffin_-_Autocomplete_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\PuffinSecureBrowser"/>
+    </sample>
+    <sample name="Puffin_-_Password_Forms_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\PuffinSecureBrowser"/>
+    </sample>
+    <sample name="Puffin_-_Password_(Encrypted)">
+        <ntfs_find path_match="Users\*\AppData\Local\PuffinSecureBrowser"/>
+    </sample>
+    <sample name="Puffin_-_Subscription_Data">
+        <ntfs_find path_match="Users\*\AppData\Local\PuffinSecureBrowser"/>
+    </sample>
+    <sample name="Puffin_-_Cookies">
+        <ntfs_find path_match="Users\*\AppData\Local\PuffinSecureBrowser"/>
+    </sample>
+    <sample name="Puffin_-_Image_Cache">
+        <ntfs_find path_match="Users\*\AppData\Local\PuffinSecureBrowser\image_cache"/>
+    </sample>
+</getthis>

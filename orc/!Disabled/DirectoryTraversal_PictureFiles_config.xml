@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--https://en.wikipedia.org/wiki/Image_file_formats-->
+    <!--Please note, this Target only looks for file extensions. It does not check the file header of each file, so be wary of picture files that were changed to a file extension not listed above, such as .pptx or .pdf-->
+    <sample name="Picture_files">
+        <ntfs_find name=""/>
+    </sample>
+</getthis>

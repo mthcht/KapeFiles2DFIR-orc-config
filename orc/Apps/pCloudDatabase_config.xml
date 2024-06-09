@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://cyberforensicator.com/2018/05/05/cloud-forensics-pcloud-drive/-->
+    <!--https://www.sciencedirect.com/science/article/pii/B9780128053034000137-->
+    <sample name="pCloud_Database">
+        <ntfs_find path_match="Users\*\AppData\Local\pCloud\*.db"/>
+    </sample>
+    <sample name="pCloud_Database_WAL_File">
+        <ntfs_find path_match="Users\*\AppData\Local\pCloud\*.db-wal"/>
+    </sample>
+    <sample name="pCloud_Database_Shared_Memory_File">
+        <ntfs_find path_match="Users\*\AppData\Local\pCloud\*.db-shm"/>
+    </sample>
+</getthis>

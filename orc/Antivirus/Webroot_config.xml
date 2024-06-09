@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Webroot_Program_Data">
+        <ntfs_find path_match="ProgramData\WRData\"/>
+    </sample>
+</getthis>

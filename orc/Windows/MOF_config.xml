@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>*</location>
+    <!--Documentation-->
+    <!--https://digital-forensics.sans.org/media/DFPS_FOR508_v4.4_1-19.pdf-->
+    <sample name="MOF_files">
+        <ntfs_find name="*.MOF"/>
+    </sample>
+</getthis>

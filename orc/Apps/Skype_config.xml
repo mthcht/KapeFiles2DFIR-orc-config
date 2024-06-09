@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://bebinary4n6.blogspot.com/2019/07/analysis-of-skype-windows-10-app.html-->
+    <!--https://bebinary4n6.blogspot.com/2019/07/skype-from-old-one-to-newest-one.html-->
+    <!--https://blog.elcomsoft.com/2019/12/extracting-skype-histories-and-deleted-files-metadata-from-microsoft-account/-->
+    <!--https://bebinary4n6.blogspot.com/2019/07/analysis-skype-app-for-windows-metro.html-->
+    <!--https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/microsoft-teams-and-skype-logging-privacy-issue/-->
+    <!--https://www.forensafe.com/blogs/skype.html-->
+    <sample name="main.db_(App_&amp;lt;v12)">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\"/>
+    </sample>
+    <sample name="skype.db_(App_+v12)">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\*\"/>
+    </sample>
+    <sample name="main.db_XP">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Skype\*\"/>
+    </sample>
+    <sample name="main.db_Win7+">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Skype\*\"/>
+    </sample>
+    <sample name="s4l-[username].db_(App_+v8)">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\Microsoft.SkypeApp_*\LocalState\"/>
+    </sample>
+    <sample name="leveldb_(Skype_for_Desktop_+v8)">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Skype for Desktop\IndexedDB\*.leveldb\"/>
+    </sample>
+    <sample name="Skype_for_Destkop_v8+_Chromium_Cache">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Skype for Desktop\Cache\"/>
+    </sample>
+</getthis>

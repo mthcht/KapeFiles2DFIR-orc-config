@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration-->
+    <sample name="OpenSSH_Server_Config_File">
+        <ntfs_find path_match="ProgramData\ssh\sshd_config"/>
+    </sample>
+    <sample name="OpenSSH_Server_Logs">
+        <ntfs_find path_match="ProgramData\ssh\logs\*"/>
+    </sample>
+    <sample name="OpenSSH_Host_ECDSA_Key">
+        <ntfs_find path_match="ProgramData\ssh\ssh_host_ecdsa_key"/>
+    </sample>
+    <sample name="OpenSSH_Host_ED25519_Key">
+        <ntfs_find path_match="ProgramData\ssh\ssh_host_ed25519_key"/>
+    </sample>
+    <sample name="OpenSSH_Host_DSA_Key">
+        <ntfs_find path_match="ProgramData\ssh\ssh_host_dsa_key"/>
+    </sample>
+    <sample name="OpenSSH_Host_RSA_Key">
+        <ntfs_find path_match="ProgramData\ssh\ssh_host_rsa_key"/>
+    </sample>
+    <sample name="OpenSSH_User_Authorized_Keys">
+        <ntfs_find path_match="Users\*\.ssh\authorized_keys"/>
+    </sample>
+    <sample name="OpenSSH_User_Authorized_Keys_2">
+        <ntfs_find path_match="Users\*\.ssh\authorized_keys2"/>
+    </sample>
+    <sample name="OpenSSH_Authorized_Administrator_Keys">
+        <ntfs_find path_match="ProgramData\ssh\administrators_authorized_keys"/>
+    </sample>
+</getthis>

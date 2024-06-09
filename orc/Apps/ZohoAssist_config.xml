@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.zoho.com/assist/kb/logs.html-->
+    <sample name="Zoho_Assist_log_files_in_AppData\Local">
+        <ntfs_find path_match="Users\*\AppData\Local\ZohoMeeting\log"/>
+    </sample>
+    <sample name="Zoho_Assist_.conf_files_in_AppData\Local">
+        <ntfs_find path_match="Users\*\AppData\Local\ZohoMeeting"/>
+    </sample>
+    <sample name="Zoho_Assist_log_files_in_ProgramData">
+        <ntfs_find path_match="ProgramData\ZohoMeeting\log"/>
+    </sample>
+    <sample name="Zoho_Assist_.conf_files">
+        <ntfs_find path_match="ProgramData\ZohoMeeting"/>
+    </sample>
+    <sample name="Zoho_Assist_log_files_in_Program_Files*">
+        <ntfs_find path_match="Program Files*\ZohoMeeting\UnAttended\ZohoMeeting\logs"/>
+    </sample>
+    <sample name="Zoho_Assist_.conf_files_in__Program_Files*">
+        <ntfs_find path_match="Program Files*\ZohoMeeting\UnAttended\ZohoMeeting"/>
+    </sample>
+    <sample name="Zoho_Assist_.txt_files_in__Program_Files*">
+        <ntfs_find path_match="Program Files*\ZohoMeeting\UnAttended\ZohoMeeting"/>
+    </sample>
+</getthis>

@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.tenforums.com/software-apps/163591-windowsapps-deleted-other-subfolders.html-->
+    <!--https://github.com/ydkhatri/Appx-Analysis-->
+    <sample name="WindowsApps_for_AppX">
+        <ntfs_find path_match="Program Files\WindowsApps\Deleted*\"/>
+    </sample>
+    <sample name="SystemApps_for_AppX">
+        <ntfs_find path_match="Windows\SystemApps\"/>
+    </sample>
+    <sample name="UserSpecificPackages_for_AppX">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\"/>
+    </sample>
+    <sample name="AppRepository_for_AppX">
+        <ntfs_find path_match="ProgramData\Microsoft\Windows\AppRepository\Packages\"/>
+    </sample>
+    <sample name="ProgramData_Packages_for_AppX">
+        <ntfs_find path_match="ProgramData\Packages\"/>
+    </sample>
+</getthis>

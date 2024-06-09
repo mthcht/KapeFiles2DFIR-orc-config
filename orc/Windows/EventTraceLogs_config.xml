@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.youtube.com/watch?v=TUR-L9AtzQE-->
+    <sample name="WDI_Trace_Logs_1">
+        <ntfs_find path_match="Windows\System32\WDI\LogFiles\*.etl*"/>
+    </sample>
+    <sample name="WDI_Trace_Logs_1">
+        <ntfs_find path_match="Windows.old\Windows\System32\WDI\LogFiles\*.etl*"/>
+    </sample>
+    <sample name="WDI_Trace_Logs_2">
+        <ntfs_find path_match="Windows\System32\WDI\{*\"/>
+    </sample>
+    <sample name="WDI_Trace_Logs_2">
+        <ntfs_find path_match="Windows.old\Windows\System32\WDI\{*\"/>
+    </sample>
+    <sample name="WMI_Trace_Logs">
+        <ntfs_find path_match="Windows\System32\LogFiles\WMI\"/>
+    </sample>
+    <sample name="WMI_Trace_Logs">
+        <ntfs_find path_match="Windows.old\Windows\System32\LogFiles\WMI\"/>
+    </sample>
+    <sample name="SleepStudy_Trace_Logs">
+        <ntfs_find path_match="Windows\System32\SleepStudy\"/>
+    </sample>
+    <sample name="SleepStudy_Trace_Logs">
+        <ntfs_find path_match="Windows.old\Windows\System32\SleepStudy\"/>
+    </sample>
+    <sample name="Energy-NTKL_Trace_Logs">
+        <ntfs_find path_match="ProgramData\Microsoft\Windows\PowerEfficiency Diagnostics\"/>
+    </sample>
+    <sample name="Delivery_Optimization_Trace_Logs">
+        <ntfs_find path_match="Windows\ServiceProfiles\NetworkService\AppData\Local\Microsoft\Windows\DeliveryOptimization\Logs\*.etl*"/>
+    </sample>
+</getthis>

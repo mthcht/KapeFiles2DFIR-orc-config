@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://en.wikipedia.org/wiki/Soulseek-->
+    <!--https://nicotine-plus.github.io/nicotine-plus/-->
+    <!--Soulseek is a very popular file sharing client. It's most commonly used for sharing MP3's amongst music enthusiasts. However, any file type can be shared, naturally.-->
+    <!--Nicotine++ is simply a more modern GUI for Soulseek-->
+    <!--Some logs, like with Soulseek, are stored as .dat files. Open with your favorite text editor that's not named Notepad or Wordpad and you should have an easy enough time using Ctrl+F to search for relevant data.-->
+    <!--Chats are stored in plaintext. These can be opened in any text editor and are human readable.-->
+    <sample name="Nicotine++_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotine\logs"/>
+    </sample>
+    <sample name="Nicotine++_Incomplete_Downloads">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotine\incomplete"/>
+    </sample>
+    <sample name="Nicotine++_Buddyfiles.db">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotine\buddyfiles.db"/>
+    </sample>
+    <sample name="Nicotine++_Buddystreams.db">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotine\buddystreams.db"/>
+    </sample>
+    <sample name="Nicotine++_Buddymtimes.db">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotine\buddymtimes.db"/>
+    </sample>
+    <sample name="Nicotine++_Buddyfileindex.db">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotine\buddyfileindex.db"/>
+    </sample>
+    <sample name="Nicotine++_Buddywordindex.db">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotine\buddywordindex.db"/>
+    </sample>
+    <sample name="Nicotine++_Config_Files">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotine\config"/>
+    </sample>
+    <sample name="Nicotine++_User_Shares">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotine\usershares"/>
+    </sample>
+    <sample name="Nicotine++_Downloads.json">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotinedownloads.json*"/>
+    </sample>
+    <sample name="Nicotine++_Uploads.json">
+        <ntfs_find path_match="Users\*\AppData\Roaming\nicotineuploads.json*"/>
+    </sample>
+</getthis>

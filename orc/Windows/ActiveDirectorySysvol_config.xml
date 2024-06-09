@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.thehacker.recipes/ad/movement/credentials/dumping/ntds-->
+    <!--https://www.minitool.com/lib/sysvol.html-->
+    <sample name="SYSVOL">
+        <ntfs_find path_match="Windows\SYSVOL"/>
+    </sample>
+</getthis>

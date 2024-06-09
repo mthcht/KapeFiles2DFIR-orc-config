@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://support.google.com/earth/answer/166438?hl=en-->
+    <sample name="Google_Earth_My_Places_file">
+        <ntfs_find path_match="Users\*\AppData\LocalLow\Google\GoogleEarthmyplaces.kml"/>
+    </sample>
+    <sample name="Google_Earth_My_Places_Backup_file">
+        <ntfs_find path_match="Users\*\AppData\LocalLow\Google\GoogleEarthmyplaces.backup.kml"/>
+    </sample>
+    <sample name="Google_Earth_My_Places_file_(XP)">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Google\GoogleEarthmyplaces.kml"/>
+    </sample>
+    <sample name="Google_Earth_My_Places_Backup_file_(XP)">
+        <ntfs_find path_match="Documents and Settings\*\Application Data\Google\GoogleEarthmyplaces.backup.kml"/>
+    </sample>
+</getthis>

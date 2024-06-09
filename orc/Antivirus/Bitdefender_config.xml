@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://anelshaer.medium.com/browsing-history-in-bitdefender-dbs-2d63ba940f92-->
+    <!--https://forensafe.com/blogs/windows_bitdefender.html-->
+    <sample name="Bitdefender_Endpoint_Security_Logs">
+        <ntfs_find path_match="ProgramData\Bitdefender\Endpoint Security\Logs\"/>
+    </sample>
+    <sample name="Bitdefender_Internet_Security_Logs">
+        <ntfs_find path_match="ProgramData\Bitdefender\Desktop\Profiles\Logs\"/>
+    </sample>
+    <sample name="Bitdefender_SQLite_DB_Files">
+        <ntfs_find path_match="Program Files*\Bitdefender*\"/>
+    </sample>
+</getthis>

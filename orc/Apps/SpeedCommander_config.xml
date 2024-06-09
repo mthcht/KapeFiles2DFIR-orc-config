@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.speedproject.com/-->
+    <!--SpeedCommander is a shareware file manager similar to Total Commander.-->
+    <!--SpeedCommander.xml will have the history of the left and right panel as well as any FTP servers the user connected to.-->
+    <sample name="SpeedCommander_-_.ini_File">
+        <ntfs_find path_match="Users\*\AppData\Roaming\SpeedProject\SpeedCommander 19\"/>
+    </sample>
+</getthis>

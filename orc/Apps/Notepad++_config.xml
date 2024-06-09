@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://krknsec.com/2020/04/18/miscellaneous-windows-10-forensic-artifacts-->
+    <!--https://forensafe.com/blogs/windows_notepad++.html-->
+    <sample name="Notepad++_Unsaved_Edits">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Notepad++\backup\"/>
+    </sample>
+    <sample name="Notepad++_Config">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Notepad++\"/>
+    </sample>
+    <sample name="Notepad++_Session">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Notepad++\"/>
+    </sample>
+</getthis>

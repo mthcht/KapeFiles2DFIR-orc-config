@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Files and folders to be used for cracking the Windows Hello PIN-->
+    <!--NOTE: You may need to uncheck the "Deduplicate" function in KAPE as it may filter out needed Cryptokey files-->
+    <!--https://github.com/Banaanhangwagen/WINHELLO2hashcat-->
+    <!--https://hashcat.net/forum/thread-10461.html-->
+    <sample name="Cryptokeys">
+        <ntfs_find path_match="Windows\ServiceProfiles\LocalService\AppData\Roaming\Microsoft\Crypto\Keys\"/>
+    </sample>
+    <sample name="Masterkey">
+        <ntfs_find path_match="Windows\System32\Microsoft\Protect\S-1-5-18\User\"/>
+    </sample>
+    <sample name="NGC">
+        <ntfs_find path_match="Windows\ServiceProfiles\LocalService\AppData\Local\Microsoft\Ngc\"/>
+    </sample>
+    <sample name="SECURITY_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SECURITY_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SYSTEM_registry_transaction_files">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SYSTEM_registry_transaction_files">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SECURITY_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SECURITY_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive">
+        <ntfs_find path_match="Windows\System32\config\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\"/>
+    </sample>
+    <sample name="SECURITY_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SECURITY_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SOFTWARE_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows\System32\config\RegBack\"/>
+    </sample>
+    <sample name="SYSTEM_registry_hive_(RegBack)">
+        <ntfs_find path_match="Windows.old\Windows\System32\config\RegBack\"/>
+    </sample>
+</getthis>

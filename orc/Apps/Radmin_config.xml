@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Radmin_Server_32bit_Log">
+        <ntfs_find path_match="Windows\SysWOW64\rserver30\"/>
+    </sample>
+    <sample name="Radmin_Server_64bit_Log">
+        <ntfs_find path_match="Windows\System32\rserver30\"/>
+    </sample>
+    <sample name="Radmin_Server_32bit_Chats">
+        <ntfs_find path_match="Windows\SysWOW64\rserver30\CHATLOGS\*\*.htm"/>
+    </sample>
+    <sample name="Radmin_Server_64bit_Chats">
+        <ntfs_find path_match="Windows\System32\rserver30\CHATLOGS\*\*.htm"/>
+    </sample>
+    <sample name="Radmin_Viewer_Chats">
+        <ntfs_find path_match="Users\*\Documents\ChatLogs\*\*.htm"/>
+    </sample>
+</getthis>

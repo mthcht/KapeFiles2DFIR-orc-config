@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <!--C:\Users\%user%\AppData\Roaming\HeidiSQL\Backups\query-tab-2020-12-14_13-09-19-655.sql-->
+    <!--C:\Users\%user%\AppData\Roaming\HeidiSQL\tabs.ini-->
+    <sample name="HeidiSQL_Backup_files_(*.sql)">
+        <ntfs_find path_match="Users\*\AppData\Roaming\HeidiSQL\Backups\"/>
+    </sample>
+    <sample name="HeidiSQL_(tabs.ini)">
+        <ntfs_find path_match="Users\*\AppData\Roaming\HeidiSQL\"/>
+    </sample>
+</getthis>

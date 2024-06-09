@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <!--This directory contained the following files in my research VM:-->
+    <!--C:\Users\*\AppData\Roaming\PeaZip\conf-lastgood.txt-->
+    <!--C:\Users\*\AppData\Roaming\PeaZip\custedit.txt-->
+    <!--C:\Users\*\AppData\Roaming\PeaZip\bookmarks.txt-->
+    <!--C:\Users\*\AppData\Roaming\PeaZip\conf.txt-->
+    <!--The two conf*.txt files contained a history of archives that were recently opened with PeaZip-->
+    <!--Each file was identical to each other and had 650ish lines of data after about 10 minutes of testing with PeaZip. Except much more for a user who uses PeaZip as their primary archiving program-->
+    <!--Bookmarks.txt appeared to contain entries for the default bookmarks that ship with PeaZip as well as user added bookmarks-->
+    <!--Within this file, it stores the equivalent  to a Shellbags-esque timestamp for the first time the user navigated to the bookmark and the last time-->
+    <!--The most recently visited timestamp is overwritten each time the user visits that bookmark and a number above the timestamps is incremented for each visits-->
+    <!--For instance, my Bookmarks.txt had this entry:-->
+    <!--4-->
+    <!--2021-03-28 15:37:36-->
+    <!--2021-03-28 11:02:20-->
+    <!--0-->
+    <!--C:\Users\%user$\Downloads-->
+    <sample name="PeaZip_Configuration_Files">
+        <ntfs_find path_match="Users\*\AppData\Roaming\PeaZip\"/>
+    </sample>
+</getthis>

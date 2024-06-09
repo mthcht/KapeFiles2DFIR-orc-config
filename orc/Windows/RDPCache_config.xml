@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.youtube.com/watch?v=NnEOk5-Dstw-->
+    <!--https://cbtgeeks.com/2018/05/22/digital-forensics-on-rdp-cache/-->
+    <!--https://github.com/BSI-Bund/RdpCacheStitcher-->
+    <sample name="RDP_Cache_Files">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Terminal Server Client\Cache\"/>
+    </sample>
+    <sample name="Windows.old_RDP_Cache_Files">
+        <ntfs_find path_match="Windows.old\Users\*\AppData\Local\Microsoft\Terminal Server Client\Cache\"/>
+    </sample>
+    <sample name="RDP_Cache_Files">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Application Data\Microsoft\Terminal Server Client\Cache\"/>
+    </sample>
+</getthis>

@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_remote_desktop_software.-->
+    <!--Install one of the applications not covered above and find where useful information is stored. If useful information can be located, make an individual Target for it and place in the appropriate folder. Then, include that Target in the appropriate Compound Target.-->
+    <sample name="Action1">
+        <ntfs_find path_match="Action1.tkape"/>
+    </sample>
+    <sample name="Ammyy">
+        <ntfs_find path_match="Ammyy.tkape"/>
+    </sample>
+    <sample name="AnyDesk">
+        <ntfs_find path_match="AnyDesk.tkape"/>
+    </sample>
+    <sample name="Chrome_Remote_Desktop">
+        <ntfs_find path_match="ApplicationEvents.tkape"/>
+    </sample>
+    <sample name="DWAgent">
+        <ntfs_find path_match="DWAgent.tkape"/>
+    </sample>
+    <sample name="ISLOnline">
+        <ntfs_find path_match="ISLOnline.tkape"/>
+    </sample>
+    <sample name="Kaseya">
+        <ntfs_find path_match="Kaseya.tkape"/>
+    </sample>
+    <sample name="Level">
+        <ntfs_find path_match="Level.tkape"/>
+    </sample>
+    <sample name="LogMeIn">
+        <ntfs_find path_match="LogMeIn.tkape"/>
+    </sample>
+    <sample name="MeshAgent">
+        <ntfs_find path_match="MeshAgent.tkape"/>
+    </sample>
+    <sample name="mRemoteNG">
+        <ntfs_find path_match="mRemoteNG.tkape"/>
+    </sample>
+    <sample name="NetMonitor">
+        <ntfs_find path_match="NetMonitorforEmployeesProfessional.tkape"/>
+    </sample>
+    <sample name="Radmin">
+        <ntfs_find path_match="Radmin.tkape"/>
+    </sample>
+    <sample name="RDP_Cache">
+        <ntfs_find path_match="RDPCache.tkape"/>
+    </sample>
+    <sample name="RDP_Logs">
+        <ntfs_find path_match="RDPLogs.tkape"/>
+    </sample>
+    <sample name="Remote_Utilities">
+        <ntfs_find path_match="RemoteUtilities_app.tkape"/>
+    </sample>
+    <sample name="RustDesk">
+        <ntfs_find path_match="RustDesk.tkape"/>
+    </sample>
+    <sample name="ScreenConnect_(ConnectWise_Control)">
+        <ntfs_find path_match="ScreenConnect.tkape"/>
+    </sample>
+    <sample name="Splashtop">
+        <ntfs_find path_match="Splashtop.tkape"/>
+    </sample>
+    <sample name="Supremo_Remote_Desktop_Control">
+        <ntfs_find path_match="SupremoRemoteDesktop.tkape"/>
+    </sample>
+    <sample name="TeamViewer">
+        <ntfs_find path_match="TeamViewerLogs.tkape"/>
+    </sample>
+    <sample name="UEMS">
+        <ntfs_find path_match="UEMS.tkape"/>
+    </sample>
+    <sample name="UltraViewer">
+        <ntfs_find path_match="UltraViewer.tkape"/>
+    </sample>
+    <sample name="VNC">
+        <ntfs_find path_match="VNCLogs.tkape"/>
+    </sample>
+    <sample name="Xeox">
+        <ntfs_find path_match="Xeox.tkape"/>
+    </sample>
+    <sample name="ZohoAssist">
+        <ntfs_find path_match="ZohoAssist.tkape"/>
+    </sample>
+</getthis>

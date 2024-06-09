@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.andreafortuna.org/2020/06/04/windows-forensic-analysis-some-thoughts-on-rdp-related-event-ids/-->
+    <!--https://ponderthebits.com/2018/02/windows-rdp-related-event-logs-identification-tracking-and-investigation/-->
+    <!--https://www.13cubed.com/downloads/rdp_flowchart.pdf-->
+    <!--https://www.youtube.com/watch?v=myzG11BP3Sk-->
+    <sample name="RemoteConnectionManager_Event_Logs">
+        <ntfs_find path_match="Windows\System32\winevt\logs\"/>
+    </sample>
+    <sample name="RemoteConnectionManager_Event_Logs">
+        <ntfs_find path_match="Windows.old\Windows\System32\winevt\logs\"/>
+    </sample>
+    <sample name="LocalSessionManager_Event_Logs">
+        <ntfs_find path_match="Windows\System32\winevt\logs\"/>
+    </sample>
+    <sample name="LocalSessionManager_Event_Logs">
+        <ntfs_find path_match="Windows.old\Windows\System32\winevt\logs\"/>
+    </sample>
+    <sample name="RDPClient_Event_Logs">
+        <ntfs_find path_match="Windows\System32\winevt\logs\"/>
+    </sample>
+    <sample name="RDPClient_Event_Logs">
+        <ntfs_find path_match="Windows.old\Windows\System32\winevt\logs\"/>
+    </sample>
+    <sample name="RDPCoreTS_Event_Logs">
+        <ntfs_find path_match="Windows\System32\winevt\logs\"/>
+    </sample>
+    <sample name="RDPCoreTS_Event_Logs">
+        <ntfs_find path_match="Windows.old\Windows\System32\winevt\logs\"/>
+    </sample>
+</getthis>

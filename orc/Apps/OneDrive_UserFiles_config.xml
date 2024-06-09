@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.sans.org/blog/cloud-storage-acquisition-from-endpoint-devices/-->
+    <!--https://www.forensicfocus.com/forums/general/onedrive-files-on-demand-windows-10-storage-sense-settings/-->
+    <!--This target collects user OneDrive files from the default folders of OneDrive Personal and Business, but folders can be user-defined.  Check NTUSER.DAT\Software\Microsoft\OneDrive\Accounts\&lt;Personal|Business&gt; to see if locations have been changed.-->
+    <sample name="OneDrive_User_Files">
+        <ntfs_find path_match="Users\*\OneDrive*\"/>
+    </sample>
+</getthis>

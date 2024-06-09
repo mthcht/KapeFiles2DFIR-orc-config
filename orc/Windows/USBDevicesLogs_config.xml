@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.andreafortuna.org/2018/02/09/usb-devices-in-windows-forensic-analysis/-->
+    <!--https://www.hecfblog.com/2013/08/daily-blog-66-understanding-artifacts.html-->
+    <!--https://www.swiftforensics.com/2012/08/tracking-usb-first-insertion-in-event.html-->
+    <!--https://www.13cubed.com/downloads/dfir_cheat_sheet.pdf-->
+    <!--v1.1-->
+    <!--Use wildcard to account for dated versions files and other forms of setupapi log-->
+    <!--Ex: setupapi.dev.20221214_093731.log, setupapi.setup.log, setupapi.upgrade.log-->
+    <sample name="Setupapi.log_XP">
+        <ntfs_find path_match="Windows\"/>
+    </sample>
+    <sample name="Setupapi.log_Win7+">
+        <ntfs_find path_match="Windows\inf\"/>
+    </sample>
+    <sample name="Setupapi.log_Win7+">
+        <ntfs_find path_match="Windows.old\Windows\inf\"/>
+    </sample>
+</getthis>

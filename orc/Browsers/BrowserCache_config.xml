@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Chrome_Cache_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Chrome\User Data\*\Cache\"/>
+    </sample>
+    <sample name="Chromium_Edge_Cache_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Edge\User Data\*\Cache\"/>
+    </sample>
+    <sample name="Firefox_Cache_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\Mozilla\Firefox\Profiles\*\"/>
+    </sample>
+    <sample name="IE_9/10_Cache">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\Temporary Internet Files\"/>
+    </sample>
+    <sample name="IE_Index.dat_temp_internet_files">
+        <ntfs_find path_match="Documents and Settings\*\Local Settings\Temporary Internet Files\Content.IE5\"/>
+    </sample>
+    <sample name="IE_11_Cache">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\INetCache\"/>
+    </sample>
+    <sample name="Edge_WebcacheV01.dat">
+        <ntfs_find path_match="Users\*\AppData\Local\Microsoft\Windows\WebCache\"/>
+    </sample>
+    <sample name="Brave_Cache_Folder">
+        <ntfs_find path_match="Users\*\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Cache\Cache_Data"/>
+    </sample>
+</getthis>

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://christopherkibble.com/posts/wsl-vhdx-recovery/-->
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_/etc/os-release">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_/etc/fstab">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_/etc/passwd">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_/etc/group">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_/etc/shadow">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_/etc/timezone">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_/etc/hostname">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_/etc/hosts">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_/etc/bash.bashrc">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_/etc/profile">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\etc\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_.bash_history">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_.bashrc">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_.profile">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\rootfs\"/>
+    </sample>
+    <sample name="SUSE_Linux_Enterprise_Server_WSL_ext4.vhdx">
+        <ntfs_find path_match="Users\*\AppData\Local\Packages\46932SUSE.SUSELinuxEnterpriseServer*\LocalState\"/>
+    </sample>
+</getthis>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--Log files from the DriveFS directory can be parsed using https://toolbox.googleapps.com/apps/loggershark/-->
+    <!--https://www.researchgate.net/publication/330319091_Cloud_Drives_Forensic_Artifacts_A_Google_Drive_Case-->
+    <!--https://cyberforensicator.com/2018/10/19/cloud-forensics-google-drive/-->
+    <!--https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics/-->
+    <!--https://www.atropos4n6.com/cloud-artifacts/google-drive-forensics-2/-->
+    <!--https://www.forensafe.com/blogs/googledrive.html-->
+    <!--https://forensafe.com/blogs/windows_google_drive.html-->
+    <sample name="Google_Drive_Backup_and_Sync_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\Drive\"/>
+    </sample>
+    <sample name="Google_Drive_for_Desktop_Metadata">
+        <ntfs_find path_match="Users\*\AppData\Local\Google\DriveFS\"/>
+    </sample>
+</getthis>

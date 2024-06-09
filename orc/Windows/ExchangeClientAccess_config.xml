@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="Exchange_client_access_log_files">
+        <ntfs_find path_match="Program Files\Microsoft\Exchange Server\*\Logging\*.log"/>
+    </sample>
+</getthis>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="IceChat_Chat_Logs">
+        <ntfs_find path_match="Users\*\AppData\Local\IceChat Networks\IceChat\Logs\"/>
+    </sample>
+</getthis>

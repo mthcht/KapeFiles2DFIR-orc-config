@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--N/A-->
+    <sample name="SUPERAntiSpyware_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\SUPERAntiSpyware\Logs\"/>
+    </sample>
+</getthis>

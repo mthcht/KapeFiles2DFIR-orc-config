@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://dfirtnt.wordpress.com/2023/08/01/rmm-xeox-client-side-evidence/-->
+    <sample name="Xeox_RMM_Client_Application_logs">
+        <ntfs_find path_match="Program Files\Xeox*.log"/>
+    </sample>
+</getthis>

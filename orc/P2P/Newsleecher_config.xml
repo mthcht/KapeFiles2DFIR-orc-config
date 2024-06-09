@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--C:\Users\%user%\AppData\Roaming\NewsLeecher\downloaded.dat is where the download log file resides. I haven't been able to test Newsleecher yet so I haven't been able to populate this file.-->
+    <sample name="Usenet_Clients_-_Newsleecher">
+        <ntfs_find path_match="Users\*\AppData\Roaming\NewsLeecher\downloaded.dat"/>
+    </sample>
+</getthis>

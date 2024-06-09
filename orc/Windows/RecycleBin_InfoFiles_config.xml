@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.youtube.com/watch?v=Gkir-wGqG2c-->
+    <!--https://www.andreafortuna.org/2019/09/26/windows-forensics-analysis-of-recycle-bin-artifacts/-->
+    <!--https://www.blackbagtech.com/blog/examining-the-windows-10-recycle-bin/-->
+    <!--https://www.sans.org/security-resources/posters/windows-forensics-evidence-of/75/download-->
+    <!--https://dereknewton.com/2010/06/recycle-bin-forensics-in-windows-7-and-vista/-->
+    <!--https://www.forensafe.com/blogs/recyclebin.html-->
+    <sample name="Recycle_Bin_-_Windows_Vista+">
+        <ntfs_find path_match="$Recycle.Bin\$I*"/>
+    </sample>
+    <sample name="RECYCLER_-_WinXP">
+        <ntfs_find path_match="RECYCLE*\INFO2"/>
+    </sample>
+</getthis>

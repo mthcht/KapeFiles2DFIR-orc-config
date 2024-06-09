@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--v1.1 - Added the USBDevicelogs target-->
+    <!--v1.2 - Added the .NET CLR UsageLogs target-->
+    <sample name="Windows_Event_Logs">
+        <ntfs_find path_match="EventLogs.tkape"/>
+    </sample>
+    <sample name="Event_Trace_Logs">
+        <ntfs_find path_match="EventTraceLogs.tkape"/>
+    </sample>
+    <sample name="PowerShell_Console_Log">
+        <ntfs_find path_match="PowerShellConsole.tkape"/>
+    </sample>
+    <sample name="Windows_Firewall_Log">
+        <ntfs_find path_match="WindowsFirewall.tkape"/>
+    </sample>
+    <sample name="USBDevicesLogs">
+        <ntfs_find path_match="USBDevicesLogs.tkape"/>
+    </sample>
+    <sample name=".NET_CLR_UsageLogs">
+        <ntfs_find path_match="NETCLRUsageLogs.tkape"/>
+    </sample>
+</getthis>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--The following files of interest are stored in the above locations. Currently, it is unknown if any other files of interest exist in these locations.-->
+    <!--C:\ProgramData\Tenable\Nessus\conf\nessusd.rules-->
+    <!--C:\ProgramData\Tenable\Nessus\nessus\logs\nessusd.dumpa-->
+    <!--C:\ProgramData\Tenable\Nessus\nessus\logs\www_server.log-->
+    <!--C:\ProgramData\Tenable\Nessus\nessus\logs\nessusd.messages-->
+    <sample name="Nessus_Logs">
+        <ntfs_find path_match="ProgramData\Tenable\Nessus\conf"/>
+    </sample>
+    <sample name="Nessus_Logs">
+        <ntfs_find path_match="ProgramData\Tenable\Nessus\nessus\logs\"/>
+    </sample>
+</getthis>

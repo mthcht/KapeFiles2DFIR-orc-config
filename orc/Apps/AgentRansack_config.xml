@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.mythicsoft.com/agentransack/-->
+    <!--https://help.mythicsoft.com/agentransack/v9/en/index.html -&gt; https://help.mythicsoft.com/agentransack/v9/en/folder_settings.htm-->
+    <!--.\AppData\Roaming\Mythicsoft\AgentRansack\config\history.xml - appears to track user's search terms-->
+    <!--.\AppData\Roaming\Mythicsoft\AgentRansack\logs\AgentRansack-app.log - appears to log when searches are conducted, similar to the below:-->
+    <!--2023.07.13 15:51:16:291 (56020.117972) Starting search-->
+    <!--2023.07.13 15:51:16:309 (56020.117972) Search started-->
+    <sample name="Agent_Ransack_Config_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mythicsoft\AgentRansack\config"/>
+    </sample>
+    <sample name="Agent_Ransack_CrashReports_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mythicsoft\AgentRansack\CrashReports"/>
+    </sample>
+    <sample name="Agent_Ransack_IndexLog_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mythicsoft\AgentRansack\IndexLog"/>
+    </sample>
+    <sample name="Agent_Ransack_Logs">
+        <ntfs_find path_match="Users\*\AppData\Roaming\Mythicsoft\AgentRansack\logs"/>
+    </sample>
+</getthis>

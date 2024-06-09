@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://www.semanticscholar.org/paper/Tracing-VNC-And-RDP-Protocol-Artefacts-on-Windows-Kerai/20467cee88102cffcc2b856b93fc0bb7a58fd499-->
+    <!--https://www.hackingarticles.in/capture-vnc-session-remote-pc-using-settoolkit/-->
+    <sample name="RealVNC_Log">
+        <ntfs_find path_match="Users\*\AppData\Local\RealVNC\"/>
+    </sample>
+    <sample name="RealVNC_Log">
+        <ntfs_find path_match="ProgramData\RealVNC-Service"/>
+    </sample>
+    <sample name="RealVNC_Application_Logs">
+        <ntfs_find path_match="ApplicationEvents.tkape"/>
+    </sample>
+    <sample name="TightVNC_Application_Logs">
+        <ntfs_find path_match="ProgramData\TightVNC\Server\Logs"/>
+    </sample>
+</getthis>
