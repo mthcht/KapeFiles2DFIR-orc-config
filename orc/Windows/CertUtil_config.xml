@@ -9,6 +9,9 @@
     <sample name="System_CryptnetUrlCache">
         <ntfs_find path_match="Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\"/>
     </sample>
+    <sample name="System_WOW64_CryptnetUrlCache">
+        <ntfs_find path_match="Windows\SysWOW64\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\"/>
+    </sample>
     <sample name="User_CryptnetUrlCache">
         <ntfs_find path_match="Users\*\AppData\LocalLow\Microsoft\CryptnetUrlCache\"/>
     </sample>

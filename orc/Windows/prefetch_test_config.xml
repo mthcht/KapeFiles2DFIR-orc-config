@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://forensicswiki.xyz/wiki/index.php?title=Prefetch-->
+    <!--https://www.youtube.com/watch?v=f4RAtR_3zcs-->
+    <!--https://nasbench.medium.com/windows-forensics-analysis-windows-artifacts-part-ii-71b8fa68d8a1-->
+    <!--https://www.sans.org/blog/device-profiling-with-windows-prefetch-->
+    <!--https://www.youtube.com/watch?v=prEghfj3bPI-->
+    <!--https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download-->
+    <!--https://www.forensafe.com/blogs/prefetch.html-->
+    <sample name="Prefetch">
+        <ntfs_find path_match="Windows\prefetch_test\*.pf"/>
+    </sample>
+    <sample name="Prefetch">
+        <ntfs_find path_match="Windows.old\Windows\prefetch_test\*.pf"/>
+    </sample>
+</getthis>

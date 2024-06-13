@@ -11,4 +11,10 @@
     <sample name="PowerShell_Console_Log">
         <ntfs_find path_match="Users\*\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\*_history.txt"/>
     </sample>
+    <sample name="PowerShell_Console_Log_Systemprofile">
+        <ntfs_find path_match="Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\*_history.txt"/>
+    </sample>
+    <sample name="PowerShell_Console_Log_WOW64_Systemprofile">
+        <ntfs_find path_match="Windows\SysWOW64\config\systemprofile\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\*_history.txt"/>
+    </sample>
 </getthis>

@@ -20,6 +20,6 @@
         <ntfs_find path_match="Users\*\AppData\Local\ESET\ESET Security\Quarantine\"/>
     </sample>
     <sample name="SYSTEM_user_quarantine">
-        <ntfs_find path_match="\Windows\System32\config\systemprofile\AppData\Local\ESET\ESET Security\Quarantine\"/>
+        <ntfs_find path_match="Windows\System32\config\systemprofile\AppData\Local\ESET\ESET Security\Quarantine\"/>
     </sample>
 </getthis>
