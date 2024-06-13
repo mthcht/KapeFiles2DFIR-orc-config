@@ -1,0 +1,31 @@
+name: Run kape2orc script daily
+
+on:
+  schedule:
+    - cron: '8 41 * * *' # This sets the action to run daily at midnight UTC
+  workflow_dispatch: # This allows the workflow to be manually triggered
+
+jobs:
+  kape2orc:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Install required libraries
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+        pip install xml
+        pip install argparse
+        pip install logging
+
+    - name: Execute kape2orc.py with update option
+      run: |
+        python kape2orc.py --update --source kape --target orc
