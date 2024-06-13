@@ -2,7 +2,7 @@ name: Run kape2orc script daily
 
 on:
   schedule:
-    - cron: '41 8 * * *' # This sets the action to run daily at midnight UTC
+    - cron: '41 8 * * *'
   workflow_dispatch: # This allows the workflow to be manually triggered
 
 jobs:
