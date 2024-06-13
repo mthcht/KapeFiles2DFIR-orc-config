@@ -1,0 +1,1522 @@
+<archive name="DFIR-ORC_{SystemType}_{FullComputerName}_Kape_Artefacts.7z" keyword="Kape_configurations" concurrency="2" repeat="Once" compression="fast" optional="yes">
+    <command keyword="GET_orc_Avast_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\Avast_config.xml</argument>
+        <output name="GET_orc_Avast_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Avast_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_AVG_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\AVG_config.xml</argument>
+        <output name="GET_orc_AVG_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_AVG_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_AviraAVLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\AviraAVLogs_config.xml</argument>
+        <output name="GET_orc_AviraAVLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_AviraAVLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Bitdefender_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\Bitdefender_config.xml</argument>
+        <output name="GET_orc_Bitdefender_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Bitdefender_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Combofix_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\Combofix_config.xml</argument>
+        <output name="GET_orc_Combofix_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Combofix_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Cybereason_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\Cybereason_config.xml</argument>
+        <output name="GET_orc_Cybereason_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Cybereason_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Cylance_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\Cylance_config.xml</argument>
+        <output name="GET_orc_Cylance_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Cylance_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Emsisoft_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\Emsisoft_config.xml</argument>
+        <output name="GET_orc_Emsisoft_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Emsisoft_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ESET_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\ESET_config.xml</argument>
+        <output name="GET_orc_ESET_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ESET_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_FSecure_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\FSecure_config.xml</argument>
+        <output name="GET_orc_FSecure_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_FSecure_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_HitmanPro_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\HitmanPro_config.xml</argument>
+        <output name="GET_orc_HitmanPro_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_HitmanPro_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Malwarebytes_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\Malwarebytes_config.xml</argument>
+        <output name="GET_orc_Malwarebytes_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Malwarebytes_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_McAfee_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\McAfee_config.xml</argument>
+        <output name="GET_orc_McAfee_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_McAfee_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_McAfee_ePO_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\McAfee_ePO_config.xml</argument>
+        <output name="GET_orc_McAfee_ePO_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_McAfee_ePO_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RogueKiller_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\RogueKiller_config.xml</argument>
+        <output name="GET_orc_RogueKiller_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RogueKiller_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SecureAge_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\SecureAge_config.xml</argument>
+        <output name="GET_orc_SecureAge_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SecureAge_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SentinelOne_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\SentinelOne_config.xml</argument>
+        <output name="GET_orc_SentinelOne_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SentinelOne_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Sophos_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\Sophos_config.xml</argument>
+        <output name="GET_orc_Sophos_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Sophos_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SUPERAntiSpyware_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\SUPERAntiSpyware_config.xml</argument>
+        <output name="GET_orc_SUPERAntiSpyware_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SUPERAntiSpyware_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Symantec_AV_Logs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\Symantec_AV_Logs_config.xml</argument>
+        <output name="GET_orc_Symantec_AV_Logs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Symantec_AV_Logs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_TotalAV_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\TotalAV_config.xml</argument>
+        <output name="GET_orc_TotalAV_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_TotalAV_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_TrendMicro_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\TrendMicro_config.xml</argument>
+        <output name="GET_orc_TrendMicro_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_TrendMicro_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VIPRE_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\VIPRE_config.xml</argument>
+        <output name="GET_orc_VIPRE_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VIPRE_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Webroot_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\Webroot_config.xml</argument>
+        <output name="GET_orc_Webroot_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Webroot_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WinDefendDetectionHist_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\WinDefendDetectionHist_config.xml</argument>
+        <output name="GET_orc_WinDefendDetectionHist_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WinDefendDetectionHist_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsDefender_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Antivirus\WindowsDefender_config.xml</argument>
+        <output name="GET_orc_WindowsDefender_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsDefender_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_1Password_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\1Password_config.xml</argument>
+        <output name="GET_orc_1Password_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_1Password_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_4KVideoDownloader_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\4KVideoDownloader_config.xml</argument>
+        <output name="GET_orc_4KVideoDownloader_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_4KVideoDownloader_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_AceText_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\AceText_config.xml</argument>
+        <output name="GET_orc_AceText_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_AceText_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_AcronisTrueImage_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\AcronisTrueImage_config.xml</argument>
+        <output name="GET_orc_AcronisTrueImage_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_AcronisTrueImage_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Action1_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Action1_config.xml</argument>
+        <output name="GET_orc_Action1_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Action1_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_AgentRansack_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\AgentRansack_config.xml</argument>
+        <output name="GET_orc_AgentRansack_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_AgentRansack_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Ammyy_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Ammyy_config.xml</argument>
+        <output name="GET_orc_Ammyy_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Ammyy_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_AnyDesk_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\AnyDesk_config.xml</argument>
+        <output name="GET_orc_AnyDesk_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_AnyDesk_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_AsperaConnect_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\AsperaConnect_config.xml</argument>
+        <output name="GET_orc_AsperaConnect_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_AsperaConnect_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_AteraAgent_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\AteraAgent_config.xml</argument>
+        <output name="GET_orc_AteraAgent_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_AteraAgent_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_BoxDrive_Metadata_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\BoxDrive_Metadata_config.xml</argument>
+        <output name="GET_orc_BoxDrive_Metadata_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_BoxDrive_Metadata_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_BoxDrive_UserFiles_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\BoxDrive_UserFiles_config.xml</argument>
+        <output name="GET_orc_BoxDrive_UserFiles_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_BoxDrive_UserFiles_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_CiscoJabber_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\CiscoJabber_config.xml</argument>
+        <output name="GET_orc_CiscoJabber_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_CiscoJabber_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ClipboardMaster_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\ClipboardMaster_config.xml</argument>
+        <output name="GET_orc_ClipboardMaster_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ClipboardMaster_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ConfluenceLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\ConfluenceLogs_config.xml</argument>
+        <output name="GET_orc_ConfluenceLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ConfluenceLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_DirectoryOpus_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\DirectoryOpus_config.xml</argument>
+        <output name="GET_orc_DirectoryOpus_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_DirectoryOpus_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Discord_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Discord_config.xml</argument>
+        <output name="GET_orc_Discord_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Discord_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_DoubleCommander_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\DoubleCommander_config.xml</argument>
+        <output name="GET_orc_DoubleCommander_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_DoubleCommander_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Dropbox_Metadata_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Dropbox_Metadata_config.xml</argument>
+        <output name="GET_orc_Dropbox_Metadata_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Dropbox_Metadata_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Dropbox_UserFiles_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Dropbox_UserFiles_config.xml</argument>
+        <output name="GET_orc_Dropbox_UserFiles_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Dropbox_UserFiles_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_DWAgent_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\DWAgent_config.xml</argument>
+        <output name="GET_orc_DWAgent_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_DWAgent_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_EFCommander_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\EFCommander_config.xml</argument>
+        <output name="GET_orc_EFCommander_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_EFCommander_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Evernote_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Evernote_config.xml</argument>
+        <output name="GET_orc_Evernote_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Evernote_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Everything (VoidTools)_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Everything (VoidTools)_config.xml</argument>
+        <output name="GET_orc_Everything (VoidTools)_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Everything (VoidTools)_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ExchangeTransport_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\ExchangeTransport_config.xml</argument>
+        <output name="GET_orc_ExchangeTransport_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ExchangeTransport_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Fences_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Fences_config.xml</argument>
+        <output name="GET_orc_Fences_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Fences_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_FileZillaClient_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\FileZillaClient_config.xml</argument>
+        <output name="GET_orc_FileZillaClient_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_FileZillaClient_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_FileZillaServer_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\FileZillaServer_config.xml</argument>
+        <output name="GET_orc_FileZillaServer_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_FileZillaServer_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_FreeCommander_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\FreeCommander_config.xml</argument>
+        <output name="GET_orc_FreeCommander_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_FreeCommander_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_FreeDownloadManager_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\FreeDownloadManager_config.xml</argument>
+        <output name="GET_orc_FreeDownloadManager_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_FreeDownloadManager_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_FreeFileSync_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\FreeFileSync_config.xml</argument>
+        <output name="GET_orc_FreeFileSync_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_FreeFileSync_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_GoogleDriveBackupSync_UserFiles_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\GoogleDriveBackupSync_UserFiles_config.xml</argument>
+        <output name="GET_orc_GoogleDriveBackupSync_UserFiles_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_GoogleDriveBackupSync_UserFiles_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_GoogleDrive_Metadata_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\GoogleDrive_Metadata_config.xml</argument>
+        <output name="GET_orc_GoogleDrive_Metadata_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_GoogleDrive_Metadata_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_GoogleEarth_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\GoogleEarth_config.xml</argument>
+        <output name="GET_orc_GoogleEarth_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_GoogleEarth_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_HeidiSQL_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\HeidiSQL_config.xml</argument>
+        <output name="GET_orc_HeidiSQL_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_HeidiSQL_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_HexChat_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\HexChat_config.xml</argument>
+        <output name="GET_orc_HexChat_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_HexChat_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_IceChat_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\IceChat_config.xml</argument>
+        <output name="GET_orc_IceChat_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_IceChat_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Idrive_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Idrive_config.xml</argument>
+        <output name="GET_orc_Idrive_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Idrive_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ImgBurn_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\ImgBurn_config.xml</argument>
+        <output name="GET_orc_ImgBurn_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ImgBurn_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_IrfanView_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\IrfanView_config.xml</argument>
+        <output name="GET_orc_IrfanView_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_IrfanView_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ISLOnline_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\ISLOnline_config.xml</argument>
+        <output name="GET_orc_ISLOnline_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ISLOnline_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_iTunesBackup_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\iTunesBackup_config.xml</argument>
+        <output name="GET_orc_iTunesBackup_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_iTunesBackup_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_JavaWebCache_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\JavaWebCache_config.xml</argument>
+        <output name="GET_orc_JavaWebCache_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_JavaWebCache_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_JDownloader2_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\JDownloader2_config.xml</argument>
+        <output name="GET_orc_JDownloader2_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_JDownloader2_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Kaseya_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Kaseya_config.xml</argument>
+        <output name="GET_orc_Kaseya_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Kaseya_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_KeepassXC_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\KeepassXC_config.xml</argument>
+        <output name="GET_orc_KeepassXC_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_KeepassXC_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Keepass_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Keepass_config.xml</argument>
+        <output name="GET_orc_Keepass_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Keepass_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Level_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Level_config.xml</argument>
+        <output name="GET_orc_Level_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Level_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_LogMeIn_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\LogMeIn_config.xml</argument>
+        <output name="GET_orc_LogMeIn_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_LogMeIn_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MacriumReflect_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\MacriumReflect_config.xml</argument>
+        <output name="GET_orc_MacriumReflect_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MacriumReflect_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Mattermost_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Mattermost_config.xml</argument>
+        <output name="GET_orc_Mattermost_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Mattermost_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MediaMonkey_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\MediaMonkey_config.xml</argument>
+        <output name="GET_orc_MediaMonkey_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MediaMonkey_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Megasync_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Megasync_config.xml</argument>
+        <output name="GET_orc_Megasync_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Megasync_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MeshAgent_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\MeshAgent_config.xml</argument>
+        <output name="GET_orc_MeshAgent_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MeshAgent_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MicrosoftOneNote_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\MicrosoftOneNote_config.xml</argument>
+        <output name="GET_orc_MicrosoftOneNote_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MicrosoftOneNote_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MicrosoftStickyNotes_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\MicrosoftStickyNotes_config.xml</argument>
+        <output name="GET_orc_MicrosoftStickyNotes_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MicrosoftStickyNotes_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MicrosoftTeams_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\MicrosoftTeams_config.xml</argument>
+        <output name="GET_orc_MicrosoftTeams_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MicrosoftTeams_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MicrosoftToDo_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\MicrosoftToDo_config.xml</argument>
+        <output name="GET_orc_MicrosoftToDo_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MicrosoftToDo_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MidnightCommander_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\MidnightCommander_config.xml</argument>
+        <output name="GET_orc_MidnightCommander_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MidnightCommander_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_mIRC_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\mIRC_config.xml</argument>
+        <output name="GET_orc_mIRC_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_mIRC_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_mRemoteNG_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\mRemoteNG_config.xml</argument>
+        <output name="GET_orc_mRemoteNG_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_mRemoteNG_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MultiCommander_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\MultiCommander_config.xml</argument>
+        <output name="GET_orc_MultiCommander_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MultiCommander_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Nessus_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Nessus_config.xml</argument>
+        <output name="GET_orc_Nessus_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Nessus_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_NetMonitorforEmployeesProfessional_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\NetMonitorforEmployeesProfessional_config.xml</argument>
+        <output name="GET_orc_NetMonitorforEmployeesProfessional_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_NetMonitorforEmployeesProfessional_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Notepad++_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Notepad++_config.xml</argument>
+        <output name="GET_orc_Notepad++_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Notepad++_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Notion_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Notion_config.xml</argument>
+        <output name="GET_orc_Notion_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Notion_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_OneCommander_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\OneCommander_config.xml</argument>
+        <output name="GET_orc_OneCommander_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_OneCommander_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_OneDrive_Metadata_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\OneDrive_Metadata_config.xml</argument>
+        <output name="GET_orc_OneDrive_Metadata_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_OneDrive_Metadata_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_OneDrive_UserFiles_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\OneDrive_UserFiles_config.xml</argument>
+        <output name="GET_orc_OneDrive_UserFiles_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_OneDrive_UserFiles_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_OpenSSHClient_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\OpenSSHClient_config.xml</argument>
+        <output name="GET_orc_OpenSSHClient_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_OpenSSHClient_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_OpenSSHServer_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\OpenSSHServer_config.xml</argument>
+        <output name="GET_orc_OpenSSHServer_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_OpenSSHServer_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_OpenVPNClient_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\OpenVPNClient_config.xml</argument>
+        <output name="GET_orc_OpenVPNClient_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_OpenVPNClient_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_OutlookPSTOST_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\OutlookPSTOST_config.xml</argument>
+        <output name="GET_orc_OutlookPSTOST_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_OutlookPSTOST_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_pCloudDatabase_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\pCloudDatabase_config.xml</argument>
+        <output name="GET_orc_pCloudDatabase_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_pCloudDatabase_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_PeaZip_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\PeaZip_config.xml</argument>
+        <output name="GET_orc_PeaZip_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_PeaZip_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ProtonVPN_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\ProtonVPN_config.xml</argument>
+        <output name="GET_orc_ProtonVPN_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ProtonVPN_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Q-Dir_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Q-Dir_config.xml</argument>
+        <output name="GET_orc_Q-Dir_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Q-Dir_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_QFinderPro (QNAP)_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\QFinderPro (QNAP)_config.xml</argument>
+        <output name="GET_orc_QFinderPro (QNAP)_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_QFinderPro (QNAP)_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_QlikSense_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\QlikSense_config.xml</argument>
+        <output name="GET_orc_QlikSense_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_QlikSense_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Radmin_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Radmin_config.xml</argument>
+        <output name="GET_orc_Radmin_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Radmin_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RcloneConf_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\RcloneConf_config.xml</argument>
+        <output name="GET_orc_RcloneConf_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RcloneConf_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RemoteUtilities_app_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\RemoteUtilities_app_config.xml</argument>
+        <output name="GET_orc_RemoteUtilities_app_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RemoteUtilities_app_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Robo-FTP_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Robo-FTP_config.xml</argument>
+        <output name="GET_orc_Robo-FTP_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Robo-FTP_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RustDesk_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\RustDesk_config.xml</argument>
+        <output name="GET_orc_RustDesk_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RustDesk_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ScreenConnect_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\ScreenConnect_config.xml</argument>
+        <output name="GET_orc_ScreenConnect_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ScreenConnect_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ShareX_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\ShareX_config.xml</argument>
+        <output name="GET_orc_ShareX_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ShareX_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SiemensTIA_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\SiemensTIA_config.xml</argument>
+        <output name="GET_orc_SiemensTIA_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SiemensTIA_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Signal_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Signal_config.xml</argument>
+        <output name="GET_orc_Signal_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Signal_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Skype_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Skype_config.xml</argument>
+        <output name="GET_orc_Skype_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Skype_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Slack_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Slack_config.xml</argument>
+        <output name="GET_orc_Slack_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Slack_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Snagit_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Snagit_config.xml</argument>
+        <output name="GET_orc_Snagit_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Snagit_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SpeedCommander_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\SpeedCommander_config.xml</argument>
+        <output name="GET_orc_SpeedCommander_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SpeedCommander_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Splashtop_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Splashtop_config.xml</argument>
+        <output name="GET_orc_Splashtop_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Splashtop_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Steam_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Steam_config.xml</argument>
+        <output name="GET_orc_Steam_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Steam_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SublimeText_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\SublimeText_config.xml</argument>
+        <output name="GET_orc_SublimeText_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SublimeText_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SugarSync_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\SugarSync_config.xml</argument>
+        <output name="GET_orc_SugarSync_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SugarSync_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SumatraPDF_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\SumatraPDF_config.xml</argument>
+        <output name="GET_orc_SumatraPDF_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SumatraPDF_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SupremoRemoteDesktop_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\SupremoRemoteDesktop_config.xml</argument>
+        <output name="GET_orc_SupremoRemoteDesktop_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SupremoRemoteDesktop_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_TablacusExplorer_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\TablacusExplorer_config.xml</argument>
+        <output name="GET_orc_TablacusExplorer_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_TablacusExplorer_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_TeamViewerLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\TeamViewerLogs_config.xml</argument>
+        <output name="GET_orc_TeamViewerLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_TeamViewerLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Telegram_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Telegram_config.xml</argument>
+        <output name="GET_orc_Telegram_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Telegram_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_TeraCopy_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\TeraCopy_config.xml</argument>
+        <output name="GET_orc_TeraCopy_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_TeraCopy_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Thunderbird_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Thunderbird_config.xml</argument>
+        <output name="GET_orc_Thunderbird_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Thunderbird_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_TotalCommander_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\TotalCommander_config.xml</argument>
+        <output name="GET_orc_TotalCommander_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_TotalCommander_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_TreeSize_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\TreeSize_config.xml</argument>
+        <output name="GET_orc_TreeSize_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_TreeSize_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_UEMS_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\UEMS_config.xml</argument>
+        <output name="GET_orc_UEMS_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_UEMS_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Ultraviewer_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Ultraviewer_config.xml</argument>
+        <output name="GET_orc_Ultraviewer_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Ultraviewer_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Viber_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Viber_config.xml</argument>
+        <output name="GET_orc_Viber_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Viber_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VirtualBoxConfig_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\VirtualBoxConfig_config.xml</argument>
+        <output name="GET_orc_VirtualBoxConfig_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VirtualBoxConfig_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VirtualBoxLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\VirtualBoxLogs_config.xml</argument>
+        <output name="GET_orc_VirtualBoxLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VirtualBoxLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VirtualBoxMemory_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\VirtualBoxMemory_config.xml</argument>
+        <output name="GET_orc_VirtualBoxMemory_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VirtualBoxMemory_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VisualStudioCode_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\VisualStudioCode_config.xml</argument>
+        <output name="GET_orc_VisualStudioCode_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VisualStudioCode_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VLC Media Player_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\VLC Media Player_config.xml</argument>
+        <output name="GET_orc_VLC Media Player_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VLC Media Player_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VMwareInventory_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\VMwareInventory_config.xml</argument>
+        <output name="GET_orc_VMwareInventory_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VMwareInventory_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VMwareMemory_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\VMwareMemory_config.xml</argument>
+        <output name="GET_orc_VMwareMemory_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VMwareMemory_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VNCLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\VNCLogs_config.xml</argument>
+        <output name="GET_orc_VNCLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VNCLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WhatsApp_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\WhatsApp_config.xml</argument>
+        <output name="GET_orc_WhatsApp_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WhatsApp_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WhatsApp_Media_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\WhatsApp_Media_config.xml</argument>
+        <output name="GET_orc_WhatsApp_Media_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WhatsApp_Media_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsYourPhone_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\WindowsYourPhone_config.xml</argument>
+        <output name="GET_orc_WindowsYourPhone_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsYourPhone_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WinSCP_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\WinSCP_config.xml</argument>
+        <output name="GET_orc_WinSCP_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WinSCP_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Xeox_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Xeox_config.xml</argument>
+        <output name="GET_orc_Xeox_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Xeox_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_XYplorer_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\XYplorer_config.xml</argument>
+        <output name="GET_orc_XYplorer_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_XYplorer_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ZohoAssist_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\ZohoAssist_config.xml</argument>
+        <output name="GET_orc_ZohoAssist_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ZohoAssist_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Zoom_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Apps\Zoom_config.xml</argument>
+        <output name="GET_orc_Zoom_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Zoom_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_BraveBrowser_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\BraveBrowser_config.xml</argument>
+        <output name="GET_orc_BraveBrowser_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_BraveBrowser_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_BrowserCache_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\BrowserCache_config.xml</argument>
+        <output name="GET_orc_BrowserCache_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_BrowserCache_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ChromeExtensions_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\ChromeExtensions_config.xml</argument>
+        <output name="GET_orc_ChromeExtensions_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ChromeExtensions_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ChromeFileSystem_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\ChromeFileSystem_config.xml</argument>
+        <output name="GET_orc_ChromeFileSystem_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ChromeFileSystem_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Chrome_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\Chrome_config.xml</argument>
+        <output name="GET_orc_Chrome_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Chrome_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_EdgeChromiumExtensions_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\EdgeChromiumExtensions_config.xml</argument>
+        <output name="GET_orc_EdgeChromiumExtensions_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_EdgeChromiumExtensions_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_EdgeChromium_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\EdgeChromium_config.xml</argument>
+        <output name="GET_orc_EdgeChromium_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_EdgeChromium_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Edge_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\Edge_config.xml</argument>
+        <output name="GET_orc_Edge_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Edge_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Firefox_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\Firefox_config.xml</argument>
+        <output name="GET_orc_Firefox_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Firefox_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_InternetExplorer_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\InternetExplorer_config.xml</argument>
+        <output name="GET_orc_InternetExplorer_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_InternetExplorer_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Opera_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\Opera_config.xml</argument>
+        <output name="GET_orc_Opera_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Opera_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_PuffinSecureBrowser_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\PuffinSecureBrowser_config.xml</argument>
+        <output name="GET_orc_PuffinSecureBrowser_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_PuffinSecureBrowser_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Vivaldi_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\Vivaldi_config.xml</argument>
+        <output name="GET_orc_Vivaldi_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Vivaldi_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Yandex_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Browsers\Yandex_config.xml</argument>
+        <output name="GET_orc_Yandex_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Yandex_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Antivirus_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\Antivirus_config.xml</argument>
+        <output name="GET_orc_Antivirus_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Antivirus_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_CloudStorage_All_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\CloudStorage_All_config.xml</argument>
+        <output name="GET_orc_CloudStorage_All_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_CloudStorage_All_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_CloudStorage_Metadata_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\CloudStorage_Metadata_config.xml</argument>
+        <output name="GET_orc_CloudStorage_Metadata_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_CloudStorage_Metadata_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_CloudStorage_OneDriveExplorer_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\CloudStorage_OneDriveExplorer_config.xml</argument>
+        <output name="GET_orc_CloudStorage_OneDriveExplorer_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_CloudStorage_OneDriveExplorer_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_CombinedLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\CombinedLogs_config.xml</argument>
+        <output name="GET_orc_CombinedLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_CombinedLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_EvidenceOfExecution_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\EvidenceOfExecution_config.xml</argument>
+        <output name="GET_orc_EvidenceOfExecution_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_EvidenceOfExecution_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Exchange_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\Exchange_config.xml</argument>
+        <output name="GET_orc_Exchange_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Exchange_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_FileExplorerReplacements_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\FileExplorerReplacements_config.xml</argument>
+        <output name="GET_orc_FileExplorerReplacements_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_FileExplorerReplacements_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_FileSystem_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\FileSystem_config.xml</argument>
+        <output name="GET_orc_FileSystem_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_FileSystem_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_FTPClients_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\FTPClients_config.xml</argument>
+        <output name="GET_orc_FTPClients_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_FTPClients_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_IRCClients_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\IRCClients_config.xml</argument>
+        <output name="GET_orc_IRCClients_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_IRCClients_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_KapeTriage_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\KapeTriage_config.xml</argument>
+        <output name="GET_orc_KapeTriage_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_KapeTriage_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MessagingClients_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\MessagingClients_config.xml</argument>
+        <output name="GET_orc_MessagingClients_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MessagingClients_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MiniTimelineCollection_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\MiniTimelineCollection_config.xml</argument>
+        <output name="GET_orc_MiniTimelineCollection_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MiniTimelineCollection_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_P2PClients_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\P2PClients_config.xml</argument>
+        <output name="GET_orc_P2PClients_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_P2PClients_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RecycleBin_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\RecycleBin_config.xml</argument>
+        <output name="GET_orc_RecycleBin_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RecycleBin_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RegistryHives_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\RegistryHives_config.xml</argument>
+        <output name="GET_orc_RegistryHives_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RegistryHives_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RemoteAdmin_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\RemoteAdmin_config.xml</argument>
+        <output name="GET_orc_RemoteAdmin_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RemoteAdmin_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ServerTriage_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\ServerTriage_config.xml</argument>
+        <output name="GET_orc_ServerTriage_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ServerTriage_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SOFELK_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\SOFELK_config.xml</argument>
+        <output name="GET_orc_SOFELK_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SOFELK_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SQLiteDatabases_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\SQLiteDatabases_config.xml</argument>
+        <output name="GET_orc_SQLiteDatabases_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SQLiteDatabases_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_TorrentClients_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\TorrentClients_config.xml</argument>
+        <output name="GET_orc_TorrentClients_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_TorrentClients_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_USBDetective_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\USBDetective_config.xml</argument>
+        <output name="GET_orc_USBDetective_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_USBDetective_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_UsenetClients_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\UsenetClients_config.xml</argument>
+        <output name="GET_orc_UsenetClients_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_UsenetClients_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VirtualBox_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\VirtualBox_config.xml</argument>
+        <output name="GET_orc_VirtualBox_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VirtualBox_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VMware_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\VMware_config.xml</argument>
+        <output name="GET_orc_VMware_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VMware_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WebBrowsers_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\WebBrowsers_config.xml</argument>
+        <output name="GET_orc_WebBrowsers_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WebBrowsers_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WebServers_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\WebServers_config.xml</argument>
+        <output name="GET_orc_WebServers_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WebServers_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WSL_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Compound\WSL_config.xml</argument>
+        <output name="GET_orc_WSL_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WSL_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ApacheAccessLog_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Logs\ApacheAccessLog_config.xml</argument>
+        <output name="GET_orc_ApacheAccessLog_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ApacheAccessLog_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_IISLogFiles_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Logs\IISLogFiles_config.xml</argument>
+        <output name="GET_orc_IISLogFiles_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_IISLogFiles_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ManageEngineLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Logs\ManageEngineLogs_config.xml</argument>
+        <output name="GET_orc_ManageEngineLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ManageEngineLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MSSQLErrorLog_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Logs\MSSQLErrorLog_config.xml</argument>
+        <output name="GET_orc_MSSQLErrorLog_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MSSQLErrorLog_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_NGINXLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Logs\NGINXLogs_config.xml</argument>
+        <output name="GET_orc_NGINXLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_NGINXLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_PowerShellConsole_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Logs\PowerShellConsole_config.xml</argument>
+        <output name="GET_orc_PowerShellConsole_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_PowerShellConsole_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_BitTorrent_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\BitTorrent_config.xml</argument>
+        <output name="GET_orc_BitTorrent_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_BitTorrent_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_DC++_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\DC++_config.xml</argument>
+        <output name="GET_orc_DC++_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_DC++_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Freenet_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\Freenet_config.xml</argument>
+        <output name="GET_orc_Freenet_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Freenet_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_FrostWire_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\FrostWire_config.xml</argument>
+        <output name="GET_orc_FrostWire_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_FrostWire_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Gigatribe_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\Gigatribe_config.xml</argument>
+        <output name="GET_orc_Gigatribe_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Gigatribe_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_NewsbinPro_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\NewsbinPro_config.xml</argument>
+        <output name="GET_orc_NewsbinPro_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_NewsbinPro_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Newsleecher_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\Newsleecher_config.xml</argument>
+        <output name="GET_orc_Newsleecher_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Newsleecher_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Nicotine++_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\Nicotine++_config.xml</argument>
+        <output name="GET_orc_Nicotine++_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Nicotine++_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_NZBGet_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\NZBGet_config.xml</argument>
+        <output name="GET_orc_NZBGet_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_NZBGet_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_qBittorrent_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\qBittorrent_config.xml</argument>
+        <output name="GET_orc_qBittorrent_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_qBittorrent_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SABnbzd_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\SABnbzd_config.xml</argument>
+        <output name="GET_orc_SABnbzd_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SABnbzd_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Shareaza_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\Shareaza_config.xml</argument>
+        <output name="GET_orc_Shareaza_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Shareaza_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Soulseek_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\Soulseek_config.xml</argument>
+        <output name="GET_orc_Soulseek_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Soulseek_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Torrents_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\Torrents_config.xml</argument>
+        <output name="GET_orc_Torrents_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Torrents_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Usenet_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\Usenet_config.xml</argument>
+        <output name="GET_orc_Usenet_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Usenet_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_uTorrent_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\P2P\uTorrent_config.xml</argument>
+        <output name="GET_orc_uTorrent_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_uTorrent_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_$Boot_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\$Boot_config.xml</argument>
+        <output name="GET_orc_$Boot_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_$Boot_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_$J_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\$J_config.xml</argument>
+        <output name="GET_orc_$J_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_$J_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_$LogFile_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\$LogFile_config.xml</argument>
+        <output name="GET_orc_$LogFile_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_$LogFile_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_$MFTMirr_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\$MFTMirr_config.xml</argument>
+        <output name="GET_orc_$MFTMirr_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_$MFTMirr_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_$MFT_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\$MFT_config.xml</argument>
+        <output name="GET_orc_$MFT_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_$MFT_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_$SDS_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\$SDS_config.xml</argument>
+        <output name="GET_orc_$SDS_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_$SDS_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_$T_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\$T_config.xml</argument>
+        <output name="GET_orc_$T_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_$T_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ActiveDirectoryNTDS_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\ActiveDirectoryNTDS_config.xml</argument>
+        <output name="GET_orc_ActiveDirectoryNTDS_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ActiveDirectoryNTDS_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ActiveDirectorySysvol_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\ActiveDirectorySysvol_config.xml</argument>
+        <output name="GET_orc_ActiveDirectorySysvol_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ActiveDirectorySysvol_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Amcache_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\Amcache_config.xml</argument>
+        <output name="GET_orc_Amcache_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Amcache_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_AppCompatPCA_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\AppCompatPCA_config.xml</argument>
+        <output name="GET_orc_AppCompatPCA_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_AppCompatPCA_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ApplicationEvents_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\ApplicationEvents_config.xml</argument>
+        <output name="GET_orc_ApplicationEvents_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ApplicationEvents_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_AppXPackages_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\AppXPackages_config.xml</argument>
+        <output name="GET_orc_AppXPackages_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_AppXPackages_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_BCD_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\BCD_config.xml</argument>
+        <output name="GET_orc_BCD_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_BCD_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_BITS_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\BITS_config.xml</argument>
+        <output name="GET_orc_BITS_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_BITS_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_CertUtil_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\CertUtil_config.xml</argument>
+        <output name="GET_orc_CertUtil_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_CertUtil_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Drivers_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\Drivers_config.xml</argument>
+        <output name="GET_orc_Drivers_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Drivers_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_EncapsulationLogging_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\EncapsulationLogging_config.xml</argument>
+        <output name="GET_orc_EncapsulationLogging_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_EncapsulationLogging_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_EventLogs-RDP_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\EventLogs-RDP_config.xml</argument>
+        <output name="GET_orc_EventLogs-RDP_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_EventLogs-RDP_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_EventLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\EventLogs_config.xml</argument>
+        <output name="GET_orc_EventLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_EventLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_EventTraceLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\EventTraceLogs_config.xml</argument>
+        <output name="GET_orc_EventTraceLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_EventTraceLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_EventTranscriptDB_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\EventTranscriptDB_config.xml</argument>
+        <output name="GET_orc_EventTranscriptDB_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_EventTranscriptDB_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ExchangeClientAccess_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\ExchangeClientAccess_config.xml</argument>
+        <output name="GET_orc_ExchangeClientAccess_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ExchangeClientAccess_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ExchangeCve-2021-26855_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\ExchangeCve-2021-26855_config.xml</argument>
+        <output name="GET_orc_ExchangeCve-2021-26855_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ExchangeCve-2021-26855_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_GroupPolicy_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\GroupPolicy_config.xml</argument>
+        <output name="GET_orc_GroupPolicy_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_GroupPolicy_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_IconCacheDB_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\IconCacheDB_config.xml</argument>
+        <output name="GET_orc_IconCacheDB_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_IconCacheDB_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_IISConfiguration_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\IISConfiguration_config.xml</argument>
+        <output name="GET_orc_IISConfiguration_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_IISConfiguration_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_LinuxOnWindowsProfileFiles_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\LinuxOnWindowsProfileFiles_config.xml</argument>
+        <output name="GET_orc_LinuxOnWindowsProfileFiles_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_LinuxOnWindowsProfileFiles_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_LNKFilesAndJumpLists_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\LNKFilesAndJumpLists_config.xml</argument>
+        <output name="GET_orc_LNKFilesAndJumpLists_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_LNKFilesAndJumpLists_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_LogFiles_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\LogFiles_config.xml</argument>
+        <output name="GET_orc_LogFiles_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_LogFiles_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MemoryFiles_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\MemoryFiles_config.xml</argument>
+        <output name="GET_orc_MemoryFiles_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MemoryFiles_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MicrosoftOfficeBackstage_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\MicrosoftOfficeBackstage_config.xml</argument>
+        <output name="GET_orc_MicrosoftOfficeBackstage_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MicrosoftOfficeBackstage_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_MOF_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\MOF_config.xml</argument>
+        <output name="GET_orc_MOF_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_MOF_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_NETCLRUsageLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\NETCLRUsageLogs_config.xml</argument>
+        <output name="GET_orc_NETCLRUsageLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_NETCLRUsageLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Notepad_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\Notepad_config.xml</argument>
+        <output name="GET_orc_Notepad_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Notepad_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_OfficeAutosave_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\OfficeAutosave_config.xml</argument>
+        <output name="GET_orc_OfficeAutosave_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_OfficeAutosave_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_OfficeDiagnostics_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\OfficeDiagnostics_config.xml</argument>
+        <output name="GET_orc_OfficeDiagnostics_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_OfficeDiagnostics_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_OfficeDocumentCache_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\OfficeDocumentCache_config.xml</argument>
+        <output name="GET_orc_OfficeDocumentCache_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_OfficeDocumentCache_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_PerfLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\PerfLogs_config.xml</argument>
+        <output name="GET_orc_PerfLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_PerfLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_PowerShell7Config_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\PowerShell7Config_config.xml</argument>
+        <output name="GET_orc_PowerShell7Config_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_PowerShell7Config_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_PowerShellTranscripts_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\PowerShellTranscripts_config.xml</argument>
+        <output name="GET_orc_PowerShellTranscripts_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_PowerShellTranscripts_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Prefetch_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\Prefetch_config.xml</argument>
+        <output name="GET_orc_Prefetch_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Prefetch_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ProgramData_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\ProgramData_config.xml</argument>
+        <output name="GET_orc_ProgramData_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ProgramData_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_PushNotification_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\PushNotification_config.xml</argument>
+        <output name="GET_orc_PushNotification_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_PushNotification_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RDPCache_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RDPCache_config.xml</argument>
+        <output name="GET_orc_RDPCache_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RDPCache_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RDPJumplist_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RDPJumplist_config.xml</argument>
+        <output name="GET_orc_RDPJumplist_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RDPJumplist_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RDPLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RDPLogs_config.xml</argument>
+        <output name="GET_orc_RDPLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RDPLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RecentFileCache_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RecentFileCache_config.xml</argument>
+        <output name="GET_orc_RecentFileCache_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RecentFileCache_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RecycleBin_DataFiles_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RecycleBin_DataFiles_config.xml</argument>
+        <output name="GET_orc_RecycleBin_DataFiles_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RecycleBin_DataFiles_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RecycleBin_InfoFiles_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RecycleBin_InfoFiles_config.xml</argument>
+        <output name="GET_orc_RecycleBin_InfoFiles_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RecycleBin_InfoFiles_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RegistryHivesMSIXApps_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RegistryHivesMSIXApps_config.xml</argument>
+        <output name="GET_orc_RegistryHivesMSIXApps_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RegistryHivesMSIXApps_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RegistryHivesOther_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RegistryHivesOther_config.xml</argument>
+        <output name="GET_orc_RegistryHivesOther_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RegistryHivesOther_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RegistryHivesSystem_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RegistryHivesSystem_config.xml</argument>
+        <output name="GET_orc_RegistryHivesSystem_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RegistryHivesSystem_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RegistryHivesUser_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RegistryHivesUser_config.xml</argument>
+        <output name="GET_orc_RegistryHivesUser_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RegistryHivesUser_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_RoamingProfile_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\RoamingProfile_config.xml</argument>
+        <output name="GET_orc_RoamingProfile_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_RoamingProfile_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SCCMClientLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\SCCMClientLogs_config.xml</argument>
+        <output name="GET_orc_SCCMClientLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SCCMClientLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ScheduledTasks_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\ScheduledTasks_config.xml</argument>
+        <output name="GET_orc_ScheduledTasks_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ScheduledTasks_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SDB_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\SDB_config.xml</argument>
+        <output name="GET_orc_SDB_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SDB_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SignatureCatalog_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\SignatureCatalog_config.xml</argument>
+        <output name="GET_orc_SignatureCatalog_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SignatureCatalog_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SnipAndSketch_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\SnipAndSketch_config.xml</argument>
+        <output name="GET_orc_SnipAndSketch_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SnipAndSketch_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SRUM_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\SRUM_config.xml</argument>
+        <output name="GET_orc_SRUM_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SRUM_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_StartupFolders_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\StartupFolders_config.xml</argument>
+        <output name="GET_orc_StartupFolders_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_StartupFolders_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_StartupInfo_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\StartupInfo_config.xml</argument>
+        <output name="GET_orc_StartupInfo_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_StartupInfo_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SUM_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\SUM_config.xml</argument>
+        <output name="GET_orc_SUM_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SUM_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Syscache_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\Syscache_config.xml</argument>
+        <output name="GET_orc_Syscache_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Syscache_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_ThumbCache_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\ThumbCache_config.xml</argument>
+        <output name="GET_orc_ThumbCache_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_ThumbCache_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_USBDevicesLogs_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\USBDevicesLogs_config.xml</argument>
+        <output name="GET_orc_USBDevicesLogs_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_USBDevicesLogs_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_VirtualDisks_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\VirtualDisks_config.xml</argument>
+        <output name="GET_orc_VirtualDisks_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_VirtualDisks_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WBEM_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WBEM_config.xml</argument>
+        <output name="GET_orc_WBEM_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WBEM_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WER_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WER_config.xml</argument>
+        <output name="GET_orc_WER_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WER_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsCopilotRecall_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsCopilotRecall_config.xml</argument>
+        <output name="GET_orc_WindowsCopilotRecall_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsCopilotRecall_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsFirewall_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsFirewall_config.xml</argument>
+        <output name="GET_orc_WindowsFirewall_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsFirewall_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsHello_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsHello_config.xml</argument>
+        <output name="GET_orc_WindowsHello_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsHello_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsIndexSearch_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsIndexSearch_config.xml</argument>
+        <output name="GET_orc_WindowsIndexSearch_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsIndexSearch_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsNetwork_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsNetwork_config.xml</argument>
+        <output name="GET_orc_WindowsNetwork_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsNetwork_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsNotificationsDB_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsNotificationsDB_config.xml</argument>
+        <output name="GET_orc_WindowsNotificationsDB_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsNotificationsDB_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsOSUpgradeArtifacts_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsOSUpgradeArtifacts_config.xml</argument>
+        <output name="GET_orc_WindowsOSUpgradeArtifacts_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsOSUpgradeArtifacts_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsPowerDiagnostics_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsPowerDiagnostics_config.xml</argument>
+        <output name="GET_orc_WindowsPowerDiagnostics_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsPowerDiagnostics_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsServerDNSAndDHCP_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsServerDNSAndDHCP_config.xml</argument>
+        <output name="GET_orc_WindowsServerDNSAndDHCP_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsServerDNSAndDHCP_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsTelemetryDiagnosticsLegacy_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsTelemetryDiagnosticsLegacy_config.xml</argument>
+        <output name="GET_orc_WindowsTelemetryDiagnosticsLegacy_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsTelemetryDiagnosticsLegacy_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsTimeline_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsTimeline_config.xml</argument>
+        <output name="GET_orc_WindowsTimeline_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsTimeline_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsUpdate_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WindowsUpdate_config.xml</argument>
+        <output name="GET_orc_WindowsUpdate_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsUpdate_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_XPRestorePoints_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\XPRestorePoints_config.xml</argument>
+        <output name="GET_orc_XPRestorePoints_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_XPRestorePoints_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_WindowsSubsystemforAndroid_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WSA\WindowsSubsystemforAndroid_config.xml</argument>
+        <output name="GET_orc_WindowsSubsystemforAndroid_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_WindowsSubsystemforAndroid_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Debian_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WSL\Debian_config.xml</argument>
+        <output name="GET_orc_Debian_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Debian_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Kali_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WSL\Kali_config.xml</argument>
+        <output name="GET_orc_Kali_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Kali_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_openSUSE_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WSL\openSUSE_config.xml</argument>
+        <output name="GET_orc_openSUSE_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_openSUSE_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_SUSELinuxEnterpriseServer_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WSL\SUSELinuxEnterpriseServer_config.xml</argument>
+        <output name="GET_orc_SUSELinuxEnterpriseServer_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_SUSELinuxEnterpriseServer_config.log" source="StdOutErr" />
+    <command keyword="GET_orc_Ubuntu_config">
+        <execute name="Orc.exe" run="self:#GetThis" />
+        <argument>/config=orc\Windows\WSL\Ubuntu_config.xml</argument>
+        <output name="GET_orc_Ubuntu_config.7z" source="File" argument="/out={FileName}" />
+        <output name="GET_orc_Ubuntu_config.log" source="StdOutErr" />
+</archive>
