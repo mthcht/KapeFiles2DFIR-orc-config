@@ -5,6 +5,7 @@
     <!--Documentation-->
     <!--v1.1 - Added the USBDevicelogs target-->
     <!--v1.2 - Added the .NET CLR UsageLogs target-->
+    <!--v1.3 - Added the PowerShell Transcripts target-->
     <sample name="Windows_Event_Logs">
         <ntfs_find path_match="EventLogs.tkape"/>
     </sample>
@@ -13,6 +14,9 @@
     </sample>
     <sample name="PowerShell_Console_Log">
         <ntfs_find path_match="PowerShellConsole.tkape"/>
+    </sample>
+    <sample name="PowerShell_Transcripts">
+        <ntfs_find path_match="PowerShellTranscripts.tkape"/>
     </sample>
     <sample name="Windows_Firewall_Log">
         <ntfs_find path_match="WindowsFirewall.tkape"/>
