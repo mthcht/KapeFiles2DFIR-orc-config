@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://learn.microsoft.com/en-us/exchange/plan-and-deploy/post-installation-tasks/verify-installation#review-the-windows-application-log-and-the-exchange-setup-log-->
+    <!--https://m365internals.com/2022/10/07/hunting-in-on-premises-exchange-server-logs/-->
+    <sample name="Exchange_Setup_Log_file">
+        <ntfs_find path_match="ExchangeSetupLogs\"/>
+    </sample>
+</getthis>

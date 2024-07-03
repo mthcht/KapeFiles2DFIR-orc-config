@@ -10,4 +10,7 @@
     <sample name="Exchange_TransportRoles_log_files">
         <ntfs_find path_match="ExchangeTransport.tkape"/>
     </sample>
+    <sample name="Exchange_Setup_log_file">
+        <ntfs_find path_match="ExchangeSetupLog.tkape"/>
+    </sample>
 </getthis>
