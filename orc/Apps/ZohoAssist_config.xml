@@ -4,6 +4,7 @@
     <location>%SystemDrive%\</location>
     <!--Documentation-->
     <!--https://www.zoho.com/assist/kb/logs.html-->
+    <!--https://www.linkedin.com/pulse/wheres-my-logs-uems-zoho-meeting-edition-geir-olav-skei-ua2rf-->
     <sample name="Zoho_Assist_log_files_in_AppData\Local">
         <ntfs_find path_match="Users\*\AppData\Local\ZohoMeeting\log"/>
     </sample>
