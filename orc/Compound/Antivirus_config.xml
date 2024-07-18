@@ -47,6 +47,9 @@
     <sample name="McAfee_ePO">
         <ntfs_find path_match="McAfee_ePO.tkape"/>
     </sample>
+    <sample name="Microsoft_Safety_Scanner">
+        <ntfs_find path_match="MicrosoftSafetyScanner.tkape"/>
+    </sample>
     <sample name="RogueKiller">
         <ntfs_find path_match="RogueKiller.tkape"/>
     </sample>
