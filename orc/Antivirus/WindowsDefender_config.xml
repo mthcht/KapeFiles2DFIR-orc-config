@@ -31,4 +31,7 @@
     <sample name="Windows_Defender_Quarantine">
         <ntfs_find path_match="ProgramData\Microsoft\Windows Defender\Quarantine\"/>
     </sample>
+    <sample name="Windows_Defender_Detections.log">
+        <ntfs_find path_match="ProgramData\Microsoft\Windows Defender\Scans\History\Service\"/>
+    </sample>
 </getthis>
