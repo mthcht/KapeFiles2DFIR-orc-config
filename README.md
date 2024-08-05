@@ -11,3 +11,6 @@ this [workflow](https://github.com/mthcht/KapeFiles2DFIR-orc-config/blob/main/.g
 todo:
 - [x] convert Targets files
 - [ ] convert modules
+
+
+other repo getting more artifacts: https://github.com/mthcht/ForensicArtifacts2DFIR
