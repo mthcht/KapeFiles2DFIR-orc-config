@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<getthis reportall="">
+    <output compression="fast"/>
+    <location>%SystemDrive%\</location>
+    <!--Documentation-->
+    <!--https://russianpanda.com/The-Abuse-of-ITarian-RMM-by-Dolphin-Loader-->
+    <sample name="ITarian">
+        <ntfs_find path_match="Program Files\ITarian\Endpoint Manager\rmmlogs"/>
+    </sample>
+    <sample name="ITarian">
+        <ntfs_find path_match="Program Files (x86)\ITarian\Endpoint Manager\rmmlogs"/>
+    </sample>
+    <sample name="Comodo">
+        <ntfs_find path_match="Program Files\Comodo\Endpoint Manager\rmmlogs"/>
+    </sample>
+    <sample name="ITarian">
+        <ntfs_find path_match="Program Files (x86)\Comodo\Endpoint Manager\rmmlogs"/>
+    </sample>
+</getthis>

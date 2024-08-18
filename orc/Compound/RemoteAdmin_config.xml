@@ -23,6 +23,9 @@
     <sample name="ISLOnline">
         <ntfs_find path_match="ISLOnline.tkape"/>
     </sample>
+    <sample name="ITarian">
+        <ntfs_find path_match="ITarian.tkape"/>
+    </sample>
     <sample name="Kaseya">
         <ntfs_find path_match="Kaseya.tkape"/>
     </sample>
